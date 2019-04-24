@@ -2,49 +2,22 @@
 title: Welcome to Middleman
 ---
 
-<div class="welcome">
-  <h1>Middleman is Watching</h1>
-
-  <p class="header1">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p>
-
-
-  <!-- .doc -->
-</div><!-- .welcome -->
-
-
-<% form_tag 'https://formcarry.com/s/IPZZAEv8L9X', :class => 'destroy-form', :method => 'POST' do %>
-  <% field_set_tag do %>
-    <p>
-      <%= label_tag :username, :class => 'first' %>
-      <%= text_field_tag :username, :value => "params[:username]" %>
-    </p>
-    <p>
-      <%= label_tag :password, :class => 'first' %>
-      <%= password_field_tag :password, :value => current_page.path  %>
-    </p>
-    <p>
-      <%= label_tag :strategy %>
-      <%= select_tag :strategy, :options => ['delete', 'destroy'],
-          :selected => 'delete' %>
-    </p>
-    <p>
-      <%= check_box_tag :confirm_delete %>
-    </p>
-  <% end %>
-  <% field_set_tag(:class => 'buttons') do %>
-    <%= submit_tag "Remove" %>
-  <% end %>
-<% end %>
-
-<div class="cards">
-  <div class="row">
-    <% data.menus.each do |menu| %>
-        <li>
-          <%= partial(:'components/card', :locals => { :title => menu.nombre, :body => menu.precio, :slug => menu.slug }) %>
-        </li>
+<section class="content">
+  <div class="cards">
+    <div class="row">
+      <% data.menus.each do |menu| %>
+        <div class="col-xs-12 col-sm-6  col-md-4">
+          <li>
+            <%= partial(:'components/card', :locals => {
+              :title => menu.nombre,
+              :precio => menu.precio,
+              :image => menu.image,
+              :platos => menu.platos,
+              :slug => menu.slug }) %>
+          </li>
+         </div>
       <% end %>
 
+    </div>
   </div>
-</div>
+</section>
