@@ -1,3 +1,67 @@
 .show{
   color: black;
+  height: 100vh;
+  position: relative;
+
+  &__background{
+    background-color: $yellow;
+    height: 1000px;
+    width: 200vw;
+    transform: skewY(-6deg) translateY(-50%) translateX(-25%);
+    border-radius: 119%;
+    z-index: -1;
+
+  }
+
+  &__content{
+    background-color: white;
+    box-shadow: $box-shadow;
+    width: 80vw;
+    height: 90vh;
+    position: absolute;
+    top: 5vh;
+    left: 10vw;
+    border-radius: 2rem;
+    overflow: hidden;
+  }
+
+  &__image-frame{
+    height: 100%;
+    width: calc(100% - 37rem);
+    overflow: hidden;
+  }
+
+  &__image{
+    height: 100%;
+  }
+
+  &__form{
+    width: 37rem;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-left: 1rem;
+    h1{
+      font-size: 4.8rem;
+      font-weight: 900;
+      color: black;
+      letter-spacing: -2px;
+    }
+    h2{
+      font-size: 4.8rem;
+      font-weight: 900;
+      color: $yellow;
+    }
+    p{
+      font-size: 1.4rem;
+      font-weight: 300;
+      color: black;
+      text-align: center;
+      margin: 2rem;
+    }
+    .platos{
+      margin-top: 5rem;
+    }
+  }
 }
