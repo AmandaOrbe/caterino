@@ -1,27 +1,65 @@
 
-<p>hello from show</p>
+<% t =  data.textos%>
 
 
-<% form_tag 'https://formcarry.com/s/IPZZAEv8L9X', :class => 'destroy-form', :method => 'POST' do %>
+<% form_tag 'https://formcarry.com/s/IPZZAEv8L9X', :class => 'form', :method => 'POST' do %>
   <% field_set_tag do %>
+    <p class= "hidden">
+      <%= label_tag :menu, :class => 'first' %>
+      <%= text_field_tag :menu, :value => current_page.path.tr('.html', '') %>
+    </p>
+
     <p>
-      <%= label_tag :username, :class => 'first' %>
-      <%= text_field_tag :username, :value => "params[:username]" %>
+      <%= label_tag t.comensales, :class => 'first' %>
+      <%= text_field_tag :comensales %>
     </p>
     <p>
-      <%= label_tag :password, :class => 'first' %>
-      <%= password_field_tag :password, :value => current_page.path  %>
+      <%= t.postre %>
+      <%= radio_button_tag :postre  %>
+    </p>
+
+    <p>
+      <%= label_tag t.nombre, :class => 'first' %>
+      <%= text_field_tag :nombre %>
+    </p>
+
+    <p>
+      <%= label_tag t.apellidos, :class => 'first' %>
+      <%= text_field_tag :apellidos %>
+    </p>
+
+    <p>
+      <%= label_tag t.email, :class => 'first' %>
+      <%= email_field_tag :email %>
+    </p>
+
+    <p>
+      <%= label_tag t.telefono, :class => 'first' %>
+      <%= text_field_tag :telefono %>
     </p>
     <p>
-      <%= label_tag :strategy %>
-      <%= select_tag :strategy, :options => ['delete', 'destroy'],
-          :selected => 'delete' %>
+      <%= label_tag t.fecha, :class => 'first' %>
+      <%= date_field_tag :fecha %>
     </p>
-    <p>
-      <%= check_box_tag :confirm_delete %>
+
+     <p>
+      <%= label_tag t.direccion, :class => 'first' %>
+      <%= text_field_tag :direccion %>
     </p>
+
+     <p>
+      <%= label_tag t.ciudad, :class => 'first' %>
+      <%= text_field_tag :ciudad %>
+    </p>
+
+     <p>
+      <%= label_tag t.CP, :class => 'first' %>
+      <%= text_field_tag :CP %>
+    </p>
+
+
   <% end %>
   <% field_set_tag(:class => 'buttons') do %>
-    <%= submit_tag "Remove" %>
+    <%= submit_tag t.confirmar %>
   <% end %>
 <% end %>
