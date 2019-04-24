@@ -10,10 +10,11 @@
     <title><%= current_page.data.title || "The Middleman" %></title>
     <%= stylesheet_link_tag "normalize", "application" %>
 
-    <%= javascript_include_tag  "all" %>
+
   </head>
 
   <body class="<%= page_classes %>">
     <%= yield %>
+    <%= javascript_include_tag "application" %>
   </body>
 </html>
