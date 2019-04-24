@@ -1,3 +1,27 @@
 
 <p>hello from show</p>
 
+
+<% form_tag 'https://formcarry.com/s/IPZZAEv8L9X', :class => 'destroy-form', :method => 'POST' do %>
+  <% field_set_tag do %>
+    <p>
+      <%= label_tag :username, :class => 'first' %>
+      <%= text_field_tag :username, :value => "params[:username]" %>
+    </p>
+    <p>
+      <%= label_tag :password, :class => 'first' %>
+      <%= password_field_tag :password, :value => current_page.path  %>
+    </p>
+    <p>
+      <%= label_tag :strategy %>
+      <%= select_tag :strategy, :options => ['delete', 'destroy'],
+          :selected => 'delete' %>
+    </p>
+    <p>
+      <%= check_box_tag :confirm_delete %>
+    </p>
+  <% end %>
+  <% field_set_tag(:class => 'buttons') do %>
+    <%= submit_tag "Remove" %>
+  <% end %>
+<% end %>

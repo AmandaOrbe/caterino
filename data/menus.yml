@@ -1,6 +1,76 @@
-- nombre: "Menú yanki"
-  precio: "77 euros"
-  slug: menu-yanki
-- nombre: "Menú y olé"
-  precio: "74 euros"
+- nombre: "Menu y ole"
+  precio: 8.50
   slug: menu-y-ole
+  image: croquetas.jpg
+  platos:
+    - Alitas de Pollo,
+    - Fingers de queso,
+    - Nuggets,
+    - Nachos Tex Mex,
+    - Aros de Cebolla
+
+- nombre: "Menu paella"
+  precio: 9.35
+  slug: menu-paella
+  image: paella.jpg
+  platos:
+    - Alitas de Pollo,
+    - Fingers de queso,
+    - Nuggets,
+    - Nachos Tex Mex,
+    - Aros de Cebolla
+
+- nombre: "Menu Argentino"
+  precio: 9.50
+  slug: menu-argentino
+  image: empanadas.jpg
+  platos:
+    - Alitas de Pollo,
+    - Fingers de queso,
+    - Nuggets,
+    - Nachos Tex Mex,
+    - Aros de Cebolla
+- nombre: "Menu sushi"
+  precio: 9.50
+  slug: menu-sushi
+  image: sushi.jpg
+  platos:
+    - Alitas de Pollo,
+    - Fingers de queso,
+    - Nuggets,
+    - Nachos Tex Mex,
+    - Aros de Cebolla
+
+- nombre: "Menu yanki"
+  precio: 8.50
+  slug: menu-yanki
+  image: alitas.jpg
+  platos:
+    - Alitas de Pollo,
+    - Fingers de queso,
+    - Nuggets,
+    - Nachos Tex Mex,
+    - Aros de Cebolla
+
+- nombre: "Menu healthy"
+  precio: 9.50
+  slug: menu-healthy
+  image: healthy.jpg
+  platos:
+    - Alitas de Pollo,
+    - Fingers de queso,
+    - Nuggets,
+    - Nachos Tex Mex,
+    - Aros de Cebolla
+
+- nombre: "Menu goloso"
+  precio: 9.50
+  slug: menu-goloso
+  image: chocolate.jpg
+  platos:
+    - Alitas de Pollo,
+    - Fingers de queso,
+    - Nuggets,
+    - Nachos Tex Mex,
+    - Aros de Cebolla
+

@@ -5,8 +5,15 @@ end
 # Assumes the file source/about/template.html.erb exists
 
 lista_menus = [
+  "menu-y-ole",
+  "menu-paella",
+  "menu-argentino",
+  "menu-sushi",
   "menu-yanki",
-  "menu-y-ole"
+  "menu-healthy",
+  "menu-goloso"
+
+
 ]
 lista_menus.each do |menu|
   proxy "/#{menu}.html", "/show.html", :locals => { :menu => menu },  ignore: true
