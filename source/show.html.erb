@@ -1,12 +1,14 @@
 
 <% t =  data.textos%>
 
+<% menu = data[menu] %>
+<p><%=menu.nombre  %></p>
 
 <% form_tag 'https://formcarry.com/s/IPZZAEv8L9X', :class => 'form', :method => 'POST' do %>
   <% field_set_tag do %>
     <p class= "hidden">
       <%= label_tag :menu, :class => 'first' %>
-      <%= text_field_tag :menu, :value => current_page.path.tr('.html', '') %>
+      <%= text_field_tag :menu, :value => menu.nombre %>
     </p>
 
     <p>
@@ -17,6 +19,10 @@
       <%= t.postre %>
       <%= radio_button_tag :postre  %>
     </p>
+
+    <div class="button">
+      euros
+    </div>
 
     <p>
       <%= label_tag t.nombre, :class => 'first' %>
