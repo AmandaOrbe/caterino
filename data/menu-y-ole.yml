@@ -1,0 +1,10 @@
+nombre: "Menu y ole"
+precio: 8.50
+slug: menu-y-ole
+image: croquetas.jpg
+platos:
+  - Alitas de Pollo,
+  - Fingers de queso,
+  - Nuggets,
+  - Nachos Tex Mex,
+  - Aros de Cebolla
