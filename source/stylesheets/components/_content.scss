@@ -1,0 +1,154 @@
+.container{
+  width: 100%;
+
+  .content{
+    margin: 4rem auto ;
+    background-color: $white;
+    width:  65rem;
+    min-height: 20rem;
+    // border: 1px solid pink;
+    @include respond(landscape) { // width < 1200
+      width:60rem; //1rem = 9px,  9/16 = 56,25%
+    }
+    @include respond(portrait) { // width < 1200
+       margin: 6rem;
+        width: auto;
+    }
+
+    @include respond(phone) { // width < 1200
+       margin: 4rem;
+        width: auto;
+    }
+
+    &--2{
+
+      margin: 6rem auto ;
+      box-shadow: $box-shadow;
+      background-color: $white;
+      width: 80rem;
+      padding: 8rem 16rem 8rem 16rem;
+      min-height: 20rem;
+
+      @include respond(landscape) { // width < 1200
+        width:60rem; //1rem = 9px,  9/16 = 56,25%
+        padding: 6rem 8rem 6rem 8rem;
+      }
+      @include respond(portrait) { // width < 1200
+        margin: 1rem;
+        width: auto; //1rem = 9px,  9/16 = 56,25%
+        padding: 2rem 6rem 6rem 6rem;
+      }
+
+      @include respond(phone) { // width < 1200
+        margin: 1rem;
+        width: auto; //1rem = 9px,  9/16 = 56,25%
+        padding: 1rem 2rem 1rem 2rem;
+      }
+    }
+  }
+
+
+  .orange{
+      color: $orange;
+    }
+
+
+  h3{
+    color: black;
+    font-family: $serif-font;
+    font-weight: 100;
+    font-size: 2.2rem;
+    border-bottom: 1px solid $orange;
+    width: max-content;
+    padding-bottom: 1rem;
+    margin-left: 5rem;
+    padding-right: 5rem;
+     @include respond(portrait) {
+      text-indent: 0rem;
+      max-width: 28rem;
+      margin-left: 3rem;
+    }
+     @include respond(phone) { // width < 1200
+      max-width:22rem;
+    }
+
+
+
+
+    // text-decoration: underline;
+
+  }
+
+  h4{
+   font-family: $serif-font;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 2.5rem;
+  }
+
+
+
+  p{
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 2.6rem;
+
+  }
+
+  a{
+    word-break: break-all;
+    color: $orange;
+  }
+
+  .biblio{
+    line-height: 2.8rem;
+    text-indent: -5rem;
+     @include respond(phone) {
+          text-indent: -2rem;
+    width: 21rem;
+    }
+
+  }
+
+  .margin7{
+    margin-top: 7rem;
+  }
+
+  .margin-bottom7{
+    margin-bottom: 7rem;
+  }
+
+  .margin-bottom5{
+    margin-bottom: 5rem;
+  }
+
+  .margin-bottom2{
+    margin-bottom: 2rem;
+  }
+
+  .margin5{
+    margin-top: 5rem;
+  }
+
+  .margin2{
+    margin-top: 2rem;
+  }
+  .indented{
+    text-indent: 5rem;
+     @include respond(portrait) {
+      text-indent: 3rem;
+    }
+  }
+
+  &__highlight{
+    font-weight: 700;
+    &:hover{
+      background-color: $light-orange;
+    }
+  }
+
+}
+
+
+
+

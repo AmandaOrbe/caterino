@@ -1,0 +1,263 @@
+#sidebar{
+   position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 28rem;
+  display: block;
+  height:500rem;
+  transition: all .5s ease;
+   @include respond(portrait) { // width < 1200
+    width:24rem; //1rem = 9px,  9/16 = 56,25%
+  }
+   @include respond(phone) { // width < 1200
+    width:100%;
+    }
+}
+
+.hidden-phone{
+    @include respond(phone) { // width < 1200
+    width: 0 !important;
+    }
+}
+
+.sidebar {
+  position:  absolute;
+  top: 0px;
+  height:100vh;
+  width: 28rem;
+  text-align: center;
+  display: block;
+  font-family: $headers-font;
+  @include respond(phone) { // width < 1200
+    width:100%;
+    }
+
+  a{
+    text-decoration: none;
+    color: black;
+  }
+
+
+  &__top{
+    background-color: $orange;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding-left: 4rem;
+    padding-top: 4rem;
+    height:28rem;
+    @include respond(portrait) { // width < 1200
+      height:24rem; //1rem = 9px,  9/16 = 56,25%
+      padding-left: 2rem;
+    }
+    @include respond(phone) { // width < 1200
+    width:100%;
+    height: 30rem;
+    }
+
+  }
+
+  &__content{
+    top :0;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 28rem;
+    // width: 28rem;
+    height: calc(100vh - 28rem);
+    overflow-y: scroll;
+    overflow-x: visible;
+    // border-right: 1px solid $gray;
+    transition: all .5s ease;
+
+     @include respond(portrait) { // width < 1200
+      top:24rem; //1rem = 9px,  9/16 = 56,25%
+      height: calc(100vh - 24rem);
+    }
+
+    @include respond(phone) { // width < 1200
+      width:100%;
+      top: 30rem;
+      height: calc(100vh - 28rem);
+    }
+
+
+    &__invisible{
+    max-height: 6rem;
+    overflow: hidden;
+    // transition: all 2s ease;
+    }
+
+    // &__visible{
+    // max-height: 500rem;
+    // overflow: hidden;
+    // // transition: all 2s ease;
+    // }
+
+
+    .check{
+      color: $orange;
+      opacity: 0;
+      padding-right: .5rem;
+      padding-left: .5rem;
+
+      @include respond(phone) { // width < 1200
+        display: none;
+      }
+     }
+
+    .green{
+      color: $green;
+      opacity: 0;
+      padding-right: .5rem;
+      padding-left: .5rem;
+    }
+
+    .red{
+      color: red;
+      padding-right: .5rem;
+      padding-left: .5rem;
+    }
+
+
+    &__item{
+      text-align: left;
+      width: 28rem;
+      height: 6rem;
+      position: relative;
+      padding-left: 4rem;
+      padding-right: 2rem;
+      font-weight: 100;
+      opacity: .6;
+      font-size: 1.2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      overflow: hidden;
+      border-bottom: 1px solid $gray;
+      border-right: 1px solid $gray;
+      transition: all .5s ease;
+      @include respond(landscape) {
+      // background-color:lightcoral;
+
+      }  @include respond(portrait) { // width < 1200
+        width:24rem; //1rem = 9px,  9/16 = 56,25%
+      // background-color:azure;
+
+      }
+       @include respond(phone) { // width < 1200
+      width:100%; //1rem = 9px,  9/16 = 56,25%
+      font-size:1.8rem;
+    }
+    }
+
+
+
+
+    &__chevron{
+      position: absolute;
+      left: 23rem;
+      opacity: 0;
+
+    }
+
+    &__chevron-down{
+      opacity: 0.5;
+    }
+
+    &__chevron-up{
+      transform: rotate(180deg);
+    }
+
+    &__title{
+      // background-color: $gray;
+      color: black;
+      opacity: 1;
+      padding-right: 2rem;
+      // border-bottom: 1px solid $dark-gray
+    }
+
+    &__read{
+      opacity: .9;
+       i{
+        opacity: 1 !important;
+      }
+    }
+
+    &__current{
+      background-color: white;
+      opacity: 1;
+      font-weight: 300;
+      border-left: 10px solid $orange;
+      padding-left: 3rem;
+      box-shadow: $box-shadow;
+      border-right: none !important;
+      z-index:1500;
+    }
+
+    &__current &__chevron{
+     opacity: 1 !important;
+    }
+  }
+
+  &__title{
+    width: 75%;
+    text-align: left;
+  }
+
+  h2{
+    color: white;
+    font: $headers-font;
+    font-weight: 300;
+    font-size: 2.8rem;
+    @include respond(phone) { // width < 1200
+      font-size: 6rem;
+      max-width: 30rem;
+      margin-left: 2rem;
+    }
+
+  }
+
+  &__percentage{
+    position: relative;
+    height: 5rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    @include respond(phone) { // width < 1200
+      display: none;
+    }
+
+    p{
+      text-align: left;
+      font-weight: 100;
+      color: white;
+      font-family: $headers-font;
+      letter-spacing: .3px;
+      opacity: .9;
+    }
+
+
+    &__bar{
+      display: block;
+      height: 2px;
+      position: absolute;
+      bottom: 0rem;
+      left: 0rem;
+      transition: all .5s ease;
+      background-color: white;
+      z-index: 0;
+
+      &--1{
+
+        width: 20rem;
+        opacity: .2;
+      }
+
+      &--2{
+        width: 0rem;
+        opacity: 1;
+      }
+
+    }
+  }
+}

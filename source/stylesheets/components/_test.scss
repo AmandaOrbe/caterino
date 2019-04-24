@@ -1,0 +1,130 @@
+.form{
+
+  position: relative;
+
+  &__radio-label{
+    width: 100%;
+    box-shadow: $box-shadow;
+    margin-top: 1rem;
+    transition: all 1s ease-in-out;
+    height: 7rem;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    @include respond(phone) {
+      height:5.5rem;
+    }
+
+    &__text{
+      height: 7rem;
+      display: flex;
+      align-items: center;
+      @include respond(phone) {
+        height:5.5rem;
+      }
+    }
+
+  }
+
+
+
+  &__orange1,
+  &__orange2{
+    display: block;
+    height: 7rem;
+    width: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 1s ease-in-out;
+    background-color: $orange;
+    z-index: 0;
+    @include respond(phone) { // width < 1200
+      height:5.5rem;
+    }
+  }
+
+
+  &__radio-input{
+    display: none;
+  }
+
+  h5{
+    font-family: $serif-font;
+    font-size: 1.4rem;
+    font-weight: 100;
+    margin-left:6rem;
+    line-height: 2rem;
+    z-index: 100;
+    @include respond(portrait) {
+      margin-left: 5rem;
+      margin-right: .5rem;
+    }
+  }
+
+  &__radio-button{
+    height: 1.4rem;
+    width: 1.4rem;
+    border: 1px solid $orange;
+    border-radius: .7rem;
+    position: absolute;
+    left: 2.5rem;
+    top: 2.75rem;
+    @include respond(phone) {
+      height: 1rem;
+      width: 1rem;
+      top: 2.2rem;
+    }
+
+  }
+
+  &__radio-input:checked + &__radio-label &__radio-button{
+    background-color: $orange;
+  }
+
+}
+
+.full-width{
+  width: 100% !important;
+}
+
+.test__answer__correct,
+.test__answer__incorrect,
+.test__answer__correct2,
+.test__answer__incorrect2,
+.test__answer__correct3,
+.test__answer__incorrect3,
+.test__answer__correct4,
+.test__answer__incorrect4{
+  max-height: 0;
+  overflow: hidden;
+  transition: all 1s ease;
+   @include respond(phone) {
+    transform: translateY(-9rem);
+  }
+
+  h4{
+  color: $orange;
+    font-family: $serif-font;
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+}
+
+.cross1{
+  transform: translateX(30px) rotate(45deg);
+  @include respond(portrait) {
+    transform: translateX(10px) rotate(45deg) scale(.5);
+  }
+
+}
+
+.cross2{
+  transform: translateX(30px) rotate(-45deg);
+   @include respond(portrait) {
+    transform: translateX(10px) rotate(-45deg) scale(.5);
+    }
+}
+
+
+

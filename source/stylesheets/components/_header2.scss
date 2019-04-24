@@ -1,0 +1,26 @@
+
+.header2{
+  margin-top: 6rem;
+
+  h2{
+    font-family: $display-font;
+    font-size: 2.2rem;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+
+  &__line{
+    &,
+    &::before,
+    &::after{
+      z-index: 1000;
+      display: inline-block;
+      width: 30rem;
+      height: 2px;
+      background-color: $orange;
+    @include respond(phone) { // width < 1200
+      width:22rem;
+    }
+    }
+  }
+}

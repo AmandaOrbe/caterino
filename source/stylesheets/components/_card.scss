@@ -1,0 +1,81 @@
+.card_row{
+  display: flex;
+  justify-content: space-between;
+   @include respond(portrait) { // width < 1200
+      display: block;
+    }
+
+}
+
+.card{
+  width: 47%;
+  box-shadow: $box-shadow;
+  border-left: 5px solid $orange;
+  margin-top: 4rem;
+  transition: all .5s ease-in-out;
+  max-height: 7rem;
+  overflow: hidden;
+  @include respond(portrait) { // width < 1200
+    margin: 4rem auto;
+    width: 77%;
+  }
+  @include respond(phone) { // width < 1200
+    width: 100%;
+  }
+
+
+  &__header{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    @include respond(landscape) { // width < 1200
+      padding-left: 1.5rem; //1rem = 9px,  9/16 = 56,25%
+    }
+  }
+
+  h4{
+    font-family: $serif-font;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 2.5rem;
+  }
+
+  i{
+    font-size: 2rem;
+    // font-weight: 700;
+    margin-top: 2.4rem;
+    transition: all .5s ease-in-out;
+
+  }
+
+  &__body{
+    padding: 2.5rem;
+
+
+    // display: none;
+
+    p{
+      font-size: 1.2rem;
+      line-height: 2.2rem;
+      margin-top: 0;
+      text-indent: 0;
+    }
+  }
+
+  &__visible{
+    max-height: 150rem;
+    overflow: hidden;
+    // transition: all 2s ease;
+
+  }
+
+  &:hover{
+    transform: translateY(-.5rem);
+    box-shadow: $box-shadow-2;
+
+  }
+
+}
+
+

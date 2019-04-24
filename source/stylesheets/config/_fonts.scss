@@ -1,0 +1,22 @@
+// Import Google fonts
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,700|Montserrat:100" rel="stylesheet");
+// Define fonts for body and headers
+$body-font: "Merriweather", "serif";
+$headers-font: "Montserrat", "Helvetica", "sans-serif";
+
+$serif-font: "Merriweather", "serif";
+$display-font: "Montserrat", "Helvetica", "sans-serif";
+// $sans-font: "Open Sans", "Helvetica", "sans-serif";
+
+
+
+
+// To use a font file (.woff) uncomment following lines
+// @font-face {
+//   font-family: "Font Name";
+//   src: font-url('FontFile.eot');
+//   src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
+//        font-url('FontFile.woff') format('woff'),
+//        font-url('FontFile.ttf') format('truetype')
+// }
+// $my-font: "Font Name";

@@ -1,0 +1,87 @@
+.navigation{
+  position: fixed;
+  height: 100vh;
+  width: 5rem;
+  top: 0;
+  left: 0;
+  z-index: 15;
+
+  @include respond(onlyphone) { // width < 1200
+    display: none;
+  }
+
+  &__checkbox{
+    display: none;
+
+  }
+
+  &__button{
+
+  }
+
+  &__icon{
+
+
+    &--1,
+    &--2,
+    &--3{
+      position: absolute;
+      width: 2.5rem;
+      height: 2px;
+      background-color: white;
+      display: inline-block;
+      z-index: 2000;
+      left: 1.255rem;
+      transition: all 0.1 ease;
+    }
+
+    &--1{
+      top: 2.7rem;
+    }
+
+    &--1x{
+      transform: rotate(-45deg);
+      top: 3.5rem !important;
+    }
+
+    &--2{
+      top: 3.5rem;
+    }
+     &--2x{
+          display: none;
+        }
+
+    &--3{
+      top: 4.3rem;
+    }
+
+    &--3x{
+      transform: rotate(45deg);
+      top: 3.5rem !important;
+    }
+
+
+
+
+  }
+
+  &__background{
+    background-color: $orange;
+    height: 100vh;
+    width: 5rem;
+    position: fixed;
+    box-shadow: $box-shadow;
+    transition: all .5s ease;
+    top: 0;
+    left: 0;
+
+    &--small{
+      height: 30rem !important;
+      box-shadow: none;
+      // opacity: 0;
+    }
+  }
+
+
+}
+

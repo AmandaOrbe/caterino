@@ -1,0 +1,39 @@
+.button{
+  font-family: $serif-font;
+  padding: 1rem;
+  font-weight: 100;
+  font-weight: 1.6rem;
+   margin: 0 auto;
+   transition: all .2s ease;
+  &__comprobar{
+    background-color: $orange;
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    width: 25rem;
+    opacity: .5;
+    @include respond(portrait) { // width < 1200
+      font-size: 1.8rem;
+    }
+    @include respond(phone) { // width < 1200
+      transform: translate(-50%, -150%);
+      border: none;
+      width: 20rem;
+    }
+  }
+
+  &:hover,
+  {
+
+    background-color: $dark-orange;
+    margin-top: 2.5rem;
+
+  }
+  &:focus,
+  &:active{
+    outline: $orange;
+
+  }
+}

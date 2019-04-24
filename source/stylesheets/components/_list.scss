@@ -1,0 +1,23 @@
+.list{
+  margin-left: 9rem;
+  margin-top: 4rem;
+  list-style: none;
+   @include respond(portrait) { // width < 1200
+      margin-left: 3rem;
+      width: 77%;
+    }
+    @include respond(portrait) { // width < 1200
+      width: 100%;
+    }
+  li{
+    min-height: 5rem;
+    font-weight: 100;
+    font-size: 1.4rem;
+
+  }
+  &__star{
+    color: $orange;
+    margin-right: 1rem;
+    transform: translateY(-1rem)
+  }
+}

@@ -1,3 +1,39 @@
+activate :autoprefixer do |prefix|
+  prefix.browsers = "last 2 versions"
+end
+
+# Assumes the file source/about/template.html.erb exists
+
+lista_menus = [
+  "menu-yanki",
+  "menu-y-ole"
+]
+lista_menus.each do |menu|
+  proxy "/#{menu}.html", "/show.html", :locals => { :menu => menu },  ignore: true
+end
+
+activate :sprockets
+
+page '/*.xml', layout: false
+page '/*.json', layout: false
+page '/*.txt', layout: false
+
+configure :build do
+  activate :minify_css
+  activate :minify_javascript
+  activate :asset_hash
+  activate :relative_assets
+  set :relative_links, true
+end
+
+activate :deploy do |deploy|
+  deploy.build_before = true
+  deploy.deploy_method = :git
+end
+
+
+
+
 ###
 # Compass
 ###
@@ -53,20 +89,4 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
-# Build-specific configuration
-configure :build do
-  # For example, change the Compass output style for deployment
-  # activate :minify_css
 
-  # Minify Javascript on build
-  # activate :minify_javascript
-
-  # Enable cache buster
-  # activate :asset_hash
-
-  # Use relative URLs
-  # activate :relative_assets
-
-  # Or use a different image path
-  # set :http_prefix, "/Content/images/"
-end
