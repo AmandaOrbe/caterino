@@ -1,0 +1,8 @@
+<% t =  data.textos%>
+<div class="col-xs-12 col-sm-6  col-md-4">
+<div class="form__radio-group" >
+    <%= radio_button_tag  :postre, :value=> postre  , :id => postre, :class => "form__radio-button"%>
+    <%= image_tag image, :class => "form__image" %>
+    <p><%= label_tag name.upcase, :class => 'form__radio-label', :for => postre %></p>
+  </div>
+</div>

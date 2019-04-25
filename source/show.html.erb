@@ -5,88 +5,102 @@
 <div class="show">
   <div class="show__background">
   </div>
-
-  <div class="show__content">
-    <div class="show__image-frame">
-      <%= image_tag 'images/PANSCOMPANY.jpg', class: "show__image" %>
-    </div>
-    <div class="show__form">
-      <h1><%=menu.nombre.upcase  %></h1>
-      <h2 id= "precio" class= "hidden" ><%=menu.precio %></h2>
-      <h2  ><%=number_to_currency(menu.precio, unit: "€", separator: ",", delimiter: "", format: "%n %u")   %></h2>
-      <div class="platos">
-      <% menu.platos.each do |plato| %>
-            <p><%= plato %></p>
-        <% end %>
+  <% form_tag 'https://formcarry.com/s/IPZZAEv8L9X', :class => 'form', :method => 'POST' do %>
+    <% field_set_tag :class => 'fieldset-1', id: "f1" do %>
+    <div class="show__content">
+      <div class="show__left">
+        <%= image_tag 'images/PANSCOMPANY.jpg', class: "show__image" %>
       </div>
-      <% form_tag 'https://formcarry.com/s/IPZZAEv8L9X', :class => 'form', :method => 'POST' do %>
-        <% field_set_tag do %>
-
-          <p class= "hidden">
-            <%= label_tag :menu, :class => 'first' %>
-            <%= text_field_tag :menu, :value => menu.nombre %>
-          </p>
-
-
-            <p> <%= label_tag t.comensales, :class => 'first' %></p>
-            <%= number_field_tag :comensales, :value => 15 , :min => 15,  :id => 'comensales'%>
-            <p class="minimo"><%= t.minimo  %></p>
-
-
-          <p>
-            <%= t.postre %>
-            <%= check_box_tag :postre , :id => 'postre' %>
-          </p>
-
-          <div class="button" id= "button-price">
+      <div class="show__right">
+        <h1><%=menu.nombre.upcase  %></h1>
+        <h2 id= "precio" class= "hidden" ><%=menu.precio %></h2>
+        <h2  ><%=number_to_currency(menu.precio, unit: "€", separator: ",", delimiter: "", format: "%n %u")   %></h2>
+        <div class="platos">
+          <% menu.platos.each do |plato| %>
+            <p><%= plato %></p>
+          <% end %>
+        </div>
+        <p class= "hidden">
+          <%= text_field_tag :menu, :value => menu.nombre %>
+        </p>
+        <p class="align-center"><%= label_tag t.comensales, :class => 'first' %></p>
+        <%= number_field_tag :comensales, :value => 15 , :min => 15,  :id => 'comensales'%>
+        <p class="minimo"><%= t.minimo  %></p>
+        <div class="button" id= "button-price">
             Total <%= 15 *  menu.precio  %> €
-          </div>
-          <div class="contact-form hidden" id= "contact-form">
-            <p>
-              <%= label_tag t.nombre, :class => 'first' %>
-              <%= text_field_tag :nombre %>
-            </p>
-
-            <p>
-              <%= label_tag t.apellidos, :class => 'first' %>
-              <%= text_field_tag :apellidos %>
-            </p>
-
-            <p>
-              <%= label_tag t.email, :class => 'first' %>
-              <%= email_field_tag :email %>
-            </p>
-
-            <p>
-              <%= label_tag t.telefono, :class => 'first' %>
-              <%= text_field_tag :telefono %>
-            </p>
-            <p>
-              <%= label_tag t.fecha, :class => 'first' %>
-              <%= date_field_tag :fecha %>
-            </p>
-
-             <p>
-              <%= label_tag t.direccion, :class => 'first' %>
-              <%= text_field_tag :direccion %>
-            </p>
-
-             <p>
-              <%= label_tag t.ciudad, :class => 'first' %>
-              <%= text_field_tag :ciudad %>
-            </p>
-
-             <p>
-              <%= label_tag t.CP, :class => 'first' %>
-              <%= text_field_tag :CP %>
-            </p>
-            <% end %>
-            <% field_set_tag(:class => 'buttons hidden') do %>
-              <%= submit_tag t.confirmar %>
-            </div>
-
-        <% end %>
-      <% end %>
+        </div>
+      </div>
     </div>
-  </div>
+    <% end %>
+<!-- ************************POSTRE************************************** -->
+    <% field_set_tag :class => 'fieldset-2 hidden', id: "f2" do %>
+      <div class="show__content">
+        <div class="show__left padding-left-5">
+          <h1 class= "width30 "><%= t.seleccion_postre.upcase  %></h1>
+          <h4 class= "underline width80 margin-top-3" > <%= t.quieres_postre %></h4>
+            <p> <%= radio_button_tag  :postre, :value => "no" , :id => "no"%>
+            <%= label_tag t.no_postre, :class => 'no-postre', :for => "no" %> </p>
+          <div class="form__cards">
+            <div class="row">
+
+              <%= partial(:'components/form_card', :locals => { :postre => "brownie", :image => 'brownie.jpg', :name => t.brownie  }) %>
+
+              <%= partial(:'components/form_card', :locals => { :postre => "tarta-limon", :image => 'tarta-limon.jpg', :name => t.tarta_limon}) %>
+
+              <%= partial(:'components/form_card', :locals => { :postre => "tartaletas", :image => 'tartaletas.jpg', :name => t.tartaletas}) %>
+              <%= partial(:'components/form_card', :locals => { :postre => "cesta-de-frutas", :image => 'cesta-de-frutas.jpg', :name => t.cesta_de_frutas }) %>
+
+              <%= partial(:'components/form_card', :locals => { :postre => "tartaletas", :image => 'tartaletas.jpg', :name => t.tartaletas}) %>
+              <%= partial(:'components/form_card', :locals => { :postre => "cesta-de-frutas", :image => 'cesta-de-frutas.jpg', :name => t.cesta_de_frutas }) %>
+
+          </div>
+        </div>
+        <div class="show__right">
+          <p>show right</p>
+          <div class="button" id= "button-postre">
+            <%= t.next.upcase %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+<!-- ************************DATOS************************************** -->
+
+    <% field_set_tag :class => 'fieldset-3 hidden', id: "f3" do %>
+      <div class="show__content">
+        <p>
+          <%= label_tag t.nombre, :class => 'first' %>
+          <%= text_field_tag :nombre %>
+        </p>
+        <p>
+          <%= label_tag t.apellidos, :class => 'first' %>
+          <%= text_field_tag :apellidos %>
+        </p>
+        <p>
+          <%= label_tag t.email, :class => 'first' %>
+          <%= email_field_tag :email %>
+        </p>
+        <p>
+          <%= label_tag t.telefono, :class => 'first' %>
+          <%= text_field_tag :telefono %>
+        </p>
+        <p>
+          <%= label_tag t.fecha, :class => 'first' %>
+          <%= date_field_tag :fecha %>
+        </p>
+        <p>
+          <%= label_tag t.direccion, :class => 'first' %>
+          <%= text_field_tag :direccion %>
+        </p>
+        <p>
+          <%= label_tag t.ciudad, :class => 'first' %>
+          <%= text_field_tag :ciudad %>
+        </p>
+        <p>
+          <%= label_tag t.CP, :class => 'first' %>
+          <%= text_field_tag :CP %>
+        </p>
+        <%= submit_tag t.confirmar %>
+      </div>
+    <% end %>
+  <% end %>
 </div>
