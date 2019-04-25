@@ -29,15 +29,16 @@
 
           <p>
             <%= label_tag t.comensales, :class => 'first' %>
-            <%= text_field_tag :comensales, :value => 15 , :id => 'comensales'%>
+            <%= number_field_tag :comensales, :value => 15 , :min => 15,  :id => 'comensales'%>
+
           </p>
           <p>
             <%= t.postre %>
-            <%= radio_button_tag :postre  %>
+            <%= check_box_tag :postre , :id => 'postre' %>
           </p>
 
           <div class="button" id= "button-price">
-            euros
+            Total <%= 15 *  menu.precio  %> €
           </div>
           <div class="contact-form hidden" id= "contact-form">
             <p>
