@@ -7,8 +7,29 @@
 }
 
 
+.width30{
+    width:30rem
+  }
+.padding-left-5{
+  padding-left: 5rem;
+}
 
+.margin-top-3{
+  margin-top: 3rem;
+}
 
+.width80{
+  width: 80%;
+}
+
+.underline{
+  padding-bottom: 1rem;
+  border-bottom: 6px solid $yellow;
+}
+
+.align-center{
+  text-align: center;
+}
 
 html{
   font-size: 62.5%; //1rem = 10px,  10/16 = 62,5%
