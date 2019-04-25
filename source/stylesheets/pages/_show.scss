@@ -27,7 +27,7 @@
 
   &__image-frame{
     height: 100%;
-    width: calc(100% - 37rem);
+    width: calc(100% - 20rem);
     overflow: hidden;
   }
 
@@ -36,7 +36,9 @@
   }
 
   &__form{
-    width: 37rem;
+    border-radius: 2rem;
+    width: 30rem;
+    height: 100%;
     background-color: white;
     position: absolute;
     right: 0;
