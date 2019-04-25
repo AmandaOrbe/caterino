@@ -27,11 +27,12 @@
             <%= text_field_tag :menu, :value => menu.nombre %>
           </p>
 
-          <p>
-            <%= label_tag t.comensales, :class => 'first' %>
-            <%= number_field_tag :comensales, :value => 15 , :min => 15,  :id => 'comensales'%>
 
-          </p>
+            <p> <%= label_tag t.comensales, :class => 'first' %></p>
+            <%= number_field_tag :comensales, :value => 15 , :min => 15,  :id => 'comensales'%>
+            <p class="minimo"><%= t.minimo  %></p>
+
+
           <p>
             <%= t.postre %>
             <%= check_box_tag :postre , :id => 'postre' %>

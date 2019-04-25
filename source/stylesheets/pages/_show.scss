@@ -65,5 +65,34 @@
     .platos{
       margin-top: 5rem;
     }
+  .minimo{
+    color: red;
+    font-size: 1rem;
+    font-weight: 100;
+    opacity: 0;
+    transition: all .3s ease;
+
+  }
+  #comensales{
+
+    width: 50%;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-left: 25%;
+    &:focus{
+      border-bottom: 3px solid $yellow;
+      outline:0;
+    }
+    &:focus:invalid{
+      border-bottom: 3px solid red;
+      outline:0;
+    }
+
+    &:focus:invalid + .minimo{
+      opacity: 1;
+    }
+  }
+
   }
 }
