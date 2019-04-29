@@ -23,12 +23,10 @@
         <p class= "hidden">
           <%= text_field_tag :menu, :value => menu.nombre %>
         </p>
-        <p class="align-center"><%= label_tag t.comensales, :class => 'first' %></p>
-        <%= number_field_tag :comensales, :value => 15 , :min => 15,  :id => 'comensales'%>
-        <p class="minimo"><%= t.minimo  %></p>
-        <div class="button" id= "button-price">
-            Total <%= 15 *  menu.precio  %> €
-        </div>
+        <br>
+        <br>
+        <br>
+        <%= partial(:'components/number_form', :locals => { :menu => menu}) %>
       </div>
     </div>
     <% end %>
@@ -104,3 +102,4 @@
     <% end %>
   <% end %>
 </div>
+<%= javascript_include_tag "application" %>

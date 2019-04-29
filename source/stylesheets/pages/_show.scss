@@ -71,6 +71,7 @@
     right: 0;
     top: 0;
     padding-left: 1rem;
+    padding-right: 1rem;
 
     .platos{
       margin-top: 5rem;
@@ -87,26 +88,7 @@
   .no_postre label{
     font-weight: 300;
   }
-  #comensales{
 
-    width: 50%;
-    text-align: center;
-    border: none;
-    border-bottom: 1px solid black;
-    margin-left: 25%;
-    &:focus{
-      border-bottom: 3px solid $yellow;
-      outline:0;
-    }
-    &:focus:invalid{
-      border-bottom: 3px solid red;
-      outline:0;
-    }
-
-    &:focus:invalid + .minimo{
-      opacity: 1;
-    }
-  }
 
   }
 }
