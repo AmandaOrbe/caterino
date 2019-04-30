@@ -42,7 +42,9 @@
 
                 <%= radio_button_tag  :postre, :value => "no" , :id => "no"%>
                 <span class="form__radio-circle"></span>
-              <%= label_tag t.no_postre, :class => 'no-postre__text', :for => "no"  %>
+
+                <label for="no" class= 'no-postre__text'><%= t.no_postre %></label>
+
             </div>
 
           <div class="form__cards">
