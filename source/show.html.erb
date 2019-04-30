@@ -36,8 +36,17 @@
         <div class="show__left padding-left-5">
           <h1 class= "width30 "><%= t.seleccion_postre.upcase  %></h1>
           <h4 class= "underline width80 margin-top-3" > <%= t.quieres_postre %></h4>
-            <p> <%= radio_button_tag  :postre, :value => "no" , :id => "no"%>
-            <%= label_tag t.no_postre, :class => 'no-postre', :for => "no" %> </p>
+
+
+              <div class="no-postre">
+
+                <%= radio_button_tag  :postre, :value => "no" , :id => "no"%>
+                <span class="form__radio-circle"></span>
+
+                <label for="no" class= 'no-postre__text'><%= t.no_postre %></label>
+
+            </div>
+
           <div class="form__cards">
             <div class="row">
 

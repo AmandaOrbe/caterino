@@ -22,6 +22,7 @@
     label{
       font-weight: 900;
       font-size: 2.8rem;
+      max-width: 20rem;
     }
 
   }
@@ -32,12 +33,14 @@
     position: absolute;
     top: 0;
     left: 0;
+    padding: 2rem,
+
+
   }
 
   &__radio-button{
-    position: absolute;
-      z-index: 100;
-    }
+    display: none;
+  }
 
 
   &__image{
@@ -46,8 +49,46 @@
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 0;
+  }
 
-      z-index: 0;
+  &__card-text{
+    letter-spacing: -2px;
+
+  }
+
+  &__radio-button:checked ~ &__radio-circle::after{
+    opacity: 1;
+  }
+
+  &__radio-circle{
+    height:2rem;
+    width:2rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    z-index: 200;
+    background-color: white;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+
+    &::after{
+      content: "";
+      display: block;
+      height: .8rem;
+      width:  .8rem;
+      border-radius: 50%;
+      background-color: $yellow;
+      z-index: 200;
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+      opacity: 0;
+
+    }
+
   }
 
   input[type="radio"]{
