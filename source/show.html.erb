@@ -63,7 +63,27 @@
           </div>
         </div>
         <div class="show__right">
-          <p>show right</p>
+          <h2 class= "upcase margin-bottom-5"><%= t.order  %></h2>
+          <div class="details" id= "order-line-1">
+            <p><span id="order-line-1__number">25</span> * <%=  menu.nombre%></p>
+            <p id="order-line-1__total">230 €</p>
+          </div>
+          <div class="details" id= "order-line-2">
+            <p id= "order-postre"><span id="order-line-2__number">25</span> * <%=  menu.nombre%></p>
+            <p id="order-line-2__total">230 €</p>
+          </div>
+          <div class="details" id= "order-line-3">
+            <p id= "order-postre"><span id="order-line-3__number">25</span> * <%=  menu.nombre%></p>
+            <p id="order-line-3__total">230 €</p>
+          </div>
+          <div class="details" id= "order-line-4">
+            <p id= "order-postre"><span id="order-line-4__number">25</span> * <%=  menu.nombre%></p>
+            <p id="order-line-4__total">230 €</p>
+          </div>
+          <div class="details" id= "order-line-total">
+            <p id= "order-postre"><span id="order-line-total__number">25</span> * <%=  menu.nombre%></p>
+            <p id="order-line-total__total">230 €</p>
+          </div>
           <div class="button" id= "button-postre">
             <%= t.next.upcase %>
           </div>
