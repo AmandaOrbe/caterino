@@ -121,7 +121,7 @@
 #no-postre{
   display: none;
 }
-#no-postre:checked ~ .form__radio-circle::after{
+#no-postre:checked ~ .no-postre__text > .form__radio-circle::after{
     opacity: 1;
   }
 
