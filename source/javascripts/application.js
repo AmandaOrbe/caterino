@@ -5,8 +5,10 @@ var diners = document.getElementById("comensales");
 var price =document.getElementById("price");
 var postreButton =document.getElementById("button-postre");
 var f1 = document.getElementById("f1");
+var step2 = document.getElementById("step2");
 var f2 = document.getElementById("f2");
 var f3 = document.getElementById("f3");
+var formRight = document.getElementById("form-right");
 var minPrice = unitPrice * 15;
 var minimo = document.getElementById("minimo")
 var minus = document.getElementById("minus")
@@ -77,11 +79,14 @@ var updateStepOnePrice = function(){
 var stepTwo = function (event) {
   f1.classList.add("hidden");
   f2.classList.remove("hidden");
+  step2.classList.remove("hidden");
+  formRight.classList.remove("hidden");
 }
 
 var stepThree = function (event) {
   f2.classList.add("hidden");
   f3.classList.remove("hidden");
+
 }
 
 

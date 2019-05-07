@@ -1,0 +1,23 @@
+<% t =  data.textos%>
+
+
+    <div class="show__left padding-left-5" id="postre-form">
+      <h1 class= "width30 "><%= t.seleccion_bebida  %></h1>
+      <h4 class= "underline width80 margin-top-3" > <%= t.quieres_bebida %></h4>
+      <div class="no-postre">
+        <%= radio_button_tag  :postre, :value => "no" , :id => "no-bebida"%>
+        <label for="no-bebida" class= 'no-postre__text'><span class="form__radio-circle"></span><%= t.no_bebida %></label>
+      </div>
+
+      <div class="form__cards">
+        <div class="row">
+          <%= partial(:'components/form_card', :locals => { :postre => "brownie", :image => 'brownie.jpg', :name => t.brownie  }) %>
+          <%= partial(:'components/form_card', :locals => { :postre => "tarta-limon", :image => 'tarta-limon.jpg', :name => t.tarta_limon}) %>
+          <%= partial(:'components/form_card', :locals => { :postre => "tartaletas", :image => 'tartaletas.jpg', :name => t.tartaletas}) %>
+          <%= partial(:'components/form_card', :locals => { :postre => "cesta-de-frutas", :image => 'cesta-de-frutas.jpg', :name => t.cesta_de_frutas }) %>
+          <%= partial(:'components/form_card', :locals => { :postre => "tartaletas", :image => 'tartaletas.jpg', :name => t.tartaletas}) %>
+          <%= partial(:'components/form_card', :locals => { :postre => "cesta-de-frutas", :image => 'cesta-de-frutas.jpg', :name => t.cesta_de_frutas }) %>
+        </div>
+      </div>
+    </div>
+

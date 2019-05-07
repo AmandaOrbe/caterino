@@ -1,0 +1,19 @@
+<% t =  data.textos%>
+<div class="show__right hidden" id= "form-right">
+  <h2 class= "upcase margin-bottom-5"><%= t.order  %></h2>
+  <div class="details" id= "order-line-1">
+    <p><span id="order-line-1__number"></span> * <%=  menu.nombre%></p>
+    <p id="order-line-1__total">230 €</p>
+  </div>
+  <div class="details transparent" id= "order-line-2">
+    <p ><span id="order-line-2__number"></span> * <span id= "order-postre"></span></p>
+    <p id="order-line-2__total">230 €</p>
+  </div>
+  <div class="details" id= "order-line-total">
+    <p class="upcase" id= "order-total"><%= t.total%></p>
+    <p id="order-line-total__total"></p>
+  </div>
+  <div class="button" id= "button-postre">
+    <%= t.next.upcase %>
+  </div>
+</div>

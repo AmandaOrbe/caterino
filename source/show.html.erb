@@ -29,62 +29,20 @@
         <%= partial(:'components/number_form', :locals => { :menu => menu}) %>
       </div>
     </div>
-    <% end %>
-<!-- ************************POSTRE************************************** -->
+  <% end %>
+
+  <div class="show__content hidden" id= "step2">
     <% field_set_tag :class => 'fieldset-2 hidden', id: "f2" do %>
-      <div class="show__content">
-        <div class="show__left padding-left-5" id="postre-form">
-          <h1 class= "width30 "><%= t.seleccion_postre.upcase  %></h1>
-          <h4 class= "underline width80 margin-top-3" > <%= t.quieres_postre %></h4>
 
-
-              <div class="no-postre">
-
-                <%= radio_button_tag  :postre, :value => "no" , :id => "no-postre"%>
-
-
-                <label for="no-postre" class= 'no-postre__text'><span class="form__radio-circle"></span><%= t.no_postre %></label>
-
-            </div>
-
-          <div class="form__cards">
-            <div class="row">
-
-              <%= partial(:'components/form_card', :locals => { :postre => "brownie", :image => 'brownie.jpg', :name => t.brownie  }) %>
-
-              <%= partial(:'components/form_card', :locals => { :postre => "tarta-limon", :image => 'tarta-limon.jpg', :name => t.tarta_limon}) %>
-
-              <%= partial(:'components/form_card', :locals => { :postre => "tartaletas", :image => 'tartaletas.jpg', :name => t.tartaletas}) %>
-              <%= partial(:'components/form_card', :locals => { :postre => "cesta-de-frutas", :image => 'cesta-de-frutas.jpg', :name => t.cesta_de_frutas }) %>
-
-              <%= partial(:'components/form_card', :locals => { :postre => "tartaletas", :image => 'tartaletas.jpg', :name => t.tartaletas}) %>
-              <%= partial(:'components/form_card', :locals => { :postre => "cesta-de-frutas", :image => 'cesta-de-frutas.jpg', :name => t.cesta_de_frutas }) %>
-
-          </div>
-        </div>
-        <div class="show__right">
-          <h2 class= "upcase margin-bottom-5"><%= t.order  %></h2>
-          <div class="details" id= "order-line-1">
-            <p><span id="order-line-1__number"></span> * <%=  menu.nombre%></p>
-            <p id="order-line-1__total">230 €</p>
-          </div>
-          <div class="details transparent" id= "order-line-2">
-            <p ><span id="order-line-2__number"></span> * <span id= "order-postre"></span></p>
-            <p id="order-line-2__total">230 €</p>
-          </div>
-          <div class="details" id= "order-line-total">
-            <p class="upcase" id= "order-total"><%= t.total%></p>
-            <p id="order-line-total__total"></p>
-          </div>
-          <div class="button" id= "button-postre">
-            <%= t.next.upcase %>
-          </div>
-        </div>
-      </div>
+      <%= partial(:'components/postre', :locals => { :menu => menu}) %>
     <% end %>
-<!-- ************************DATOS************************************** -->
-
     <% field_set_tag :class => 'fieldset-3 hidden', id: "f3" do %>
+      <%= partial(:'components/bebida', :locals => { :menu => menu}) %>
+    <% end %>
+    <%= partial(:'components/form-right', :locals => { :menu => menu}) %>
+  </div>
+
+    <% field_set_tag :class => 'fieldset-4 hidden', id: "f4" do %>
       <div class="show__content">
         <p>
           <%= label_tag t.nombre, :class => 'first' %>
@@ -123,4 +81,5 @@
     <% end %>
   <% end %>
 </div>
+
 <%= javascript_include_tag "application" %>
