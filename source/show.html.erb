@@ -33,17 +33,17 @@
 <!-- ************************POSTRE************************************** -->
     <% field_set_tag :class => 'fieldset-2 hidden', id: "f2" do %>
       <div class="show__content">
-        <div class="show__left padding-left-5">
+        <div class="show__left padding-left-5" id="postre-form">
           <h1 class= "width30 "><%= t.seleccion_postre.upcase  %></h1>
           <h4 class= "underline width80 margin-top-3" > <%= t.quieres_postre %></h4>
 
 
               <div class="no-postre">
 
-                <%= radio_button_tag  :postre, :value => "no" , :id => "no"%>
+                <%= radio_button_tag  :postre, :value => "no" , :id => "no-postre"%>
                 <span class="form__radio-circle"></span>
 
-                <label for="no" class= 'no-postre__text'><%= t.no_postre %></label>
+                <label for="no-postre" class= 'no-postre__text'><%= t.no_postre %></label>
 
             </div>
 
@@ -65,24 +65,16 @@
         <div class="show__right">
           <h2 class= "upcase margin-bottom-5"><%= t.order  %></h2>
           <div class="details" id= "order-line-1">
-            <p><span id="order-line-1__number">25</span> * <%=  menu.nombre%></p>
+            <p><span id="order-line-1__number"></span> * <%=  menu.nombre%></p>
             <p id="order-line-1__total">230 €</p>
           </div>
-          <div class="details" id= "order-line-2">
-            <p id= "order-postre"><span id="order-line-2__number">25</span> * <%=  menu.nombre%></p>
+          <div class="details transparent" id= "order-line-2">
+            <p ><span id="order-line-2__number"></span> * <span id= "order-postre"></span></p>
             <p id="order-line-2__total">230 €</p>
           </div>
-          <div class="details" id= "order-line-3">
-            <p id= "order-postre"><span id="order-line-3__number">25</span> * <%=  menu.nombre%></p>
-            <p id="order-line-3__total">230 €</p>
-          </div>
-          <div class="details" id= "order-line-4">
-            <p id= "order-postre"><span id="order-line-4__number">25</span> * <%=  menu.nombre%></p>
-            <p id="order-line-4__total">230 €</p>
-          </div>
           <div class="details" id= "order-line-total">
-            <p id= "order-postre"><span id="order-line-total__number">25</span> * <%=  menu.nombre%></p>
-            <p id="order-line-total__total">230 €</p>
+            <p class="upcase" id= "order-total"><%= t.total%></p>
+            <p id="order-line-total__total"></p>
           </div>
           <div class="button" id= "button-postre">
             <%= t.next.upcase %>

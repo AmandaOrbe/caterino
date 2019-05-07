@@ -12,12 +12,23 @@ var minimo = document.getElementById("minimo")
 var minus = document.getElementById("minus")
 var increase = document.getElementById("increase")
 var decrease = document.getElementById("decrease")
+var postreRadios = document.getElementsByName('postre')
+var postreCards = document.querySelectorAll(".form__radio-group")
+var postreTotal = document.getElementById("order-line-2__total")
+var noPostre = document.getElementById("no-postre")
+var dinersNumber = Number(diners.value);
+var menuPrice = dinersNumber * (unitPrice);
+var menuPostrePrice = menuPrice + dinersNumber
+var orderTotalStep2 = document.getElementById("order-line-total__total");
+var menuNumberStep2 = document.getElementById("order-line-1__number");
+var menuTotalStep2 = document.getElementById("order-line-1__total");
 
 
 var minimoVisible = function( event){
  if (Number(diners.value) < 15) {
   minimo.style.opacity = 1;
  }
+
 }
 
 var signColor = function(){
@@ -31,6 +42,7 @@ var signColor = function(){
 var increaseDiners  = function (event){
   var dinersNumber = Number(diners.value);
   diners.value = Number(document.getElementById("comensales").value) + 1;
+  minimo.style.opacity = 0;
 }
 
 var decreaseDiners  = function (event){
@@ -40,22 +52,27 @@ var decreaseDiners  = function (event){
   } else {
     minimo.style.opacity = 1;
   }
+
 }
 
-var updatePrice = function (event) {
-    var dinersNumber = Number(diners.value);
-    // var postre = document.getElementById("postre").checked;
-    // var i = postre ? 1 : 0;
-    var calculatedPrice = dinersNumber * (unitPrice  );
-    // console.log(i);
-    if (calculatedPrice >= minPrice ) {
-    price.innerHTML = "Total " + calculatedPrice + " €";
+var updatePrices = function (event) {
+    dinersNumber = Number(diners.value);
+    menuPrice = dinersNumber * (unitPrice);
+};
+
+var updateStepOnePrice = function(){
+  updatePrices();
+  if (menuPrice >= minPrice ) {
+    price.innerHTML = "Total " + menuPrice + " €";
+    orderTotalStep2.innerHTML = menuPrice;
+    menuNumberStep2.innerHTML = dinersNumber;
+    menuTotalStep2.innerHTML = menuPrice;
   } else {
     price.innerHTML = "Total " + minPrice + " €";
   }
   minimoVisible();
   signColor();
-};
+}
 
 var stepTwo = function (event) {
   f1.classList.add("hidden");
@@ -69,13 +86,33 @@ var stepThree = function (event) {
 
 
 
-// console.log(finalPrice);
+var checkPostre = function(){
+  postreRadios.forEach(function(postreRadio){
+    if (postreRadio.checked && postreRadio.value != "no"){
+      var checkedPostre = postreRadio.value;
+      document.getElementById("order-line-2").classList.remove("transparent");
+      document.getElementById("order-line-2__number").innerHTML = dinersNumber;
+      document.getElementById("order-postre").innerHTML = checkedPostre;
+      document.getElementById("order-line-2__total").innerHTML = dinersNumber + " €";
+      orderTotalStep2.innerHTML = menuPostrePrice + " €"
+    } else if (postreRadio.checked && postreRadio.value === "no"){
+      document.getElementById("order-line-2").classList.add("transparent");
+      orderTotalStep2.innerHTML = menuPrice + " €"
+    }
+  })
+}
 
-diners.addEventListener("keyup", updatePrice);
-window.addEventListener("click", updatePrice);
 
+diners.addEventListener("keyup", updateStepOnePrice);
+window.addEventListener("click", updateStepOnePrice);
 
-window.addEventListener("DOMContentLoaded", updatePrice);
+postreCards.forEach(function(postreCard) {
+  postreCard.addEventListener("change", checkPostre)
+});
+
+noPostre.addEventListener("change", checkPostre)
+
+window.addEventListener("DOMContentLoaded", updateStepOnePrice);
 
 buttonNext.addEventListener("click", stepTwo);
 postreButton.addEventListener("click", stepThree);

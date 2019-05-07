@@ -118,10 +118,10 @@
       top: .5rem;
     }
 }
-#no{
+#no-postre{
   display: none;
 }
-#no:checked ~ .form__radio-circle::after{
+#no-postre:checked ~ .form__radio-circle::after{
     opacity: 1;
   }
 
@@ -141,11 +141,15 @@
 
 #order-line-2,
 #order-line-4{
-  margin-bottom: 2rem;
-  padding-bottom:2rem;
-  border-bottom: 1px solid black;
+  // margin-bottom: 2rem;
+  // padding-bottom:2rem;
+
 }
 
-#order-line-total p{
+#order-line-total {
+  padding-top: 2rem;
+  border-top: 1px solid black;
+  p{
   font-weight: 700;
+  }
 }
