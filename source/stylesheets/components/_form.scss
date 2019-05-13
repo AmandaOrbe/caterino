@@ -1,4 +1,4 @@
-.form{
+ .form{
   label{
     color: black;
   }
@@ -57,10 +57,10 @@
 
   }
 
-  &__radio-button:checked ~ &__radio-circle::after{
+
+  &__radio-button:checked ~ &__radio-label > &__radio-circle::after{
     opacity: 1;
   }
-
   &__radio-circle{
     height:2rem;
     width:2rem;
@@ -94,13 +94,5 @@
   input[type="radio"]{
     margin: auto 1rem;
   }
-
-
-
-
-
-
-
-
 
 }
