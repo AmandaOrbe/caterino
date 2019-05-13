@@ -2,11 +2,11 @@
 <div class="col-xs-12 col-sm-6  col-md-4">
 <div class="form__radio-group" >
     <%= radio_button_tag  :postre, :value=> name   , :id => postre, :class => "form__radio-button"%>
-    <span class="form__radio-circle"></span>
     <%= image_tag image, :class => "form__image" %>
-    <p class= "upcase form__card-text">
-      <label for=<%= postre %> class="form__radio-label"><%=name  %> </label>
-    </p>
+    <label for=<%= postre %> class="form__radio-label upcase form__card-text"><%=name  %> <span class="form__radio-circle"></span></label>
+
+
+
 
   </div>
 </div>
