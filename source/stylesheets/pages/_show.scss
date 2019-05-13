@@ -72,32 +72,3 @@
 }
 
 
-
-#order-line-1,
-#order-line-2,
-#order-line-3,
-#order-line-4,
-#order-line-total {
-  margin: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  p{
-    margin-top: 0rem;
-    margin-bottom: 1rem;
-  }
-}
-
-#order-line-2,
-#order-line-4{
-  // margin-bottom: 2rem;
-  // padding-bottom:2rem;
-
-}
-
-#order-line-total {
-  padding-top: 2rem;
-  border-top: 1px solid black;
-  p{
-  font-weight: 700;
-  }
-}
