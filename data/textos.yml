@@ -24,4 +24,6 @@ order: tu pedido
 total: total
 seleccion_bebida: SELECCIONA LAS BEBIDAS
 quieres_bebida: ¿Quieres añadir bebidas frías por solo 3€ por persona?
-no_bebida: No gracias, no quiero bebida
+no_bebida: No gracias
+si_bebida: Sí, quiero bebida
+

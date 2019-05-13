@@ -1,4 +1,4 @@
-.no-postre{
+.option-label{
   height: 5rem;
   width: 100%;
   position: relative;
@@ -24,9 +24,19 @@
   }
 
 
-#no-postre-radio{
+#no-postre-radio,
+#no-bebida-radio,
+#si-bebida-radio{
   display: none;
 }
-#no-postre-radio:checked ~ .no-postre__text > .form__radio-circle::after{
+#no-postre-radio:checked ~ .option-label__text > .form__radio-circle::after{
+    opacity: 1;
+  }
+
+#no-bebida-radio:checked ~ .option-label__text > .form__radio-circle::after{
+    opacity: 1;
+  }
+
+#si-bebida-radio:checked ~ .option-label__text > .form__radio-circle::after{
     opacity: 1;
   }

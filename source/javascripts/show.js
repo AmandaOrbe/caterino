@@ -24,6 +24,8 @@ var menuPostrePrice = menuPrice + dinersNumber
 var orderTotalStep2 = document.getElementById("order-line-total__total");
 var menuNumberStep2 = document.getElementById("order-line-1__number");
 var menuTotalStep2 = document.getElementById("order-line-1__total");
+var noBebida = document.getElementById("no-bebida-radio");
+var siBebida = document.getElementById("si-bebida-radio");
 
 
 var minimoVisible = function( event){
