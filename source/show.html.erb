@@ -2,84 +2,13 @@
 <% t =  data.textos%>
 
 <% menu = data[menu] %>
+
 <div class="show">
   <div class="show__background">
   </div>
-  <% form_tag 'https://formcarry.com/s/IPZZAEv8L9X', :class => 'form', :method => 'POST' do %>
-    <% field_set_tag :class => 'fieldset-1', id: "f1" do %>
-    <div class="show__content">
-      <div class="show__left">
-        <%= image_tag 'images/PANSCOMPANY.jpg', class: "show__image" %>
-      </div>
-      <div class="show__right">
-        <h1><%=menu.nombre.upcase  %></h1>
-        <h2 id= "precio" class= "hidden" ><%=menu.precio %></h2>
-        <h2  ><%=number_to_currency(menu.precio, unit: "€", separator: ",", delimiter: "", format: "%n %u")   %></h2>
-        <div class="platos">
-          <% menu.platos.each do |plato| %>
-            <p><%= plato %></p>
-          <% end %>
-        </div>
-        <p class= "hidden">
-          <%= text_field_tag :menu, :value => menu.nombre %>
-        </p>
-        <br>
-        <br>
-        <br>
-        <%= partial(:'components/number_form', :locals => { :menu => menu}) %>
-      </div>
-    </div>
-  <% end %>
-
-  <div class="show__content hidden" id= "step2">
-    <% field_set_tag :class => 'fieldset-2 hidden', id: "f2" do %>
-
-      <%= partial(:'components/postre', :locals => { :menu => menu}) %>
-    <% end %>
-    <% field_set_tag :class => 'fieldset-3 hidden', id: "f3" do %>
-      <%= partial(:'components/bebida', :locals => { :menu => menu}) %>
-    <% end %>
-    <%= partial(:'components/form-right', :locals => { :menu => menu}) %>
+  <div class="show__content">
+    <%= partial(:'components/form', :locals => { :menu => menu}) %>
   </div>
-
-    <% field_set_tag :class => 'fieldset-4 hidden', id: "f4" do %>
-      <div class="show__content">
-        <p>
-          <%= label_tag t.nombre, :class => 'first' %>
-          <%= text_field_tag :nombre %>
-        </p>
-        <p>
-          <%= label_tag t.apellidos, :class => 'first' %>
-          <%= text_field_tag :apellidos %>
-        </p>
-        <p>
-          <%= label_tag t.email, :class => 'first' %>
-          <%= email_field_tag :email %>
-        </p>
-        <p>
-          <%= label_tag t.telefono, :class => 'first' %>
-          <%= text_field_tag :telefono %>
-        </p>
-        <p>
-          <%= label_tag t.fecha, :class => 'first' %>
-          <%= date_field_tag :fecha %>
-        </p>
-        <p>
-          <%= label_tag t.direccion, :class => 'first' %>
-          <%= text_field_tag :direccion %>
-        </p>
-        <p>
-          <%= label_tag t.ciudad, :class => 'first' %>
-          <%= text_field_tag :ciudad %>
-        </p>
-        <p>
-          <%= label_tag t.CP, :class => 'first' %>
-          <%= text_field_tag :CP %>
-        </p>
-        <%= submit_tag t.confirmar %>
-      </div>
-    <% end %>
-  <% end %>
 </div>
 
-<%= javascript_include_tag "application" %>
+<%= javascript_include_tag "show" %>

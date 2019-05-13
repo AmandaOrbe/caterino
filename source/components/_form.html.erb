@@ -1,0 +1,45 @@
+
+<% t =  data.textos%>
+<% form_tag 'https://formcarry.com/s/IPZZAEv8L9X', :class => 'form', :method => 'POST' do %>
+  <%= partial(:'components/form1', :locals => { :menu => menu}) %>
+  <%= partial(:'components/form2', :locals => { :menu => menu}) %>
+
+  <% field_set_tag :class => 'fieldset-4 hidden', id: "f4" do %>
+      <div class="show__content">
+        <p>
+          <%= label_tag t.nombre, :class => 'first' %>
+          <%= text_field_tag :nombre %>
+        </p>
+        <p>
+          <%= label_tag t.apellidos, :class => 'first' %>
+          <%= text_field_tag :apellidos %>
+        </p>
+        <p>
+          <%= label_tag t.email, :class => 'first' %>
+          <%= email_field_tag :email %>
+        </p>
+        <p>
+          <%= label_tag t.telefono, :class => 'first' %>
+          <%= text_field_tag :telefono %>
+        </p>
+        <p>
+          <%= label_tag t.fecha, :class => 'first' %>
+          <%= date_field_tag :fecha %>
+        </p>
+        <p>
+          <%= label_tag t.direccion, :class => 'first' %>
+          <%= text_field_tag :direccion %>
+        </p>
+        <p>
+          <%= label_tag t.ciudad, :class => 'first' %>
+          <%= text_field_tag :ciudad %>
+        </p>
+        <p>
+          <%= label_tag t.CP, :class => 'first' %>
+          <%= text_field_tag :CP %>
+        </p>
+        <%= submit_tag t.confirmar %>
+      </div>
+    <% end %>
+  <% end %>
+</div>

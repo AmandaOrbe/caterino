@@ -1,0 +1,32 @@
+.no-postre{
+  height: 5rem;
+  width: 100%;
+  position: relative;
+
+  &__text {
+    padding-left: 4rem;
+    padding-top: .2rem;
+    height: 5rem;
+    width: 100%;
+    font-weight: 100;
+    font-size: 1.4rem ;
+
+    label{
+      left: 1rem;
+      top: 1.8rem;
+    }
+  }
+}
+
+.form__radio-circle{
+  left: 1rem;
+  top: .5rem;
+  }
+
+
+#no-postre-radio{
+  display: none;
+}
+#no-postre-radio:checked ~ .no-postre__text > .form__radio-circle::after{
+    opacity: 1;
+  }

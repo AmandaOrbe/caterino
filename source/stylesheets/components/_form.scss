@@ -96,49 +96,11 @@
   }
 
 
-  .number{
-    font-size: 3rem;
-    font-weight: 900;
-    letter-spacing: -2px;
-  }
 
-  .number-form{
-    display: flex;
-    justify-content:center;
-  }
-  .number-line{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 18.4rem;
-  }
 
-  #comensales{
-    width: 50%;
-    text-align: center;
-    border: none;
-    border-bottom: 1px solid black;
 
-    &:focus{
-      border-bottom: 3px solid $yellow;
-      outline:0;
-    }
-    &:focus:invalid{
-      border-bottom: 3px solid red;
-      outline:0;
-    }
 
-    &:focus:invalid + .minimo{
-      opacity: 1;
-    }
 
-  }
 
-  .decrease, .increase{
-
-  }
-  input[type=number]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
 
 }
