@@ -1,4 +1,6 @@
 // = require_tree .
+
+
 var unitPrice = Number(document.getElementById("precio").innerText);
 var buttonNext = document.getElementById("button-next");
 var diners = document.getElementById("comensales");
@@ -15,15 +17,18 @@ var minus = document.getElementById("minus")
 var increase = document.getElementById("increase")
 var decrease = document.getElementById("decrease")
 var postreRadios = document.getElementsByName('postre')
+var bebidaRadios = document.getElementsByName('bebida')
 var postreCards = document.querySelectorAll(".form__radio-group")
 var postreTotal = document.getElementById("order-line-2__total")
 var noPostre = document.getElementById("no-postre-radio")
 var dinersNumber = Number(diners.value);
 var menuPrice = dinersNumber * (unitPrice);
-var menuPostrePrice = menuPrice + dinersNumber
-var orderTotalStep2 = document.getElementById("order-line-total__total");
-var menuNumberStep2 = document.getElementById("order-line-1__number");
-var menuTotalStep2 = document.getElementById("order-line-1__total");
+var postrePrice = 0
+var bebidaPrice = 0
+var menuTotal = menuPrice + postrePrice + bebidaPrice
+var orderTotal = document.getElementById("order-line-total__total");
+var menuNumberLine1 = document.getElementById("order-line-1__number");
+var menuTotalLine1 = document.getElementById("order-line-1__total");
 var noBebida = document.getElementById("no-bebida-radio");
 var siBebida = document.getElementById("si-bebida-radio");
 
@@ -68,9 +73,9 @@ var updateStepOnePrice = function(){
   updatePrices();
   if (menuPrice >= minPrice ) {
     price.innerHTML = "Total " + menuPrice + " €";
-    orderTotalStep2.innerHTML = menuPrice;
-    menuNumberStep2.innerHTML = dinersNumber;
-    menuTotalStep2.innerHTML = menuPrice;
+    orderTotal.innerHTML = menuTotal;
+    menuNumberLine1.innerHTML = dinersNumber;
+    menuTotalLine1.innerHTML = menuPrice;
   } else {
     price.innerHTML = "Total " + minPrice + " €";
   }
@@ -91,7 +96,10 @@ var stepThree = function (event) {
 
 }
 
-
+var updateTotal = function(postrePrice, bebidaPrice){
+  menuTotal = menuPrice + postrePrice + bebidaPrice
+  orderTotal.innerHTML = menuTotal + " €"
+}
 
 var checkPostre = function(){
   postreRadios.forEach(function(postreRadio){
@@ -101,13 +109,34 @@ var checkPostre = function(){
       document.getElementById("order-line-2__number").innerHTML = dinersNumber;
       document.getElementById("order-postre").innerHTML = checkedPostre;
       document.getElementById("order-line-2__total").innerHTML = dinersNumber + " €";
-      orderTotalStep2.innerHTML = menuPostrePrice + " €"
+      postrePrice = dinersNumber;
     } else if (postreRadio.checked && postreRadio.value === "no"){
       document.getElementById("order-line-2").classList.add("transparent");
-      orderTotalStep2.innerHTML = menuPrice + " €"
     }
+    console.log("checkPostre, postre price= " + postrePrice  + " bebidaPrice = " + bebidaPrice)
+    updateTotal(postrePrice, bebidaPrice);
   })
 }
+
+
+var checkBebida = function(){
+  console.log(postrePrice)
+  bebidaRadios.forEach(function(bebidaRadio){
+    if (bebidaRadio.checked && bebidaRadio.value === "si"){
+      document.getElementById("order-line-3").classList.remove("hidden");
+      document.getElementById("order-line-3__number").innerHTML = dinersNumber;
+      document.getElementById("order-bebida").innerHTML = "bebida";
+      document.getElementById("order-line-3__total").innerHTML = dinersNumber * 3+ " €";
+      bebidaPrice = 3 * dinersNumber;
+    } else if (bebidaRadio.checked && bebidaRadio.value === "no"){
+      document.getElementById("order-line-3").classList.add("hidden");
+      bebidaPrice = 0;
+      console.log("bebida-no")
+    }
+    updateTotal(postrePrice, bebidaPrice);
+  })
+}
+
 
 
 diners.addEventListener("keyup", updateStepOnePrice);
@@ -116,6 +145,11 @@ window.addEventListener("click", updateStepOnePrice);
 postreCards.forEach(function(postreCard) {
   postreCard.addEventListener("change", checkPostre)
 });
+
+bebidaRadios.forEach(function(postreCard) {
+  postreCard.addEventListener("change", checkBebida)
+});
+
 
 noPostre.addEventListener("change", checkPostre)
 
