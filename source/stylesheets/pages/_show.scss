@@ -57,10 +57,6 @@
 
   }
 
-  &__image{
-    min-height:90vh;
-    height: 100%;
-  }
 
   &__right{
     border-radius: 2rem;
@@ -72,58 +68,10 @@
     top: 0;
     padding-left: 1rem;
     padding-right: 1rem;
-
-    .platos{
-      margin-top: 5rem;
-      text-align: center;
-    }
-  .minimo{
-    color: red;
-    font-size: 1rem;
-    font-weight: 100;
-    opacity: 0;
-    transition: all .3s ease;
-
-  }
-
-
-
   }
 }
-.no-postre{
-
-    height: 5rem;
-    width: 100%;
-    position: relative;
-    &__text {
-      padding-left: 4rem;
-      padding-top: .2rem;
-      height: 5rem;
-      width: 100%;
-      font-weight: 100;
-      font-size: 1.4rem ;
-
-      label{
-
-      left: 1rem;
-      top: 1.8rem;
-    }
-
-    }
 
 
-
-    .form__radio-circle{
-      left: 1rem;
-      top: .5rem;
-    }
-}
-#no-postre{
-  display: none;
-}
-#no-postre:checked ~ .no-postre__text > .form__radio-circle::after{
-    opacity: 1;
-  }
 
 #order-line-1,
 #order-line-2,
