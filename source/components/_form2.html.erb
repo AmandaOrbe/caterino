@@ -1,0 +1,10 @@
+<% t =  data.textos%>
+  <div class="hidden form2" id= "step2">
+    <% field_set_tag :class => 'fieldset-2  hidden', id: "f2" do %>
+      <%= partial(:'components/postre', :locals => { :menu => menu}) %>
+    <% end %>
+    <% field_set_tag :class => 'fieldset-3 hidden', id: "f3" do %>
+      <%= partial(:'components/bebida', :locals => { :menu => menu}) %>
+    <% end %>
+    <%= partial(:'components/form-right', :locals => { :menu => menu}) %>
+  </div>
