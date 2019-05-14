@@ -54,9 +54,7 @@
 
   &__card-text{
     letter-spacing: -2px;
-
   }
-
 
   &__radio-button:checked ~ &__radio-label > &__radio-circle::after{
     opacity: 1;

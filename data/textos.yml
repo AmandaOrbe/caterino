@@ -9,7 +9,7 @@ direccion: Dirección de entrega
 ciudad: Ciudad
 CP: CP
 extra: ¿Algo más que debamos saber?
-confirmar: confirmar
+confirmar: CONFIRMAR
 minimo: A partir de 15 personas
 seleccion_postre: selecciona el postre
 next: siguiente
@@ -26,4 +26,5 @@ seleccion_bebida: SELECCIONA LAS BEBIDAS
 quieres_bebida: ¿Quieres añadir bebidas frías por solo 3€ por persona?
 no_bebida: No gracias
 si_bebida: Sí, quiero bebida
-
+datos: tus datos
+algo_mas: Algo más que debamos saber?

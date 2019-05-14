@@ -2,7 +2,7 @@
   font-family: $serif-font;
   padding: 1rem;
   font-weight: 800;
-  font-weight: 1.6rem;
+  font-size: 1.6rem;
    margin: 0 auto;
    transition: all .2s ease;
    background-color: $yellow;
@@ -11,6 +11,13 @@
    border: none;
    border-radius: 10rem;
    text-align: center;
+   text-transform: uppercase;
+   cursor: pointer;
+
+   &:hover{
+    cursor: pointer;
+
+   }
 
   // &__comprobar{
   //   background-color: $orange;
