@@ -6,5 +6,8 @@
     <% field_set_tag :class => 'fieldset-3 hidden', id: "f3" do %>
       <%= partial(:'components/bebida', :locals => { :menu => menu}) %>
     <% end %>
+    <% field_set_tag :class => 'fieldset-4 hidden', id: "f4" do %>
+      <%= partial(:'components/datos', :locals => { :menu => menu}) %>
+    <% end %>
     <%= partial(:'components/form-right', :locals => { :menu => menu}) %>
   </div>

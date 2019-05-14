@@ -1,4 +1,6 @@
+
 // = require_tree .
+
 
 
 var unitPrice = Number(document.getElementById("precio").innerText);
@@ -6,10 +8,13 @@ var buttonNext = document.getElementById("button-next");
 var diners = document.getElementById("comensales");
 var price =document.getElementById("price");
 var postreButton =document.getElementById("button-postre");
+var bebidaButton =document.getElementById("button-bebida");
+var datosButton =document.getElementById("button-datos");
 var f1 = document.getElementById("f1");
 var step2 = document.getElementById("step2");
 var f2 = document.getElementById("f2");
 var f3 = document.getElementById("f3");
+var f4 = document.getElementById("f4");
 var formRight = document.getElementById("form-right");
 var minPrice = unitPrice * 15;
 var minimo = document.getElementById("minimo")
@@ -31,6 +36,7 @@ var menuNumberLine1 = document.getElementById("order-line-1__number");
 var menuTotalLine1 = document.getElementById("order-line-1__total");
 var noBebida = document.getElementById("no-bebida-radio");
 var siBebida = document.getElementById("si-bebida-radio");
+var datepicker = document.getElementById("datepicker");
 
 
 var minimoVisible = function( event){
@@ -93,7 +99,16 @@ var stepTwo = function (event) {
 var stepThree = function (event) {
   f2.classList.add("hidden");
   f3.classList.remove("hidden");
+  postreButton.classList.add("hidden");
+  bebidaButton.classList.remove("hidden");
+}
 
+var stepFour = function (event) {
+  f3.classList.add("hidden");
+  console.log("stepFour");
+  f4.classList.remove("hidden");
+  bebidaButton.classList.add("hidden");
+  datosButton.classList.remove("hidden");
 }
 
 var updateTotal = function(postrePrice, bebidaPrice){
@@ -157,9 +172,14 @@ window.addEventListener("DOMContentLoaded", updateStepOnePrice);
 
 buttonNext.addEventListener("click", stepTwo);
 postreButton.addEventListener("click", stepThree);
+bebidaButton.addEventListener("click", stepFour);
 
 increase.addEventListener("click", increaseDiners);
 decrease.addEventListener("click", decreaseDiners);
 // postre.addEventListener("onChange", function(event){
 //   if postre
 // }
+
+flatpickr(datepicker, {
+  minDate: Date.now()+ (24 * 60 * 60 * 1000)
+});

@@ -1,0 +1,46 @@
+.datos-form{
+  position: relative;
+  width: calc(100% - 50rem);
+
+
+  &__group{
+    // width: 80%;
+    // border: 1px solid red;
+    height: 8rem;
+    display: block;
+  }
+
+  &__input{
+    width:100%;
+    border: none;
+    border-bottom: 1px solid black;
+    font-weight: 700;
+
+    &:focus{
+      outline: none;
+      border-bottom: 3px solid $yellow;
+    }
+
+    &:focus:invalid{
+      border-bottom: 3px solid red;
+      outline:0;
+    }
+  }
+
+  &__label{
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+}
+
+.text-input{
+  width: 100%;
+  height:12rem;
+  font-size: 1.4rem;
+  font-weight: 100;
+  border: 1px solid black;
+  &:focus{
+    outline: none;
+    border: 3px solid $yellow;
+  }
+}

@@ -1,0 +1,76 @@
+<% t =  data.textos%>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <div class=" padding-left-5 datos-form ">
+    <h1 class= "width30 upcase"><%= t.datos  %></h1>
+    <div class="container margin-top-5">
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <div class="datos-form__group">
+            <%= text_field_tag :nombre , :class => 'datos-form__input' %>
+            <%= label_tag t.nombre, :class => 'datos-form__label' %>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="datos-form__group">
+            <%= text_field_tag :apellidos , :class => 'datos-form__input' %>
+            <%= label_tag t.apellidos, :class => 'datos-form__label' %>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <div class="datos-form__group">
+            <%= email_field_tag :email , :class => 'datos-form__input'%>
+            <%= label_tag t.email, :class => 'datos-form__label' %>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="datos-form__group">
+            <%= text_field_tag :telefono , :class => 'datos-form__input'%>
+            <%= label_tag t.telefono, :class => 'datos-form__label' %>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <div class="datos-form__group">
+            <%= date_field_tag :fecha , :class => 'datos-form__input', :id => 'datepicker' %>
+            <%= label_tag t.fecha, :class => 'datos-form__label' %>
+            </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="datos-form__group">
+          <div class="col-xs-12 ">
+            <%= text_field_tag :direccion , :class => 'datos-form__input' %>
+            <%= label_tag t.direccion, :class => 'datos-form__label' %>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+         <div class="datos-form__group">
+          <%= text_field_tag :ciudad  , :class => 'datos-form__input'%>
+          <%= label_tag t.ciudad, :class => 'datos-form__label' %>
+        </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="datos-form__group">
+            <%= text_field_tag :CP  , :class => 'datos-form__input'%>
+            <%= label_tag t.CP, :class => 'datos-form__label upcase' %>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="datos-form__group">
+          <div class="col-xs-12 ">
+            <%= label_tag t.algo_mas, :class => 'datos-form__label' %>
+            <%= text_area_tag :comentarios , :class => ' text-input' %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
