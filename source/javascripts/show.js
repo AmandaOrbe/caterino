@@ -92,15 +92,22 @@ var updateStepOnePrice = function(){
 var stepTwo = function (event) {
   f1.classList.add("hidden");
   f2.classList.remove("hidden");
+  f3.classList.add("hidden");
   step2.classList.remove("hidden");
   formRight.classList.remove("hidden");
+  postreButton.classList.remove("hidden");
+  bebidaButton.classList.add("hidden");
+  // window.location = "#bebida";
 }
 
 var stepThree = function (event) {
   f2.classList.add("hidden");
   f3.classList.remove("hidden");
+  f4.classList.add("hidden");
   postreButton.classList.add("hidden");
   bebidaButton.classList.remove("hidden");
+  datosButton.classList.add("hidden");
+  // window.location = "#bebida";
 }
 
 var stepFour = function (event) {
@@ -109,7 +116,23 @@ var stepFour = function (event) {
   f4.classList.remove("hidden");
   bebidaButton.classList.add("hidden");
   datosButton.classList.remove("hidden");
+  // window.location = "#datos";
 }
+
+
+var locateUrl = function(){
+  url = window.location.href;
+  var lastPart = url.substr(url.lastIndexOf('#') + 1);
+  console.log(lastPart);
+  if (lastPart === "postre"){
+    stepTwo();
+  } else if (lastPart === "bebida") {
+    stepThree();
+  }else if (lastPart === "datos") {
+    stepFour();
+  }
+}
+
 
 var updateTotal = function(postrePrice, bebidaPrice){
   menuTotal = menuPrice + postrePrice + bebidaPrice
@@ -133,6 +156,9 @@ var checkPostre = function(){
   })
 }
 
+var logHello = function(){
+  console.log("hello");
+}
 
 var checkBebida = function(){
   console.log(postrePrice)
@@ -156,6 +182,7 @@ var checkBebida = function(){
 
 diners.addEventListener("keyup", updateStepOnePrice);
 window.addEventListener("click", updateStepOnePrice);
+window.addEventListener("hashchange", locateUrl);
 
 postreCards.forEach(function(postreCard) {
   postreCard.addEventListener("change", checkPostre)
@@ -171,8 +198,8 @@ noPostre.addEventListener("change", checkPostre)
 window.addEventListener("DOMContentLoaded", updateStepOnePrice);
 
 buttonNext.addEventListener("click", stepTwo);
-postreButton.addEventListener("click", stepThree);
-bebidaButton.addEventListener("click", stepFour);
+// postreButton.addEventListener("click", stepThree);
+// bebidaButton.addEventListener("click", stepFour);
 
 increase.addEventListener("click", increaseDiners);
 decrease.addEventListener("click", decreaseDiners);
