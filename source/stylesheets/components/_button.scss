@@ -13,6 +13,14 @@
    text-align: center;
    text-transform: uppercase;
    cursor: pointer;
+   a{
+    padding: 1rem 6rem ;
+    color:black;
+
+    &:active{
+      color: black;
+    }
+   }
 
    &:hover{
     cursor: pointer;

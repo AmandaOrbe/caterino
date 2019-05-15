@@ -17,13 +17,13 @@
     <p class="upcase" id= "order-total"><%= t.total%></p>
     <p id="order-line-total__total"></p>
   </div>
-  <a class="button hidden" id= "button-postre" href="#bebida">
-    <%= t.next.upcase %>
-  </a>
-  <a class="button hidden" id= "button-bebida" href="#datos">
-    <%= t.next.upcase %>
-  </a>
-  <a class="button hidden upcase" id= "button-datos" href="#5">
+  <div class="button hidden" id= "button-postre">
+    <a href="#bebida"><%= t.next.upcase %></a>
+  </div>
+  <div class="button hidden" id= "button-bebida" >
+    <a href="#datos"><%= t.next.upcase %></a>
+  </div>
+  <div class="button hidden upcase" id= "button-datos" >
     <%= submit_tag t.confirmar %>
-  </a>
+  </dic>
 </div>
