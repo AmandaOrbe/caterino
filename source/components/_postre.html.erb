@@ -11,12 +11,15 @@
 
       <div class="form__cards">
         <div class="row">
-          <%= partial(:'components/form_card', :locals => { :postre => "brownie", :image => 'brownie.jpg', :name => t.brownie  }) %>
-          <%= partial(:'components/form_card', :locals => { :postre => "tarta-limon", :image => 'tarta-limon.jpg', :name => t.tarta_limon}) %>
-          <%= partial(:'components/form_card', :locals => { :postre => "tartaletas", :image => 'tartaletas.jpg', :name => t.tartaletas}) %>
-          <%= partial(:'components/form_card', :locals => { :postre => "cesta-de-frutas", :image => 'cesta-de-frutas.jpg', :name => t.cesta_de_frutas }) %>
-          <%= partial(:'components/form_card', :locals => { :postre => "tartaletas", :image => 'tartaletas.jpg', :name => t.tartaletas}) %>
-          <%= partial(:'components/form_card', :locals => { :postre => "cesta-de-frutas", :image => 'cesta-de-frutas.jpg', :name => t.cesta_de_frutas }) %>
+          <%= partial(:'components/postre_card', :locals => {
+              :postre => "brownie",
+              :image => 'brownie.jpg',
+              :name => t.brownie  }) %>
+          <%= partial(:'components/postre_card', :locals => { :postre => "tarta-limon", :image => 'tarta-limon.jpg', :name => t.tarta_limon}) %>
+          <%= partial(:'components/postre_card', :locals => { :postre => "tartaletas", :image => 'tartaletas.jpg', :name => t.tartaletas}) %>
+          <%= partial(:'components/postre_card', :locals => { :postre => "cesta-de-frutas", :image => 'cesta-de-frutas.jpg', :name => t.cesta_de_frutas }) %>
+          <%= partial(:'components/postre_card', :locals => { :postre => "tiramisu", :image => 'tiramisu.jpg', :name => t.tiramisu}) %>
+          <%= partial(:'components/postre_card', :locals => { :postre => "tarta-choco", :image => 'chocolate.jpg', :name => t.tarta_choco }) %>
         </div>
       </div>
     </div>
