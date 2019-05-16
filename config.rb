@@ -9,13 +9,20 @@ lista_menus = [
   "menu-arroces",
   "menu-argentino",
   "menu-vegetariano",
-  "menu-infantil",
+  "menu-infantil"
+]
+lista_menus.each do |menu|
+  proxy "/#{menu}.html", "/menu.html", :locals => { :menu => menu },  ignore: true
+end
+
+lista_cafes = [
   "coffee-break-1",
   "coffee-break-2",
   "coffee-break-3"
 ]
-lista_menus.each do |menu|
-  proxy "/#{menu}.html", "/show.html", :locals => { :menu => menu },  ignore: true
+
+lista_cafes.each do |cafe|
+  proxy "/#{cafe}.html", "/cafe.html", :locals => { :cafe => cafe },  ignore: true
 end
 
 activate :sprockets
@@ -33,8 +40,8 @@ configure :build do
 end
 
 activate :deploy do |deploy|
-  deploy.build_before = true
-  deploy.deploy_method = :git
+  deploy.method = :git
+
 end
 
 

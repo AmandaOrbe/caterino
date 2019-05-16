@@ -6,7 +6,7 @@ source 'https://rubygems.org'
 gem 'middleman'
 gem 'middleman-autoprefixer', '~> 2.7'
 gem 'middleman-sprockets'
-gem 'middleman-deploy', git: 'https://github.com/lewagon/middleman-deploy.git'
+gem 'middleman-deploy' , '~> 1.0'
 
 
 # Assets
