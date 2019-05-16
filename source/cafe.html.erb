@@ -1,0 +1,21 @@
+
+<% t =  data.textos%>
+
+<% cafe = data[cafe] %>
+
+<div class="show">
+  <div class="show__background">
+  </div>
+  <div class="show__content">
+    <%= partial(:'components/form1', :locals => { :menu => cafe}) %>
+    <div class="hidden form2" id= "step2">
+      <% field_set_tag :class => 'fieldset-4 hidden', id: "f4" do %>
+        <%= partial(:'components/datos', :locals => { :menu => cafe}) %>
+      <% end %>
+      <%= partial(:'components/form-right', :locals => { :menu => cafe}) %>
+    </div>
+  </div>
+</div>
+
+<%= javascript_include_tag "cafe" %>
+

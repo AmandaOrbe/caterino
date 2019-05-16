@@ -1,8 +1,4 @@
 
-// = require_tree .
-
-
-
 var unitPrice = Number(document.getElementById("precio").innerText);
 var buttonNext = document.getElementById("button-next");
 var diners = document.getElementById("comensales");
@@ -92,7 +88,7 @@ var updateStepOnePrice = function(){
 var stepTwo = function (event) {
   f1.classList.add("hidden");
   f2.classList.remove("hidden");
-  f3.classList.add("hidden");
+  f1.classList.add("hidden");
   step2.classList.remove("hidden");
   formRight.classList.remove("hidden");
   postreButton.classList.remove("hidden");
@@ -124,7 +120,7 @@ var locateUrl = function(){
   url = window.location.href;
   var lastPart = url.substr(url.lastIndexOf('#') + 1);
   console.log(lastPart);
-  if (lastPart === "postre"){
+  if (lastPart === "1"){
     stepTwo();
   } else if (lastPart === "bebida") {
     stepThree();
