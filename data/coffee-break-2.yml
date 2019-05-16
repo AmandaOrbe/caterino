@@ -1,0 +1,10 @@
+nombre: "Coffee break 2"
+precio: 8.50
+slug: coffee-break-2
+image: chocolate.jpg
+platos:
+  - Café, Infusiones, Leche
+  - Agua mineral
+  - Zumo de naranja
+  - Mini croissant, Mini ensaimada
+  - Mini bocadillo de queso manchego

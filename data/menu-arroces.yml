@@ -1,0 +1,11 @@
+nombre: "Arroces"
+precio: 9.35
+slug: menu-arroces
+image: paella.jpg
+platos:
+  - "Escoje entre:"
+  - paella mixta
+  - paella de pescado
+  - fideua
+  - arroz negro
+  - arroz al horno

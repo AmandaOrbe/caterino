@@ -1,76 +1,92 @@
-- nombre: "Menu y ole"
+- nombre: "Menu Tapeo"
   precio: 8.50
   slug: menu-y-ole
   image: croquetas.jpg
   platos:
-    - Alitas de Pollo,
-    - Fingers de queso,
-    - Nuggets,
-    - Nachos Tex Mex,
-    - Aros de Cebolla
-
-- nombre: "Menu paella"
+    - Tortilla de patatas
+    - mini hamburguesa
+    - croquetas de setas
+    - croquetas de jamón
+    - ensaladilla rusa
+    - brochetas de tomate cherry
+- nombre: "Arroces"
   precio: 9.35
-  slug: menu-paella
+  slug: menu-arroces
   image: paella.jpg
   platos:
-    - Alitas de Pollo,
-    - Fingers de queso,
-    - Nuggets,
-    - Nachos Tex Mex,
-    - Aros de Cebolla
-
+    - "Escoje entre:"
+    - paella mixta
+    - paella de pescado
+    - fideua
+    - arroz negro
+    - arroz al horno
 - nombre: "Menu Argentino"
   precio: 9.50
   slug: menu-argentino
   image: empanadas.jpg
   platos:
-    - Alitas de Pollo,
-    - Fingers de queso,
-    - Nuggets,
-    - Nachos Tex Mex,
-    - Aros de Cebolla
-- nombre: "Menu sushi"
+    - empanada de carne
+    - empanada de pollo al curry
+    - empanada de jamón y queso
+    - empanada de atún
+    - empanada de queso seco, albaca y mozzarella
+- nombre: "Menu vegetariano"
   precio: 9.50
-  slug: menu-sushi
-  image: sushi.jpg
-  platos:
-    - Alitas de Pollo,
-    - Fingers de queso,
-    - Nuggets,
-    - Nachos Tex Mex,
-    - Aros de Cebolla
-
-- nombre: "Menu yanki"
-  precio: 8.50
-  slug: menu-yanki
-  image: alitas.jpg
-  platos:
-    - Alitas de Pollo,
-    - Fingers de queso,
-    - Nuggets,
-    - Nachos Tex Mex,
-    - Aros de Cebolla
-
-- nombre: "Menu healthy"
-  precio: 9.50
-  slug: menu-healthy
+  slug: menu-vegetariano
   image: healthy.jpg
   platos:
-    - Alitas de Pollo,
-    - Fingers de queso,
-    - Nuggets,
-    - Nachos Tex Mex,
-    - Aros de Cebolla
+    - tortilla de espinacas, escalivada y piñones.
+    - mini bocadillo vegetal.
+    - empanada de queso y cebolla (tipo argentinas)
+    - croqueta de verduras
+    - degustación de rissoto
 
-- nombre: "Menu goloso"
-  precio: 9.50
-  slug: menu-goloso
+
+- nombre: "Menu infantil"
+  precio: 7
+  slug: menu-infantil
+  image: alitas.jpg
+  platos:
+    - mini hamburguesa o mini franfurt
+    - nuguets de pollo
+    - mini croquetas
+    - tacos de pizza
+
+- nombre: "Coffee break 1"
+  precio: 6.50
+  slug: coffee-break-1
   image: chocolate.jpg
   platos:
-    - Alitas de Pollo,
-    - Fingers de queso,
-    - Nuggets,
-    - Nachos Tex Mex,
-    - Aros de Cebolla
+    - Café
+    - Leche
+    - Zumo de naranja
+    - Agua mineral
+    - Mini croisant
+    - Mini madalenas
+
+- nombre: "Coffee break 2"
+  precio: 8.50
+  slug: coffee-break-2
+  image: chocolate.jpg
+  platos:
+    - Café, Infusiones, Leche
+    - Agua mineral
+    - Zumo de naranja
+    - Mini croissant, Mini ensaimada
+    - Mini bocadillo de queso manchego
+
+- nombre: "Coffee break 3"
+  precio: 11.50
+  slug: coffee-break-3
+  image: chocolate.jpg
+  platos:
+    - Café, Infusiones, Leche
+    - Agua mineral
+    - Zumos naranja / piña / melocoton
+    - Mini croissant, Mini ensaimada, Mini madalenas
+    - Dados de brownie
+    - Tarta de santiago
+    - Brochetas de frutas naturales
+
+
 

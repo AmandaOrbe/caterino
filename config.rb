@@ -6,14 +6,13 @@ end
 
 lista_menus = [
   "menu-y-ole",
-  "menu-paella",
+  "menu-arroces",
   "menu-argentino",
-  "menu-sushi",
-  "menu-yanki",
-  "menu-healthy",
-  "menu-goloso"
-
-
+  "menu-vegetariano",
+  "menu-infantil",
+  "coffee-break-1",
+  "coffee-break-2",
+  "coffee-break-3"
 ]
 lista_menus.each do |menu|
   proxy "/#{menu}.html", "/show.html", :locals => { :menu => menu },  ignore: true

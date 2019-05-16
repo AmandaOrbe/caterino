@@ -1,0 +1,10 @@
+nombre: "Menu Argentino"
+precio: 9.50
+slug: menu-argentino
+image: empanadas.jpg
+platos:
+  - empanada de carne
+  - empanada de pollo al curri
+  - empanada de jamón y queso
+  - empanada de atún
+  - empanada de queso seco, albaca y mozzarella

@@ -1,6 +1,6 @@
 
 .card{
-  width: 32rem;
+  width: 34rem;
   height: 45rem;
   box-shadow: $box-shadow;
   border-radius: 1rem;
@@ -9,6 +9,7 @@
   padding: 2rem;
   position: relative;
   overflow: hidden;
+
 
   h3{
     color: white;
@@ -20,6 +21,7 @@
     color: $yellow;
     font-size: 4.8rem;
     font-weight: 800;
+    letter-spacing: -2px;
 
   }
 
@@ -45,7 +47,8 @@
     .text{
 
       margin-top: 20rem;
-
+      margin-left: 2rem;
+      margin-right: 2rem;
 
     }
     &:hover{
