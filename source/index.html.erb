@@ -1,9 +1,22 @@
 ---
 title: Welcome to Middleman
 ---
-
+<% t =  data.textos%>
+<header class= "header1">
+  <div class="header1__text">
+    <h1 class= "header1__title"><%=t.header1  %></h1>
+    <h2 class= "header1__subtitle"><%=t.header2_1  %></h2>
+    <h2 class= "header1__subtitle"><%=t.header2_2  %></h2>
+    <button class="button button--black button--header" href="#menu-cards">
+      <a href="#menu-cards" class= "header--link"><%= "Elige vuestro menú"%></a>
+    </button>
+  </div>
+  <div class="header1__frame">
+    <%= image_tag "miniburgers.png", class: "header1__image" %>
+  </div>
+</header>
 <section class="content">
-  <div class="cards">
+  <div class="cards" id="menu-cards">
     <div class="row">
       <% data.menus.each do |menu| %>
         <div class="col-xs-12 col-sm-6  col-md-4">
@@ -17,7 +30,6 @@ title: Welcome to Middleman
           </li>
          </div>
       <% end %>
-
     </div>
   </div>
 </section>
