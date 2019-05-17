@@ -2,7 +2,7 @@
 .navbar{
   background: $yellow;
   position: fixed;
-  height: 9rem;
+  height: 7.5rem;
   display: flex;
   color: black;
   align-items: center;
@@ -20,6 +20,10 @@
     left: 3rem;
     display: flex;
     align-items: center;
+
+    h2{
+      color: black;
+    }
   }
 
   &__right{

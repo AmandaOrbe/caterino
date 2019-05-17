@@ -9,30 +9,29 @@
     <h2  ><%=number_to_currency(menu.precio, unit: "€", separator: ",", delimiter: "", format: "%n %u")   %></h2>
     <div class="platos">
       <% menu.platos.each do |plato| %>
-        <p><%= plato %></p>
+       <div class="plato-instance"><p><%= plato %></p></div>
       <% end %>
     </div>
     <p class= "hidden">
       <%= text_field_tag :menu, :value => menu.nombre %>
     </p>
-    <br>
-    <br>
-    <br>
-    <h4 class="align-center"><%= label_tag t.comensales, :class => 'first' %></h4>
-    <div class="number-form">
-      <div class="number-form__line">
-        <%= partial(:'components/minus_sign') %>
-        <%= number_field_tag :comensales, :value => 15 , :min => 15,  :id => 'comensales', :class => "number-form__number" %>
-        <%= partial(:'components/plus_sign') %>
+    <div class="show__down">
+      <h4 class="align-center"><%= label_tag t.comensales, :class => 'first' %></h4>
+      <div class="number-form">
+        <div class="number-form__line">
+          <%= partial(:'components/minus_sign') %>
+          <%= number_field_tag :comensales, :value => 15 , :min => 15,  :id => 'comensales', :class => "number-form__number" %>
+          <%= partial(:'components/plus_sign') %>
+        </div>
       </div>
-    </div>
-    <p class="align-center" id= "minimo"><%= t.minimo  %></p>
-    <h4 class="align-center" id= "price">
-        Total <%= 15 *  menu.precio  %> €
-    </h4>
-    <br>
-    <div class="button" id= "button-next" href="">
-         <a href="#1">Continuar</a>
+      <p class="align-center" id= "minimo"><%= t.minimo  %></p>
+      <h4 class="align-center" id= "price">
+          Total <%= 15 *  menu.precio  %> €
+      </h4>
+      <br>
+      <div class=" show__button button" id= "button-next" href="">
+           <a href="#1">Continuar</a>
+      </div>
     </div>
   </div>
 <% end %>

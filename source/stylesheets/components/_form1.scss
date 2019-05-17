@@ -9,7 +9,6 @@
   &__image{
     min-height:90vh;
     height: 100%;
-
   }
 
   &__right{
@@ -22,11 +21,18 @@
     top: 0;
     padding-left: 1rem;
     padding-right: 1rem;
-    }
+  }
 
   .platos{
-    margin-top: 5rem;
+
     text-align: center;
+    height: calc(100% - 40rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    p{
+      margin: 0;
+    }
   }
 
   #minimo{
@@ -61,7 +67,6 @@
   text-align: center;
   border: none;
   border-bottom: 1px solid black;
-
   &:focus{
     border-bottom: 3px solid $yellow;
     outline:0;
@@ -70,11 +75,9 @@
     border-bottom: 3px solid red;
     outline:0;
   }
-
   &:focus:invalid + .minimo{
     opacity: 1;
   }
-
 }
 
 input[type=number]::-webkit-inner-spin-button {
