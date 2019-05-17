@@ -16,6 +16,20 @@ title: Welcome to Middleman
     <%= image_tag "miniburgers.png", class: "header1__image" %>
   </div>
 </header>
+<section class="instructions">
+  <div class="row">
+      <% data.instructions.each do |instruction| %>
+        <div class="col-xs-12 col-sm-6  col-md-3">
+          <li>
+            <%= partial(:'components/instructions', :locals => {
+              :name => instruction.name,
+              :number => instruction.number,
+              :image => instruction.image }) %>
+          </li>
+         </div>
+      <% end %>
+    </div>
+</section>
 <section class="content">
   <div class="cards" id="menu-cards">
     <div class="row">
