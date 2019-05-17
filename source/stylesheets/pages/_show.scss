@@ -4,29 +4,31 @@
   position: relative;
   max-width: 100%;
   overflow-x: hidden;
+
   h1{
-      font-size: 3.6rem;
-      font-weight: 900;
-      color: black;
-      letter-spacing: -2px;
-    }
-    h2{
-      font-size: 3.6rem;
-      font-weight: 900;
-      color: $yellow;
-    }
-    h4{
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: black;
-    }
-    p{
-      font-size: 1.4rem;
-      font-weight: 100;
-      color: black;
-      margin-top: 2rem ;
-      margin-bottom: 2rem ;
-    }
+    font-size: 3.6rem;
+    font-weight: 900;
+    color: black;
+    letter-spacing: -2px;
+  }
+
+  h2{
+    font-size: 3.6rem;
+    font-weight: 900;
+    color: $yellow;
+  }
+
+  h4{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: black;
+  }
+
+  p{
+    font-size: 1.4rem;
+    font-weight: 100;
+    color: black;
+  }
 
   &__background{
     background-color: $yellow;
@@ -35,28 +37,24 @@
     transform: skewY(-6deg) translateY(-50%) translateX(-25%);
     border-radius: 119%;
     z-index: -1;
-
   }
 
   &__content{
     background-color: white;
     box-shadow: $box-shadow;
     width: 80vw;
-    min-height: 90vh;
+    height: 85vh;
     position: absolute;
-    top: 5vh;
+    top: 9rem;
     left: 10vw;
     border-radius: 2rem;
     overflow: hidden;
-
   }
 
   &__left{
     height: 100%;
     width: calc(100% - 30rem);
-
   }
-
 
   &__right{
     border-radius: 2rem;
@@ -68,6 +66,16 @@
     top: 0;
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  &__down{
+    position: absolute;
+    bottom: 2.5rem;
+    right: 50%;
+    transform: translateX(50%);
+    max-height: 22rem;
+    display: flex;
+    flex-direction: column;
   }
 }
 
