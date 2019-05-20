@@ -1,0 +1,12 @@
+- name: Selecciona un Menu
+  number: 1
+  image: menu.png
+- name: Indica para cuantas personas
+  number: 2
+  image: women.png
+- name: Confirma tu pedido
+  number: 3
+  image: responsive.png
+- name: …A disfrutar !
+  number: 4
+  image: serving-dish.png
