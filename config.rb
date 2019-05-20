@@ -4,7 +4,26 @@ end
 
 # Assumes the file source/about/template.html.erb exists
 
+lista_menus = [
+  "menu-y-ole",
+  "menu-arroces",
+  "menu-argentino",
+  "menu-vegetariano",
+  "menu-infantil"
+]
+lista_menus.each do |menu|
+  proxy "/#{menu}.html", "/menu.html", :locals => { :menu => menu },  ignore: true
+end
 
+lista_cafes = [
+  "coffee-break-1",
+  "coffee-break-2",
+  "coffee-break-3"
+]
+
+lista_cafes.each do |cafe|
+  proxy "/#{cafe}.html", "/cafe.html", :locals => { :cafe => cafe },  ignore: true
+end
 
 activate :sprockets
 
