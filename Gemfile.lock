@@ -42,7 +42,7 @@ GEM
     erubis (2.7.0)
     eventmachine (1.2.7)
     execjs (2.7.0)
-    ffi (1.10.0)
+    ffi (1.11.0)
     font-awesome-sass (5.8.1)
       sassc (>= 1.11)
     haml (5.1.0)
