@@ -1,0 +1,38 @@
+.occasions{
+  padding: 3rem 9rem;
+  max-width: 130rem;
+  margin: 0 auto;
+
+  &__card{
+  width: 30rem;
+  height: 36rem;
+  overflow:hidden;
+  border-radius: 1rem;
+  position: relative;
+  }
+
+
+  &__frame{
+    width: 30rem;
+    height: 30rem;
+    background-color: $beige;
+
+  }
+
+  &__name{
+    color: black;
+    font-weight: 800;
+    font-size: 1.8rem;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 1rem;
+  }
+
+  &__image{
+    position: absolute;
+    width:30rem;
+  }
+
+
+}

@@ -1,0 +1,7 @@
+- name: Una fiesta especial
+  image: empresa-01.png
+- name: La cena después del partido
+  image: empresa-02.png
+- name: Un evento de empresa
+  image: empresa-03.png
+
