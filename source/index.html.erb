@@ -49,3 +49,17 @@ title: Welcome to Middleman
   </div>
 </section>
 
+<section class="instructions">
+  <div class="row">
+      <% data.occasions.each do |occasion| %>
+        <div class="col-xs-12 col-sm-6  col-md-4">
+          <li>
+            <%= partial(:'components/occasions', :locals => {
+              :name => occasion.name,
+              :image => occasion.image }) %>
+          </li>
+         </div>
+      <% end %>
+    </div>
+</section>
+
