@@ -9,11 +9,25 @@ lista_menus = [
   "menu-arroces",
   "menu-argentino",
   "menu-vegetariano",
-  "menu-infantil"
+  "menu-infantil",
+  "paella-mixta",
+  "paella-pescado",
+  "paella-carne"
 ]
 lista_menus.each do |menu|
   proxy "/#{menu}.html", "/menu.html", :locals => { :menu => menu },  ignore: true
 end
+
+# lista_arroces = [
+#   "paella-mixta",
+#   "paella-pescado",
+#   "paella-carne",
+#   "fideua",
+#   "risotto-setas"
+# ]
+# lista_arroces.each do |menu|
+#   proxy "/#{menu}.html", "/menu.html", :locals => { :menu => menu },  ignore: true
+# end
 
 lista_cafes = [
   "coffee-break-1",
@@ -24,6 +38,8 @@ lista_cafes = [
 lista_cafes.each do |cafe|
   proxy "/#{cafe}.html", "/cafe.html", :locals => { :cafe => cafe },  ignore: true
 end
+
+
 
 activate :sprockets
 
