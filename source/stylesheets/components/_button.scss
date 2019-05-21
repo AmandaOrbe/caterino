@@ -51,6 +51,16 @@
     font-weight: 300;
   }
 
+  &--back{
+    border: 1px solid $yellow;
+    background-color: white;
+
+    a{
+      color: $yellow;
+    }
+
+  }
+
 
 
 }

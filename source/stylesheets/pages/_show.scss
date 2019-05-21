@@ -1,6 +1,6 @@
 .show{
   color: black;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   max-width: 100%;
   overflow-x: hidden;
@@ -40,15 +40,26 @@
   }
 
   &__content{
-    background-color: white;
-    box-shadow: $box-shadow;
-    width: 80vw;
+
     min-height: 85vh;
     position: absolute;
     top: 9rem;
+    width: 80vw;
+    min-height: 85vh;
     left: 10vw;
     border-radius: 2rem;
-    overflow: hidden;
+
+
+    &--full{
+      background-color: white;
+      box-shadow: $box-shadow;
+      overflow: hidden;
+    }
+
+    &--divided{
+
+
+    }
   }
 
   &__left{
@@ -56,9 +67,23 @@
     width: calc(100% - 30rem);
   }
 
+  &__left--divided{
+    background-color: white;
+    box-shadow: $box-shadow;
+    border-radius: 2rem;
+    width: 65%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 5rem;
+
+
+  }
+
   &__right{
     border-radius: 2rem;
-    width: 30rem;
+    width: 30%;
     height: 100%;
     background-color: white;
     position: absolute;

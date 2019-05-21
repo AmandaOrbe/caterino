@@ -1,4 +1,11 @@
 .own{
+
+  button{
+      background-color: white;
+      border: none;
+      border-image: none;
+    }
+
   &__card{
     box-shadow: $box-shadow-light;
     width: 30rem;
@@ -6,18 +13,48 @@
     display: block;
     text-align: right;
     padding: 2rem;
-    margin: 2rem;
-
+    margin: 2rem 0rem;
   }
 
   &__name{
     font-weight: 700;
     font-size: 1.8rem;
+    padding-left: 15px;
   }
 
   &__price{
-    font-weight: 300;
-    font-size: 1.8rem;
+    font-weight: 700;
+    font-size: 1.2rem;
     color: $gray;
+    padding-left: 15px;
   }
+  .modal-dialog-centered {
+      /* To center vertically */
+      top: 25%;
+      vertical-align: middle;
+      pointer-events:none;
+  }
+
+  .modal-body{
+    height: 20rem;
+  }
+
+  .modal-header{
+    border-bottom: none;
+    position: relative;
+    .modal-title{
+      position: absolute;
+      left: 3rem;
+    }
+    .close{
+      position: absolute;
+      right: 3rem;
+    }
+  }
+
+  .modal-footer{
+    display: flex;
+  }
+
+
 }
