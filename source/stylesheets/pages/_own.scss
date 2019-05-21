@@ -1,0 +1,23 @@
+.own{
+  &__card{
+    box-shadow: $box-shadow-light;
+    width: 30rem;
+    height: 12rem;
+    display: block;
+    text-align: right;
+    padding: 2rem;
+    margin: 2rem;
+
+  }
+
+  &__name{
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+
+  &__price{
+    font-weight: 300;
+    font-size: 1.8rem;
+    color: $gray;
+  }
+}
