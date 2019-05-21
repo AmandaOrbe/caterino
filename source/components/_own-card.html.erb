@@ -1,25 +1,45 @@
-
+<% t =  data.textos%>
 <button type="button" class="own__card" data-toggle="modal" data-target=<%= "#" + "#{id}exampleModal" %> >
   <h3 class="own__name">  <%= name  %></h3>
   <h4 class="own__price">  <%= price  %></h4>
 </button>
 
+
+
 <!-- Modal -->
-<div class="modal fade" id= <%= "#{id}exampleModal"%> tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+<div class="modal fade" id= <%= "#{id}exampleModal"%> tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h4 class="modal-title" id="exampleModalLongTitle"><%= name  %></h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        ...
+        <div class="show__down">
+          <h4 class="align-center"><%= label_tag t.cantidad, :class => 'first' %></h4>
+          <div class="number-form">
+            <div class="number-form__line">
+              <%= partial(:'components/minus_sign') %>
+              <%= number_field_tag :comensales, :value => 1 , :min => 11,  :id => 'comensales', :class => "number-form__number" %>
+              <%= partial(:'components/plus_sign') %>
+            </div>
+          </div>
+
+
+          <br>
+
+        </div>
+
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <div class=" show__button button button--back " id= "button-next" href="">
+               <a href="#1"><%= t.cancelar  %></a>
+          </div>
+          <div class=" show__button button" id= "button-next" href="">
+               <a href="#1">total <%= price  %></a>
+          </div>
       </div>
     </div>
   </div>

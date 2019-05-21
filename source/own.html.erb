@@ -3,11 +3,12 @@
 <div class="show">
   <div class="show__background">
   </div>
-  <div class="show__content">
+  <div class="show__content show__content--divided">
     <% form_tag 'https://formcarry.com/s/IPZZAEv8L9X', :class => 'own', :method => 'POST' do %>
-      <div class="show__left padding-left-5" id="own-form">
+      <div class="show__left--divided padding-left-5" id="own-form">
         <h1 class="upcase"><%=t.crea%></h1>
-        <h3>Entrantes</h3>
+        <br><br>
+        <h4>Entrantes</h4>
 
         <div class="row">
           <% data.own.entrantes.each do |entrante| %>
