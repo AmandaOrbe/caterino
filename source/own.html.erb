@@ -1,0 +1,29 @@
+<% t =  data.textos%>
+
+<div class="show">
+  <div class="show__background">
+  </div>
+  <div class="show__content">
+    <% form_tag 'https://formcarry.com/s/IPZZAEv8L9X', :class => 'own', :method => 'POST' do %>
+      <div class="show__left padding-left-5" id="own-form">
+        <h1 class="upcase"><%=t.crea%></h1>
+        <h3>Entrantes</h3>
+
+        <div class="row">
+          <% data.own.entrantes.each do |entrante| %>
+            <div class="col-xs-12 col-sm-6">
+              <%= partial(:'components/own-card', :locals => {
+              :id => entrante[0],
+              :name => entrante[1].name,
+              :price => entrante[1].price }) %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+      <div class="show__right">
+        show-right
+      </div>
+    <% end %>
+  </div>
+</div>
+<%= javascript_include_tag "own" %>
