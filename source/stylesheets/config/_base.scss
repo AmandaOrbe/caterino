@@ -58,6 +58,10 @@
   margin-left: 2rem;
 }
 
+.border-left-yellow{
+  border-left: 5px solid $yellow;
+}
+
 input{
     align-items: flex-start;
     text-align: left;

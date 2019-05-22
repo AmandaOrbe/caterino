@@ -1,0 +1,23 @@
+<div id=<%="#{id}group"  %> >
+  <button type="button" class="own__card modal-button" id= <%="#{id}button"%> >
+    <h3 class="own__name">  <%= name  %></h3>
+    <h4 class="own__price">  <%= price  %></h4>
+  </button>
+
+  <div class="hidden mymodal">
+    <div class="mymodal__body">
+      <div class="show__down">
+        <h4 class="align-center"><%= label_tag name, :class => 'first' %></h4>
+        <div class="number-form">
+          <div class="number-form__line number-form__own" id= <%=id  %>>
+            <%= partial(:'components/minus_sign') %>
+            <%= number_field_tag name, :value => 0 , :min => 0,  :id => "#{name}id", :class => "number-form__number" %>
+            <%= partial(:'components/plus_sign') %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
