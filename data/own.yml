@@ -1,57 +1,57 @@
 entrantes:
   croquetas:
     name: croquetas
-    price: 1€
+    price: 1
   nuggets:
     name: nuggets
-    price: 1€
+    price: 1
   ensaladilla:
     name: ensaladilla rusa
-    price: 1€
+    price: 1
   crujiente:
     name: crujiente de langostino
-    price: 2€
+    price: 2
   saquets:
     name: saquets de verduras
-    price: 1€
+    price: 1
   chupito:
     name: chupito de gazpacho
-    price: 1€
+    price: 1
 principales:
   croquetas:
     name: croquetas
-    price: 1€
+    price: 1
   nuggets:
     name: nuggets
-    price: 1€
+    price: 1
   ensaladilla:
     name: ensaladilla rusa
-    price: 1€
+    price: 1
   crujiente:
     name: crujiente de langostino
-    price: 2€
+    price: 2
   saquets:
     name: saquets de verduras
-    price: 1€
+    price: 1
   chupito:
     name: chupito de gazpacho
-    price: 1€
+    price: 1
 postres:
   croquetas:
     name: croquetas
-    price: 1€
+    price: 1
   nuggets:
     name: nuggets
-    price: 1€
+    price: 1
   ensaladilla:
     name: ensaladilla rusa
-    price: 1€
+    price: 1
   crujiente:
     name: crujiente de langostino
-    price: 2€
+    price: 2
   saquets:
     name: saquets de verduras
-    price: 1€
+    price: 1
   chupito:
     name: chupito de gazpacho
-    price: 1€
+    price: 1

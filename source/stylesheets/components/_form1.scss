@@ -59,12 +59,14 @@
     font-size: 3rem;
     font-weight: 900;
     letter-spacing: -2px;
+    width: 50%;
+    text-align: center;
   }
 }
 
 #comensales{
-  width: 50%;
-  text-align: center;
+  // width: 50%;
+  // text-align: center;
   border: none;
   border-bottom: 1px solid black;
   &:focus{

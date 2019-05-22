@@ -1,5 +1,7 @@
 <% t =  data.textos%>
 
+
+
 <div class="show">
   <div class="show__background">
   </div>
@@ -22,9 +24,12 @@
         </div>
       </div>
       <div class="show__right">
-        show-right
+        <%= partial(:'components/form-right-own')%>
       </div>
     <% end %>
   </div>
 </div>
-<%= javascript_include_tag "own" %>
+
+
+
+<%= javascript_include_tag "custom" %>
