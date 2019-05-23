@@ -20,6 +20,7 @@ var updateButtonText = function(event, numberForm){
       card.style.borderLeft= "7px solid #FDD000"
       card.querySelector(".own__price").innerText = price * Number(numberForm.value) + "€";
       card.querySelector(".own__price").style.color= "#FDD000";
+      card.querySelector(".own__name__cantidad").innerText = numberForm.value + " *";
       // document.getElementById("order-items-right").innerHTML('beforeend','<h4>Entrantes</h4>');
     }
 }
