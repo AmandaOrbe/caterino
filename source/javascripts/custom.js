@@ -7,7 +7,7 @@
 var buttonsTotal = document.querySelectorAll(".button--total");
 var numberForms = document.querySelectorAll(".own__number-form");
 var orderItemsRight = document.getElementById("order-items-right");
-var orderLines = []
+var orderLines = {}
 
 
 
@@ -15,7 +15,6 @@ var orderLines = []
 var itemsObject= {}
 
 numberForms.forEach(function(numberForm){
-  // console.log(numberForm);
   card = numberForm.closest(".own__instance").querySelector(".own__card")
   itemsObject[numberForm.name.toString()] = {
     name: numberForm.name,
@@ -37,28 +36,30 @@ var updatePage = function(event, item){
       card.querySelector(".own__price").innerText = unitPrice * value + "€";
       card.querySelector(".own__price").style.color= "#FDD000";
       card.querySelector(".own__name__cantidad").innerText = value + " *";
-      // document.getElementById("order-items-right").innerHTML('beforeend','<h4>Entrantes</h4>');
+      html =  " <div class='details ' id= "+ itemsObject[item].name + "right> <p><span id='order-line-1__number'>" + itemsObject[item].value + "</span> * " + itemsObject[item].name + "</p><p id='order-line-1__total'>" + itemsObject[item].value * itemsObject[item].unitPrice + "</p></div>"
+      if (document.getElementById(itemsObject[item].name + "right")){
+        line = document.getElementById(itemsObject[item].name + "right");
+        orderItemsRight.removeChild(line);
+      }
+      orderItemsRight.insertAdjacentHTML("beforeend", html)
     } else {
       card.style.borderLeft= "none"
       card.querySelector(".own__price").innerText = unitPrice;
       card.querySelector(".own__price").style.color= "black";
       card.querySelector(".own__name__cantidad").innerText = "";
+      line = document.getElementById(itemsObject[item].name + "right");
+      orderItemsRight.removeChild(line);
     }
 }
 
 var updateItemsObject = function(event, numberForm){
-  //Updates the items object with the new value
-  // itemName = numberForm.name,
-  // console.log(event.target.closest(".own__instance").querySelector(".own__card"));
   item = numberForm.name;
   selectedObject = itemsObject[item];
   itemsObject[item].value = numberForm.value ;
 
   updatePage(event, item)
 
-  console.log(itemsObject[item]);
-  console.log(itemsObject[item].value);
-  console.log(numberForm.value);
+
 
 
 }
@@ -73,31 +74,18 @@ var updateButtonText = function(numberForm){
   console.log(itemsObject[item]);
   unitPrice = itemsObject[item].unitPrice;
   button = event.target.closest(".own__instance").querySelector(".button--total a");
-  // card = event.target.closest(".own__instance").querySelector(".own__card");
   button.innerText = "Total " + numberForm.value * unitPrice + "€";
-    // if (Number(numberForm.value) > 0) {
-    //   card.style.borderLeft= "7px solid #FDD000"
-    //   card.querySelector(".own__price").innerText = unitPrice * Number(numberForm.value) + "€";
-    //   card.querySelector(".own__price").style.color= "#FDD000";
-    //   card.querySelector(".own__name__cantidad").innerText = numberForm.value + " *";
-    //   // document.getElementById("order-items-right").innerHTML('beforeend','<h4>Entrantes</h4>');
-    // } else {
-    //   card.style.borderLeft= "none"
-    //   card.querySelector(".own__price").innerText = unitPrice;
-    //   card.querySelector(".own__price").style.color= "black";
-    //   card.querySelector(".own__name__cantidad").innerText = "";
-    // }
+
 }
 
 numberForms.forEach(function(numberForm){
   numberForm.addEventListener("change", function(event){
-    updateItemsObject(event, numberForm);
     updateButtonText(numberForm);
   });
 
   numberForm.addEventListener("keyup", function(event){
-    // updateButtonText(event, numberForm);
-    // updateItemsObject(event, numberForm);
+    updateButtonText( numberForm);
+
   });
 });
 
@@ -107,7 +95,10 @@ buttonsTotal.forEach(function(buttonTotal){
     var numberForm = event.target.closest(".modal-content").querySelector(".own__number-form");
     updateItemsObject(event, numberForm);
    // console.log(numberForm)
+   console.log(itemsObject)
   });
 });
+
+
 
 
