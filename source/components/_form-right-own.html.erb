@@ -2,7 +2,11 @@
 <div id= "form-right">
   <h2 class= "upcase margin-bottom-5"><%= t.order  %></h2>
   <div id="order-items-right">
-    <div id="order-items-right-L0">LOLOL</div>
+    <div id="order-items-right-L0">
+      <div class="form-right__empty align-center">
+        <p> <%= t.empty  %></p>
+      </div>
+    </div>
   </div>
   <div class="button  upcase" id= "button-submit-own" >
     <%= submit_tag t.confirmar %>
