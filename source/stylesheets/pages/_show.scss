@@ -83,14 +83,16 @@
 
   &__right{
     border-radius: 2rem;
-    width: 30%;
-    height: 100%;
+    width: 35rem;
+    min-height: 35rem;
     background-color: white;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 3rem;
+    margin-right: 9rem;
+    margin-top: 9rem;
+    box-shadow: $box-shadow;
   }
 
   &__down{
@@ -101,6 +103,13 @@
     max-height: 22rem;
     display: flex;
     flex-direction: column;
+  }
+
+  #button-submit-own{
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
