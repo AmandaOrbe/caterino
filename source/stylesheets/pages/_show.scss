@@ -93,6 +93,8 @@
     margin-right: 9rem;
     margin-top: 9rem;
     box-shadow: $box-shadow;
+
+
   }
 
   &__down{
@@ -111,6 +113,16 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+   .details{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #order-line-total2{
+      display:flex;
+      justify-content: space-between;
+    }
 }
 
 

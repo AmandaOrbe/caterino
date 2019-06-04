@@ -11,6 +11,13 @@
     margin-top: 0rem;
     margin-bottom: 1rem;
   }
+
+  &__number{
+    font-weight: 700;
+  }
+  &__total{
+    font-weight: 700;
+  }
 }
 
 #order-line-2,
@@ -20,7 +27,8 @@
 
 }
 
-#order-line-total {
+#order-line-total,
+#order-line-total2 {
   padding-top: 2rem;
   border-top: 1px solid black;
   p{
