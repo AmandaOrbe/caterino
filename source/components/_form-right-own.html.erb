@@ -7,7 +7,12 @@
         <p> <%= t.empty  %></p>
       </div>
     </div>
+
   </div>
+  <div class="hidden total" id= "order-line-total2">
+      <p class="upcase" id= "order-total"><%= t.total%></p>
+      <p id="order-line-total__total"></p>
+    </div>
   <div class="button  upcase" id= "button-submit-own" >
     <%= submit_tag t.confirmar %>
   </div>
