@@ -44,8 +44,7 @@
     min-height: 85vh;
     position: absolute;
     top: 9rem;
-    width: 80vw;
-    min-height: 85vh;
+    min-height: 60rem;
     left: 10vw;
     border-radius: 2rem;
 
@@ -54,17 +53,20 @@
       background-color: white;
       box-shadow: $box-shadow;
       overflow: hidden;
+      width: 100rem;
+      min-height: 60rem;
+      left: calc((100vw - 105rem)/2);
     }
 
     &--divided{
 
-
+      width: 80%;
     }
   }
 
   &__left{
     // height: 100%;
-    width: calc(100% - 30rem);
+    width: 70rem;
   }
 
   &__left--divided{

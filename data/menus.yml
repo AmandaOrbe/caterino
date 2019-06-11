@@ -1,7 +1,7 @@
 estrellas:
   - nombre: "Menu Tapeo"
     precio: 8.50
-    slug: menu-y-ole
+    slug: menu-tapeo
     image: croquetas.jpg
     platos:
       - Tortilla de patatas
@@ -10,17 +10,6 @@ estrellas:
       - croquetas de jamón
       - ensaladilla rusa
       - brochetas de tomate cherry
-  - nombre: "Arroces"
-    precio: 9.35
-    slug: menu-arroces
-    image: paella.jpg
-    platos:
-      - "Escoje entre:"
-      - paella mixta
-      - paella de pescado
-      - fideua
-      - arroz negro
-      - arroz al horno
   - nombre: "Menu Argentino"
     precio: 9.50
     slug: menu-argentino
@@ -107,20 +96,18 @@ arroces:
     image: paella.jpg
     platos:
       - Calamar
-      - pollo
-      - ternera
+      - Merluza
       - gambas
       - alcachofas
       - guisantes
+
   - nombre: "Paella de Carne"
     precio: 9.35
     slug: paella-carne
     image: paella.jpg
     platos:
-      - Calamar
       - pollo
       - ternera
-      - gambas
       - alcachofas
       - guisantes
 

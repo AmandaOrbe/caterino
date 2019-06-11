@@ -1,7 +1,7 @@
-nombre: "Menu y ole"
+nombre: "Menu Tapeo"
 precio: 8.50
-slug: menu-y-ole
-image: PANSCOMPANY.jpg
+slug: menu-tapeo
+image: PANSCOMPANYflat.jpg
 platos:
   - Alitas de Pollo,
   - Fingers de queso,
