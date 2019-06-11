@@ -18,40 +18,52 @@ entrantes:
     name: chupito de gazpacho
     price: 1
 principales:
-  croquetas:
-    name: croquetas
-    price: 1
-  nuggets:
-    name: nuggets
-    price: 1
-  ensaladilla:
-    name: ensaladilla rusa
-    price: 1
-  crujiente:
-    name: crujiente de langostino
-    price: 2
-  saquets:
-    name: saquets de verduras
-    price: 1
-  chupito:
-    name: chupito de gazpacho
-    price: 1
+  fideua:
+    name: Fideuà
+    price: 5
+  risotto:
+    name: Risotto
+    price: 4.50
+  redondo:
+    name: Redondo de Ternera
+    price: 6.50
+  campero:
+    name: Pollo Campero
+    price: 6.50
+  macarrones:
+    name: Macarrones (infantil)
+    price: 3.50
+  pollo:
+    name: Pollo Rebozado (infantil)
+    price: 3.50
 postres:
-  croquetas:
-    name: croquetas
+  massini:
+    name: massini
     price: 1
-  nuggets:
-    name: nuggets
+  brownie:
+    name: brownie
     price: 1
-  ensaladilla:
-    name: ensaladilla rusa
+  brownie:
+    name: brownie
     price: 1
-  crujiente:
-    name: crujiente de langostino
+  limon:
+    name: tarta de limón
     price: 2
-  saquets:
-    name: saquets de verduras
+  queso:
+    name: tarta de queso
     price: 1
-  chupito:
-    name: chupito de gazpacho
+  choco:
+    name: tarta choco trufa
+    price: 1
+  gitano:
+    name: brazo de gitano
+    price: 2
+  tartaletas:
+    name: tartaletas frutales
+    price: 1
+  brocheta:
+    name: brocheta de frutas
+    price: 1
+  canasta:
+    name: canasta de frutas de temporada
     price: 1

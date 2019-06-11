@@ -97,13 +97,16 @@
   }
 
    &__right--own{
+
     border-radius: 2rem;
     width: 35rem;
     min-height: 35rem;
+    max-height: 60rem;
     background-color: white;
     position: fixed;
     right: 0;
     top: 0;
+
     padding: 3rem;
     margin-right: 9rem;
     margin-top: 9rem;
@@ -124,10 +127,9 @@
   }
 
   #button-submit-own{
-    position: absolute;
-    bottom: 5rem;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-top: 5rem;
+
+    margin: 0 auto;
   }
 
    .details{
