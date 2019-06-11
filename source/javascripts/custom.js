@@ -32,7 +32,7 @@ numberForms.forEach(function(numberForm){
 
 
 
-// console.log(itemsObject["croquetas"].itemTotal)
+
 
 var updateTotalsObject =  function(item){
   totalsObject[item] = itemsObject[item].itemTotal;
@@ -42,15 +42,11 @@ var displayTotalPrice = function() {
   totalsArray = []
   total = 0
   Object.values(totalsObject).forEach(function(value){
-    // console.log(value);
     total = total + value;
-    // console.log(total);
   })
   totalNumber.innerText = total + " €"
-  console.log(total);
-  console.log(totalsObject);
-  // console.log(totalsArray);
-  // console.log(totalsArray.reduce(reducer));
+
+
 
 }
 
