@@ -1,7 +1,7 @@
 nombre: "Menu Argentino"
 precio: 9.50
 slug: menu-argentino
-image: empanadas.jpg
+image: empanadasflat.jpg
 platos:
   - empanada de carne
   - empanada de pollo al curri

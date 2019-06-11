@@ -6,7 +6,7 @@
   border-radius: 1rem;
   margin: 4rem auto;
   transition: all .5s ease-in-out;
-  padding: 2rem;
+  padding: 0 2rem;
   position: relative;
   overflow: hidden;
 
@@ -45,10 +45,17 @@
     z-index: 50;
 
     .text{
-
-      margin-top: 20rem;
+      margin-top: 18rem;
       margin-left: 2rem;
       margin-right: 2rem;
+      height: 24rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      p{
+        margin: 0;
+      }
 
     }
     &:hover{

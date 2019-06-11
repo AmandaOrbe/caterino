@@ -1,11 +1,10 @@
 nombre: "Paella de Pescado"
 precio: 9.35
 slug: paella-pescado
-image: paella.jpg
+image: paellaflat.jpg
 platos:
   - Calamar
-  - pollo
-  - ternera
+  - Merluza
   - gambas
   - alcachofas
   - guisantes

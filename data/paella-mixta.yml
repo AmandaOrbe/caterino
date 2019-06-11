@@ -1,7 +1,7 @@
 nombre: "Paella Mixta"
 precio: 9.35
 slug: paella-mixta
-image: paella.jpg
+image: paellaflat.jpg
 platos:
   - Calamar
   - pollo
