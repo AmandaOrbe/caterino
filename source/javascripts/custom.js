@@ -10,6 +10,7 @@ var orderItemsRight = document.getElementById("order-items-right");
 var empty = document.querySelector(".form-right__empty");
 var totalLine = document.getElementById("order-line-total2");
 var totalNumber = document.getElementById("order-line-total__total");
+var confirmar = document.getElementById("button-submit-own");
 var itemsObject= {}
 var totalsObject = {}
 
@@ -59,16 +60,26 @@ function totalShow(isHidden) {
   return (isEmpty ? totalLine.classList.remove("hidden") : console.log("totalShowNOTContains") );
 }
 
+function confirmarHide(isHidden) {
+  return (isEmpty ? confirmar.classList.add("hidden") : console.log("confirmaHiddden"));
+}
+
+function confirmarShow(isHidden) {
+  return (isEmpty ? confirmar.classList.remove("hidden") : console.log("confirmarShowNOTContains") );
+}
+
 
 
 var isEmpty = function(){
   if (document.querySelector(".details")){
     empty.style.display = "none";
     totalShow(totalLine.classList.contains("hidden"));
+    confirmarShow(confirmar.classList.contains("hidden"));
 
   } else{
     empty.style.display = "block";
     totalHide(totalLine.classList.contains("hidden"));
+    confirmarHide(confirmar.classList.contains("hidden"));
   }
 }
 
