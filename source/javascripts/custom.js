@@ -135,6 +135,12 @@ var updateButtonText = function(numberForm){
   button.innerText = "Total " + numberForm.value * unitPrice + "€";
 }
 
+var stepOne = function () {
+  ownMenu.classList.remove("hidden");
+  datos.classList.add("hidden");
+  confirmar.classList.add("hidden");
+  isEmpty();
+}
 var stepTwo = function (event) {
   ownMenu.classList.add("hidden");
   datos.classList.remove("hidden");
@@ -161,6 +167,17 @@ buttonsTotal.forEach(function(buttonTotal){
 });
 
 siguiente.addEventListener("click", stepTwo);
+
+window.onhashchange = function() {
+     console.log("window on hash change");
+     console.log(window.location.href.endsWith("#datos"));
+     if(window.location.href.endsWith("#datos")){
+      stepTwo();
+     }else{
+      stepOne();
+     };
+
+}
 
 flatpickr(datepicker, {
   minDate: Date.now()+ (24 * 60 * 60 * 1000)
