@@ -85,10 +85,17 @@ var updateStepOnePrice = function(){
   signColor();
 }
 
+var stepOne = function(event){
+  f1.classList.remove("hidden");
+  f2.classList.add("hidden");
+  step2.classList.add("hidden");
+  formRight.classList.add("hidden");
+  postreButton.classList.add("hidden");
+}
+
 var stepTwo = function (event) {
   f1.classList.add("hidden");
   f2.classList.remove("hidden");
-  f1.classList.add("hidden");
   step2.classList.remove("hidden");
   formRight.classList.remove("hidden");
   postreButton.classList.remove("hidden");
@@ -118,14 +125,21 @@ var stepFour = function (event) {
 
 var locateUrl = function(){
   url = window.location.href;
-  var lastPart = url.substr(url.lastIndexOf('#') + 1);
-  console.log(lastPart);
-  if (lastPart === "1"){
+  console.log(url)
+  if (url.endsWith("#1")){
+    console.log("url.endsWith(#1)");
     stepTwo();
-  } else if (lastPart === "bebida") {
+  } else if (url.endsWith("#bebida")) {
+    console.log("url.endsWith(#bebida)");
     stepThree();
-  }else if (lastPart === "datos") {
+  }else if (url.endsWith("#datos")) {
+    console.log("url.endsWith(#datos)");
     stepFour();
+  }else if (url.endsWith(".html")) {
+    console.log("url.endsWith(.html)");
+    stepOne();
+  }else{
+    console.log("none of the above")
   }
 }
 
