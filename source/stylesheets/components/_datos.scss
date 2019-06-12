@@ -1,6 +1,13 @@
 .datos-form{
   position: relative;
-  width: calc(100% - 50rem);
+  &--half{
+    width: calc(100% - 33rem);
+  }
+
+  &--full{
+    width: 100%;
+  }
+
 
 
   &__group{

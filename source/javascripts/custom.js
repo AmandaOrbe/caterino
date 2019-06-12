@@ -8,11 +8,16 @@ var buttonsTotal = document.querySelectorAll(".button--total");
 var numberForms = document.querySelectorAll(".own__number-form");
 var orderItemsRight = document.getElementById("order-items-right");
 var empty = document.querySelector(".form-right__empty");
+var ownMenu = document.querySelector(".own-menu");
+var datos = document.querySelector(".datos");
 var totalLine = document.getElementById("order-line-total2");
 var totalNumber = document.getElementById("order-line-total__total");
+var siguiente = document.getElementById("button-next-own");
 var confirmar = document.getElementById("button-submit-own");
 var itemsObject= {}
 var totalsObject = {}
+
+var datepicker = document.getElementById("datepicker");
 
 var reducer = function(accumulator, currentValue) {
   accumulator + currentValue;
@@ -60,12 +65,12 @@ function totalShow(isHidden) {
   return (isEmpty ? totalLine.classList.remove("hidden") : console.log("totalShowNOTContains") );
 }
 
-function confirmarHide(isHidden) {
-  return (isEmpty ? confirmar.classList.add("hidden") : console.log("confirmaHiddden"));
+function siguienteHide(isHidden) {
+  return (isEmpty ? siguiente.classList.add("hidden") : console.log("confirmaHiddden"));
 }
 
-function confirmarShow(isHidden) {
-  return (isEmpty ? confirmar.classList.remove("hidden") : console.log("confirmarShowNOTContains") );
+function siguienteShow(isHidden) {
+  return (isEmpty ? siguiente.classList.remove("hidden") : console.log("siguienteShowNOTContains") );
 }
 
 
@@ -74,12 +79,12 @@ var isEmpty = function(){
   if (document.querySelector(".details")){
     empty.style.display = "none";
     totalShow(totalLine.classList.contains("hidden"));
-    confirmarShow(confirmar.classList.contains("hidden"));
+    siguienteShow(siguiente.classList.contains("hidden"));
 
   } else{
     empty.style.display = "block";
     totalHide(totalLine.classList.contains("hidden"));
-    confirmarHide(confirmar.classList.contains("hidden"));
+    siguienteHide(siguiente.classList.contains("hidden"));
   }
 }
 
@@ -130,7 +135,12 @@ var updateButtonText = function(numberForm){
   button.innerText = "Total " + numberForm.value * unitPrice + "€";
 }
 
-
+var stepTwo = function (event) {
+  ownMenu.classList.add("hidden");
+  datos.classList.remove("hidden");
+  siguiente.classList.add("hidden");
+  confirmar.classList.remove("hidden");
+}
 
 numberForms.forEach(function(numberForm){
   numberForm.addEventListener("change", function(event){
@@ -150,6 +160,10 @@ buttonsTotal.forEach(function(buttonTotal){
   });
 });
 
+siguiente.addEventListener("click", stepTwo);
 
+flatpickr(datepicker, {
+  minDate: Date.now()+ (24 * 60 * 60 * 1000)
+});
 
 
