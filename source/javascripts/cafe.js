@@ -79,6 +79,14 @@ var updateStepOnePrice = function(){
   signColor();
 }
 
+var stepOne = function(event){
+  f1.classList.remove("hidden");
+  f4.classList.add("hidden");
+  step2.classList.add("hidden");
+  formRight.classList.add("hidden");
+  datosButton.classList.add("hidden");
+}
+
 var stepTwo = function (event) {
   f1.classList.add("hidden");
   f4.classList.remove("hidden");
@@ -94,10 +102,11 @@ var stepTwo = function (event) {
 
 var locateUrl = function(){
   url = window.location.href;
-  var lastPart = url.substr(url.lastIndexOf('#') + 1);
-  console.log(lastPart);
-  if (lastPart === "1"){
+  if (url.endsWith("1")){
     stepTwo();
+  }else if (url.endsWith(".html")) {
+    console.log("url.endsWith(.html)");
+    stepOne();
   }
 }
 
