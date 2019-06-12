@@ -125,21 +125,14 @@ var stepFour = function (event) {
 
 var locateUrl = function(){
   url = window.location.href;
-  console.log(url)
   if (url.endsWith("#1")){
-    console.log("url.endsWith(#1)");
     stepTwo();
   } else if (url.endsWith("#bebida")) {
-    console.log("url.endsWith(#bebida)");
     stepThree();
   }else if (url.endsWith("#datos")) {
-    console.log("url.endsWith(#datos)");
     stepFour();
   }else if (url.endsWith(".html")) {
-    console.log("url.endsWith(.html)");
     stepOne();
-  }else{
-    console.log("none of the above")
   }
 }
 
