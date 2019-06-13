@@ -1,4 +1,14 @@
-
+.cards__row{
+   @include respond(portrait) { // width < 1200
+      display: flex;
+      overflow-x: auto;
+    }
+  .col-xs-12 {
+     @include respond(portrait) { // width < 1200
+      padding: 0;
+    }
+  }
+}
 .card{
   width: 34rem;
   height: 45rem;
@@ -11,6 +21,9 @@
   overflow: hidden;
   @include respond(landscape) { // width < 1200
     max-width: 90% !important; //1rem = 9px,  9/16 = 56,25%
+  }
+  @include respond(portrait) { // width < 1200
+    margin: 1rem auto; //1rem = 9px,  9/16 = 56,25%
   }
 
 
