@@ -31,8 +31,8 @@ title: Welcome to Middleman
 </section>
 <section class="content">
   <div class="cards" id="menu-cards">
-    <div class="row">
-      <h3 class= "category-title"><%= t.estrellas %></h3>
+    <h3 class= "category-title"><%= t.estrellas %></h3>
+    <div class="row cards__row">
       <% data.menus.estrellas.each do |menu| %>
         <div class="col-xs-12 col-sm-6  col-md-4">
           <li>
@@ -46,8 +46,8 @@ title: Welcome to Middleman
          </div>
       <% end %>
     </div>
-    <div class="row">
-      <h3 class= "category-title"><%= t.arrocitos %></h3>
+    <h3 class= "category-title"><%= t.arrocitos %></h3>
+    <div class="row cards__row">
       <% data.menus.arroces.each do |menu| %>
         <div class="col-xs-12 col-sm-6  col-md-4">
           <li>
@@ -62,8 +62,9 @@ title: Welcome to Middleman
       <% end %>
     </div>
   </div>
-  <div class="row">
-      <h3 class= "category-title"><%= t.coffee_breaks %></h3>
+  <h3 class= "category-title"><%= t.coffee_breaks %></h3>
+  <div class="row cards__row">
+
       <% data.menus.coffees.each do |menu| %>
         <div class="col-xs-12 col-sm-6  col-md-4">
           <li>

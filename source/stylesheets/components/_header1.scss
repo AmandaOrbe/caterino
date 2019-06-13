@@ -43,12 +43,12 @@
     right: 0;
     width: 55rem;
     @include respond(portrait) {
-     width: 50%;
-     right: auto;
-     left: 50%;
-     top: 50%;
-     transform: translate(-50%,-50%);
-     max-width: 25rem;
+     width: 67%;
+    right: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-31%, -50%);
+    max-width: 32rem;
     }
 
   }
