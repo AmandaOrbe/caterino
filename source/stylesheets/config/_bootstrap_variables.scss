@@ -23,3 +23,10 @@ $border-radius-large: 2px;
 $border-radius-small: 2px;
 
 // Override other variables below!
+$grid-breakpoints: (
+  xs: 0,
+  sm: 600px,
+  md: 900px,
+  lg: 1200px,
+  xl: 1280px
+);
