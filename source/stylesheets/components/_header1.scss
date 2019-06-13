@@ -1,6 +1,6 @@
 .header1{
   background-color: $yellow;
-  min-height: 100vh;
+  height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: space-between;
@@ -8,6 +8,13 @@
   padding-top: 14rem;
   position: relative;
 
+  @include respond(portrait) {
+   display: block;
+  }
+
+  &__text{
+
+  }
 
   h1{
   font-size: 6rem;
@@ -24,21 +31,37 @@
   &__frame{
     width: 100%;
     position: relative;
+    @include respond(portrait) {
+     height: 50%;
+    }
+
+
   }
+
   &__image{
     position: absolute;
     right: 0;
-    width: 60%;
+    width: 55rem;
+    @include respond(portrait) {
+     width: 50%;
+     right: auto;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%,-50%);
+     max-width: 25rem;
+    }
+
   }
 
-  &__notice{
-    position: absolute;
-    top: 8rem;
-    right: 6rem;
-    color: black;
-    font-weight: 300;
-    font-size: 1.4rem;
 
+
+  #button--home{
+    @include respond(portrait) {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
 

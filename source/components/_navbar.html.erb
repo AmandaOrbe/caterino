@@ -1,5 +1,6 @@
-<div class="navbar">
+<% t =  data.textos%>
 
+<div class="navbar">
    <% link_to '/', class: "navbar__left" do %>
     <%= image_tag "chef-hat.png", class: "navbar__logo" %> &nbsp; <h2>  Caterino</h2>
   <% end %>
@@ -9,6 +10,6 @@
     <a href="tel:608983840" class="button button--black button--navbar">
       608983840 &nbsp; <i class="fas fa-phone"></i>
     </a>
-
   </div>
+  <p class= "navbar__notice"><%=t.whatsapp %> </p>
 </div>
