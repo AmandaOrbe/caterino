@@ -15,7 +15,7 @@ title: Welcome to Middleman
     <%= image_tag "miniburgers.png", class: "header1__image" %>
   </div>
 </header>
-<section class="instructions">
+<section class="instructions instructions--first">
   <div class="row">
       <% data.instructions.each do |instruction| %>
         <div class="col-xs-6 col-sm-3">
@@ -96,7 +96,7 @@ title: Welcome to Middleman
 <section class="instructions">
   <div class="row">
       <% data.occasions.each do |occasion| %>
-        <div class="col-xs-12 col-sm-6  col-md-4">
+        <div class="col-xs- col-md-4">
           <li>
             <%= partial(:'components/occasions', :locals => {
               :name => occasion.name,

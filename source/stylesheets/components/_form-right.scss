@@ -35,3 +35,26 @@
   font-weight: 700;
   }
 }
+
+#order-line-total2{
+      display:flex;
+      justify-content: space-between;
+      @include respond(phone) {
+         border-top: none;
+      }
+    }
+.form-right__empty{
+  @include respond(phone) {
+    display:none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
