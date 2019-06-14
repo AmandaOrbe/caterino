@@ -94,16 +94,16 @@ html{
   font-size: 62.5%; //1rem = 10px,  10/16 = 62,5%
 
   @include respond(landscape) { // width < 1200
-    font-size: 56.25% !important; //1rem = 9px,  9/16 = 56,25%
+    font-size: 60% !important; //1rem = 9px,  9/16 = 56,25%
   }
 
   @include respond(portrait) { // width < 900 -->more specific: it should be later on our code
 
-    font-size: 50% !important; //1rem = 8px,  8/16 = 50%
+    font-size: 55% !important; //1rem = 8px,  8/16 = 50%
   }
 
   @include respond(phone) {
-    font-size: 40% !important;
+    font-size: 50% !important;
   }
   @include respond(big-screen) {
     font-size: 75% !important; //1rem = 12px,  12/16 = 75%

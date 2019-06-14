@@ -47,6 +47,13 @@
     min-height: 60rem;
     left: 10vw;
     border-radius: 2rem;
+    @include respond(portrait) {
+      left:3vh;
+      border-radius: 0;
+    }
+    @include respond(phone) {
+      left:0;
+    }
 
 
     &--full{
@@ -61,6 +68,9 @@
     &--divided{
 
       width: 80%;
+      @include respond(phone) {
+        width: 100%;
+      }
     }
   }
 
@@ -79,6 +89,15 @@
     left: 0;
     top: 0;
     padding: 5rem;
+    @include respond(portrait) {
+      width: 80%;
+    }
+    @include respond(phone) {
+      width: 100%;
+      border-radius: 0;
+      padding: 0;
+      padding-left: 0 !important;
+    }
 
 
   }
@@ -93,24 +112,54 @@
     top: 0;
     padding-left: 1rem;
     padding-right: 1rem;
+    @include respond(phone) {
+      display: none;
+    }
 
   }
 
    &__right--own{
     overflow-y: auto;
     border-radius: 2rem;
-    width: 35rem;
+    width: 26%;
+    max-width: 35rem;
     min-height: 35rem;
     max-height: 60rem;
     background-color: white;
     position: fixed;
     right: 0;
     top: 0;
-
     padding: 3rem;
     margin-right: 9rem;
     margin-top: 9rem;
     box-shadow: $box-shadow;
+    @include respond(portrait) {
+      margin-right: 5vh;
+    }
+    @include respond(phone) {
+      min-height: 0;
+      padding: 0;
+      width: 100%;
+      margin-right: 0;
+      margin-top: 0;
+      bottom: 0;
+      left: 0;
+      right: auto;
+      top: auto;
+      min-height: 0;
+      margin: 0;
+      width: 100%;
+      max-width: 100%;
+      border-radius: 0;
+      padding-left: 4rem;
+      padding-right: 4rem;
+      padding-bottom: 2rem;
+      h2{
+
+        display: none;
+
+      }
+    }
   }
 
 
@@ -132,15 +181,21 @@
     margin: 0 auto;
   }
 
+  &__button{
+   @include respond(phone) {
+      margin-bottom: 1rem;
+    }
+  }
+
    .details{
       display: flex;
       justify-content: space-between;
+      @include respond(phone) {
+         display:none;
+      }
     }
 
-    #order-line-total2{
-      display:flex;
-      justify-content: space-between;
-    }
+
 }
 
 
