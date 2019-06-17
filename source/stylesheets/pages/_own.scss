@@ -20,6 +20,10 @@
   #button-next-own,
   #button-submit-own{
     width: 80%;
+    @include respond(phone) {
+      margin: 1rem auto;
+    }
+
     a{
       padding: 0;
     }

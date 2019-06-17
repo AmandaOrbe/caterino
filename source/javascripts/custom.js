@@ -14,6 +14,9 @@ var totalLine = document.getElementById("order-line-total2");
 var totalNumber = document.getElementById("order-line-total__total");
 var siguiente = document.getElementById("button-next-own");
 var confirmar = document.getElementById("button-submit-own");
+var verMas = document.querySelector(".ver-mas");
+var close = document.querySelector(".close-cross");
+
 var itemsObject= {}
 var totalsObject = {}
 
@@ -59,10 +62,12 @@ var displayTotalPrice = function() {
 
 function totalHide(isHidden) {
   return (isEmpty ? totalLine.classList.add("hidden") : console.log("totalHiddden"));
+  return (isEmpty ? verMas.classList.add("hidden") : console.log("totalHiddden"));
 }
 
 function totalShow(isHidden) {
   return (isEmpty ? totalLine.classList.remove("hidden") : console.log("totalShowNOTContains") );
+  return (isEmpty ? verMas.classList.remove("hidden") : console.log("totalShowNOTContains") );
 }
 
 function siguienteHide(isHidden) {
@@ -135,6 +140,20 @@ var updateButtonText = function(numberForm){
   button.innerText = "Total " + numberForm.value * unitPrice + "€";
 }
 
+var showDetails = function(){
+  orderItemsRight.style.display = "block";
+  verMas.style.display = "none";
+  console.log(close);
+  close.classList.remove("hidden");
+}
+
+
+var hideDetails = function(){
+  orderItemsRight.style.display = "none";
+  verMas.style.display = "block";
+  close.classList.add("hidden");
+}
+
 var stepOne = function () {
   ownMenu.classList.remove("hidden");
   datos.classList.add("hidden");
@@ -167,6 +186,9 @@ buttonsTotal.forEach(function(buttonTotal){
 });
 
 siguiente.addEventListener("click", stepTwo);
+
+verMas.addEventListener("click", showDetails);
+close.addEventListener("click", hideDetails);
 
 window.onhashchange = function() {
      console.log("window on hash change");

@@ -34,25 +34,54 @@
   p{
   font-weight: 700;
   }
+  @include respond(phone) {
+     border-top: none;
+      width: 80%;
+     margin: 1rem auto;
+
+  }
 }
 
-#order-line-total2{
-      display:flex;
-      justify-content: space-between;
-      @include respond(phone) {
-         border-top: none;
-      }
-    }
+.order-line-total2-prices{
+  display:flex;
+  justify-content: space-between;
+
+}
+
 .form-right__empty{
   @include respond(phone) {
-    display:none;
+    display:none !important;
     }
+}
+
+.ver-mas{
+  font-weight: 100;
+  font-size: 1.4rem;
+  display:hidden;
+  padding-bottom: 1rem;
+
+  @include respond(phone) {
+    // display:block;
+  }
+  @include respond(nophone) {
+    display:none !important;
+  }
+  a{
+    color: black;
+  }
 }
 
 
 
 
-
+#order-items-right{
+  position: relative;
+   @include respond(phone) {
+     display:none;
+     width: 80%;
+     margin: 2rem auto 0;
+  }
+}
 
 
 

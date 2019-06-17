@@ -1,0 +1,28 @@
+.close-cross {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  width: 3rem;
+  height: 3rem;
+  opacity: 0.4;
+  @include respond(nophone) {
+    display:none !important;
+  }
+}
+.close-cross:hover {
+  opacity: 1;
+}
+.close-cross:before, .close-cross:after {
+  position: absolute;
+  left: 1.5rem;
+  content: ' ';
+  height: 2rem;
+  width: 2px;
+  background-color: #333;
+}
+.close-cross:before {
+  transform: rotate(45deg);
+}
+.close-cross:after {
+  transform: rotate(-45deg);
+}
