@@ -2,6 +2,9 @@
   @if $breakpoint == phone {
     @media (max-width: 37.5em) {@content}; // 600px
   }
+  @if $breakpoint == nophone {
+    @media (min-width: 37.5em) {@content}; // 600px
+  }
   @if $breakpoint == portrait {
     @media (max-width: 56.25em) {@content}; // 900px
   }

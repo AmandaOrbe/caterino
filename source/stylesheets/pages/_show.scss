@@ -19,9 +19,10 @@
   }
 
   h4{
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-weight: 700;
     color: black;
+    text-transform: capitalize;
   }
 
   p{
@@ -151,9 +152,7 @@
       width: 100%;
       max-width: 100%;
       border-radius: 0;
-      padding-left: 4rem;
-      padding-right: 4rem;
-      padding-bottom: 2rem;
+
       h2{
 
         display: none;
@@ -190,9 +189,7 @@
    .details{
       display: flex;
       justify-content: space-between;
-      @include respond(phone) {
-         display:none;
-      }
+
     }
 
 

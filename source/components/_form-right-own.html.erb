@@ -1,6 +1,9 @@
 <% t =  data.textos%>
 <div id= "form-right">
   <h2 class= "upcase margin-bottom-5"><%= t.order  %></h2>
+  <div class="close-cross hidden">
+
+  </div>
   <div id="order-items-right">
     <div id="order-items-right-L0">
       <div class="form-right__empty align-center">
@@ -9,9 +12,15 @@
     </div>
 
   </div>
+
   <div class="hidden total" id= "order-line-total2">
+    <div class="ver-mas">
+      <a href="#"><%= t.ver_mas  %></a>
+    </div>
+    <div class="order-line-total2-prices">
       <p class="upcase" id= "order-total"><%= t.total%></p>
       <p id="order-line-total__total"></p>
+    </div>
     </div>
   <div class="button  upcase hidden" id= "button-next-own" >
 
