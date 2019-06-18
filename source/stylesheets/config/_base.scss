@@ -20,6 +20,10 @@
   padding-left: 3rem;
 }
 
+.padding-left-2{
+  padding-left: 2rem;
+}
+
 .margin-top-3{
   margin-top: 3rem;
 }
@@ -62,6 +66,12 @@
     @include respond(portrait) { // width < 1200
       margin-left: 0;
       font-size: 2.8rem;
+    }
+}
+
+.portrait-hidden{
+  @include respond(portrait) { // width < 1200
+      display:none;
     }
 }
 

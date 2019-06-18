@@ -1,7 +1,7 @@
 <% t =  data.textos%>
 
 
-    <div class="show__left padding-left-5" id="postre-form">
+    <div class="show__left padding-left-2" id="postre-form">
       <h1><%= t.seleccion_postre.upcase  %></h1>
       <h4 class= "underline width80 margin-top-3" > <%= t.quieres_postre %></h4>
       <div class="option-label">
@@ -10,7 +10,7 @@
       </div>
 
       <div class="form__cards">
-        <div class="row">
+        <div class="row cards__row">
           <%= partial(:'components/postre_card', :locals => {
               :postre => "brownie",
               :image => 'brownie.jpg',
