@@ -67,3 +67,26 @@ postres:
   canasta:
     name: canasta de frutas de temporada
     price: 1
+bebidas:
+  agua:
+    name: agua mineral 1,5l
+    price: 1
+  zumos:
+    name: zumos 1l€
+    price: 1.9
+  refrescos:
+    name:  refrescos (lata)
+    price: 0.75
+  cerveza:
+    name:  cerveza (lata)
+    price: 0.75
+  tinto:
+    name: vino tinto crianza
+    price:  3.9
+  blanco:
+    name:  vino blanco verdejo
+    price: 4.9
+  cava:
+    name: brut nature
+    price: 5.5
+
