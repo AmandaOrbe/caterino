@@ -49,6 +49,10 @@
     padding: 1rem 3rem;
     width: 20rem;
     font-weight: 300;
+     @include respond(phone) {
+      padding: 1rem 1rem;
+      width: 17rem;
+    }
   }
 
   &--back{
