@@ -16,6 +16,10 @@ var siguiente = document.getElementById("button-next-own");
 var confirmar = document.getElementById("button-submit-own");
 var verMas = document.querySelector(".ver-mas");
 var close = document.querySelector(".close-cross");
+var entrantesTab = document.getElementById("entrantes-tab");
+var principalesTab = document.getElementById("principales-tab");
+var postresTab = document.getElementById("postres-tab");
+var bebidasTab = document.getElementById("bebidas-tab");
 
 var itemsObject= {}
 var totalsObject = {}
@@ -78,7 +82,26 @@ function siguienteShow(isHidden) {
   return (isEmpty ? siguiente.classList.remove("hidden") : console.log("siguienteShowNOTContains") );
 }
 
+var observer = new IntersectionObserver(function(entries) {
+  // isIntersecting is true when element and viewport are overlapping
+  // isIntersecting is false when element and viewport don't overlap
+  var element = entries[0].target.id.replace("-row", "")
+  var path = "#" + element;
+  var tab = document.getElementById(element+"-tab")
+  if(entries[0].isIntersecting === true){
+    // history.pushState({}, "", path)
+    tab.classList.add("tab--current");
 
+  }else{
+    tab.classList.remove("tab--current");
+
+  }
+}, { threshold: [.51] });
+
+observer.observe(document.querySelector("#entrantes-row"));
+observer.observe(document.querySelector("#principales-row"));
+observer.observe(document.querySelector("#postres-row"));
+observer.observe(document.querySelector("#bebidas-row"));
 
 var isEmpty = function(){
   if (document.querySelector(".details")){
@@ -191,14 +214,11 @@ verMas.addEventListener("click", showDetails);
 close.addEventListener("click", hideDetails);
 
 window.onhashchange = function() {
-     console.log("window on hash change");
-     console.log(window.location.href.endsWith("#datos"));
      if(window.location.href.endsWith("#datos")){
       stepTwo();
      }else{
       stepOne();
      };
-
 }
 
 flatpickr(datepicker, {

@@ -1,0 +1,44 @@
+.tabs{
+  display:flex;
+  position: fixed;
+  top: 8rem;
+  height: 5rem;
+  overflow-x: auto;
+  z-index: 10000;
+  background-color: white;
+  min-width: 100%;
+
+  @include respond(nophone) {
+    display:none !important;
+  }
+}
+
+.tab{
+  padding: 2rem .3rem .5rem .3rem;
+  margin-left: 2rem;
+  font-size: 1.8rem;
+  color: black;
+  font-family: $body-font;
+  font-weight: 100;
+  text-transform: capitalize;
+
+  &:hover{
+    color: $yellow;
+  }
+
+  &--current{
+    border-bottom: 5px solid $yellow;
+    font-weight: 700;
+
+  }
+}
+
+#entrantes,
+#principales,
+#postres,
+#bebidas{
+  display: block;
+  position: relative;
+  top: -12rem;
+  visibility: hidden;
+}
