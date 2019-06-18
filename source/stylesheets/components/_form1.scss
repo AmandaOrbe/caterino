@@ -10,12 +10,12 @@
     // min-height:90vh;
     height: 60rem;
 
-    @include respond(phone) {
+    @include respond(portrait) {
       position: absolute;
-      height: 100%;
-    /* width: 100%; */
+      height: auto;
       margin: 0 auto;
-      left: 0px;
+      transform: translateX(-50%);
+      left: 50%;
     }
 
   }
@@ -30,6 +30,9 @@
     top: 0;
     padding-left: 1rem;
     padding-right: 1rem;
+    @include respond(portrait) {
+      transform: translateX(50%);
+    }
   }
 
   .platos{
@@ -41,6 +44,12 @@
     justify-content: space-around;
     p{
       margin: 0;
+      @include respond(portrait) {
+        margin: 1rem;
+      }
+    }
+    @include respond(portrait) {
+
     }
   }
 
