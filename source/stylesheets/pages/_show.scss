@@ -65,6 +65,10 @@
       width: 100rem;
       min-height: 60rem;
       left: calc((100vw - 105rem)/2);
+      @include respond(phone) {
+        width: 100vh;
+        left: 0;
+      }
     }
 
     &--divided{
@@ -79,6 +83,12 @@
   &__left{
     // height: 100%;
     width: 70rem;
+    @include respond(phone) {
+      height: 80vw;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
   }
 
   &__left--divided{
@@ -115,7 +125,9 @@
     padding-left: 1rem;
     padding-right: 1rem;
     @include respond(phone) {
-      display: none;
+      top: auto;
+      right: auto;
+      position: static;
     }
 
   }

@@ -20,6 +20,7 @@ var entrantesTab = document.getElementById("entrantes-tab");
 var principalesTab = document.getElementById("principales-tab");
 var postresTab = document.getElementById("postres-tab");
 var bebidasTab = document.getElementById("bebidas-tab");
+var tabs = document.querySelector(".tabs");
 
 var itemsObject= {}
 var totalsObject = {}
@@ -181,9 +182,12 @@ var stepOne = function () {
   ownMenu.classList.remove("hidden");
   datos.classList.add("hidden");
   confirmar.classList.add("hidden");
+  tabs.classList.remove("hidden");
   isEmpty();
 }
 var stepTwo = function (event) {
+  console.log("stepTwo")
+  tabs.classList.add("hidden");
   ownMenu.classList.add("hidden");
   datos.classList.remove("hidden");
   siguiente.classList.add("hidden");

@@ -9,6 +9,15 @@
   &__image{
     // min-height:90vh;
     height: 60rem;
+
+    @include respond(phone) {
+      position: absolute;
+      height: 100%;
+    /* width: 100%; */
+      margin: 0 auto;
+      left: 0px;
+    }
+
   }
 
   &__right{
