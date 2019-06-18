@@ -2,6 +2,10 @@
   position: relative;
   &--half{
     width: calc(100% - 33rem);
+    @include respond(portrait) {
+      width: 90%;
+      width: 90%;
+    }
   }
 
   &--full{
@@ -49,5 +53,8 @@
   &:focus{
     outline: none;
     border: 3px solid $yellow;
+  }
+  @include respond(portrait) {
+    margin-bottom: 20rem;
   }
 }

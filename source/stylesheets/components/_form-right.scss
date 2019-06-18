@@ -11,6 +11,10 @@
     margin-top: 0rem;
     margin-bottom: 1rem;
   }
+     @include respond(portrait) {
+        margin: 0 auto;
+        width: 80%;
+    }
 
   &__number{
     font-weight: 700;
@@ -35,6 +39,7 @@
   font-weight: 700;
   }
   @include respond(phone) {
+    padding-top: 0;
      border-top: none;
       width: 80%;
      margin: 1rem auto;
