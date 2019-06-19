@@ -96,6 +96,7 @@ var stepOne = function(event){
 var stepTwo = function (event) {
   f1.classList.add("hidden");
   f2.classList.remove("hidden");
+  f3.classList.add("hidden");
   step2.classList.remove("hidden");
   formRight.classList.remove("hidden");
   postreButton.classList.remove("hidden");

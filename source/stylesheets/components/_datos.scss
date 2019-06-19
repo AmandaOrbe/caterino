@@ -1,7 +1,7 @@
 .datos-form{
   position: relative;
   &--half{
-    width: calc(100% - 33rem);
+    width: 65%;
     @include respond(portrait) {
       width: 90%;
       width: 90%;

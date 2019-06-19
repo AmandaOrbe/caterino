@@ -1,0 +1,28 @@
+.footer{
+  width: 100%;
+
+  background-color: black;
+  padding: 5rem;
+  display: flex;
+  font-family: $body-font;
+  color: white;
+  font-weight: 700;
+  justify-content: space-between;
+  letter-spacing: 1px;
+  align-items: center;
+  @include respond(portrait) { // width < 1200
+      display: block;
+      height: auto;
+    }
+  &__left{
+    display: flex;
+    width: 20rem;
+    justify-content: space-between;
+  }
+  &__right{
+    text-align: right;
+    @include respond(portrait) { // width < 1200
+      text-align: center;
+    }
+  }
+}
