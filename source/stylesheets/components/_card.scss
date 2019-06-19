@@ -1,5 +1,5 @@
 .cards__row{
-   @include respond(portrait) { // width < 1200
+   @include respond(phone) { // width < 1200
       display: flex;
       overflow-x: auto;
     }

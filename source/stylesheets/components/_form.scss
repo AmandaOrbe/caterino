@@ -19,14 +19,17 @@
     height: 18rem;
     width: 20rem;
     position: relative;
-    border-radius: 2rem;
+    border-radius: 1rem;
     overflow: hidden;
     @include respond(portrait) {
+      border-radius: 1rem;
+      margin: 1.5rem;
       margin: 1rem;
      &:first-child{
       margin-left: 1.8rem;
      }
     }
+
 
 
     label{

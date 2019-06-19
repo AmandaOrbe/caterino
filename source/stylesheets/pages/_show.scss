@@ -4,6 +4,11 @@
   position: relative;
   max-width: 100%;
   overflow-x: hidden;
+  @include respond(portrait) {
+   min-height: auto;
+   height: auto;
+   position: static;
+  }
 
   h1{
     font-size: 3.6rem;
@@ -39,6 +44,9 @@
     transform: skewY(-6deg) translateY(-50%) translateX(-25%);
     border-radius: 119%;
     z-index: -1;
+     @include respond(portrait) {
+     display: none;
+  }
   }
 
   &__content{
@@ -67,11 +75,13 @@
       transform: translateX(-50%);
       @include respond(portrait) {
         // max-width: 100vh;
+        overflow: auto;
         width: 100vw;
         left: auto;
         transform: none;
         margin: 0 auto;
         box-shadow: none;
+        height: auto;
       }
     }
 
@@ -118,6 +128,7 @@
 
   }
 
+  &__form1,
   &__right{
     border-radius: 2rem;
     width: 30%;
@@ -128,6 +139,9 @@
     top: 0;
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  &__right{
     @include respond(portrait) {
       top: auto;
       right: auto;
@@ -144,7 +158,13 @@
             text-align: center;
       }
     }
+  }
 
+  &__form1{
+    @include respond(portrait) {
+      position: static;
+      height: auto;
+    }
   }
 
    &__right--own{

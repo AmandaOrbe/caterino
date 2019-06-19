@@ -3,7 +3,7 @@
   <div class="show__left show__frame">
     <%= image_tag menu.image, class: "form1__image" %>
   </div>
-  <div class="show__right">
+  <div class="show__right show__form1">
     <h1><%=menu.nombre.upcase  %></h1>
     <h2 id= "precio" class= "hidden" ><%=menu.precio %></h2>
     <h2  ><%=number_to_currency(menu.precio, unit: "€", separator: ",", delimiter: "", format: "%n %u")   %></h2>
