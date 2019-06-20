@@ -83,26 +83,26 @@ function siguienteShow(isHidden) {
   return (isEmpty ? siguiente.classList.remove("hidden") : console.log("siguienteShowNOTContains") );
 }
 
-var observer = new IntersectionObserver(function(entries) {
-  // isIntersecting is true when element and viewport are overlapping
-  // isIntersecting is false when element and viewport don't overlap
-  var element = entries[0].target.id.replace("-row", "")
-  var path = "#" + element;
-  var tab = document.getElementById(element+"-tab")
-  if(entries[0].isIntersecting === true){
-    // history.pushState({}, "", path)
-    tab.classList.add("tab--current");
+// var observer = new IntersectionObserver(function(entries) {
+//   // isIntersecting is true when element and viewport are overlapping
+//   // isIntersecting is false when element and viewport don't overlap
+//   var element = entries[0].target.id.replace("-row", "")
+//   var path = "#" + element;
+//   var tab = document.getElementById(element+"-tab")
+//   if(entries[0].isIntersecting === true){
+//     // history.pushState({}, "", path)
+//     tab.classList.add("tab--current");
 
-  }else{
-    tab.classList.remove("tab--current");
+//   }else{
+//     tab.classList.remove("tab--current");
 
-  }
-}, { threshold: [.51] });
+//   }
+// }, { threshold: [.51] });
 
-observer.observe(document.querySelector("#entrantes-row"));
-observer.observe(document.querySelector("#principales-row"));
-observer.observe(document.querySelector("#postres-row"));
-observer.observe(document.querySelector("#bebidas-row"));
+// observer.observe(document.querySelector("#entrantes-row"));
+// observer.observe(document.querySelector("#principales-row"));
+// observer.observe(document.querySelector("#postres-row"));
+// observer.observe(document.querySelector("#bebidas-row"));
 
 var isEmpty = function(){
   if (document.querySelector(".details")){

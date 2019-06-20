@@ -24,6 +24,8 @@
 
   &:hover{
     color: $yellow;
+    font-weight: 700;
+    border-bottom: 3px solid clack;
   }
 
   &--current{
