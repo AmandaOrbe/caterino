@@ -1,10 +1,10 @@
 .cards__row{
-   @include respond(phone) { // width < 1200
+   @include respond(phone) {
       display: flex;
       overflow-x: auto;
     }
   .col-xs-12 {
-     @include respond(portrait) { // width < 1200
+     @include respond(portrait) {
       padding: 0;
     }
   }
@@ -19,11 +19,11 @@
   padding: 0 2rem;
   position: relative;
   overflow: hidden;
-  @include respond(landscape) { // width < 1200
-    max-width: 90% !important; //1rem = 9px,  9/16 = 56,25%
+  @include respond(landscape) {
+    max-width: 90% !important;
   }
-  @include respond(portrait) { // width < 1200
-    margin: 1rem auto; //1rem = 9px,  9/16 = 56,25%
+  @include respond(portrait) {
+    margin: 1rem auto;
   }
 
 
@@ -32,6 +32,9 @@
     color: white;
     font-size: 3.6rem;
     font-weight: 800;
+    @include respond(phone) {
+      font-size: 3.4rem;
+    }
   }
 
   h4{
@@ -39,6 +42,9 @@
     font-size: 4.8rem;
     font-weight: 800;
     letter-spacing: -2px;
+    @include respond(phone) {
+      font-size: 3.8rem;
+    }
 
   }
 
