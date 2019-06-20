@@ -83,17 +83,20 @@ title: Welcome to Middleman
 <header class= "header2">
   <div class="header2__text">
     <h2 class= "header2__title"><%=t.encuentras  %></h2>
+    <br>
     <p class= "header2__subtitle"><%=t.selecciona  %></p>
+    <br>
     <button class="button button--black button--header" href="/own.html">
       <a href="/own.html" class= "header--link"><%=t.crea %></a>
     </button>
+    <br><br>
   </div>
   <div class="header2__frame">
     <%= image_tag "miniburgers.png", class: "header2__image" %>
   </div>
 </header>
 
-<section class="instructions">
+<section class="occasions">
   <div class="row">
       <% data.occasions.each do |occasion| %>
         <div class="col-xs- col-md-4">

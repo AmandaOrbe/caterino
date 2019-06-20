@@ -17,6 +17,9 @@
   a{
     padding: 1rem 6rem ;
     color:black;
+    @include respond(phone) {
+      padding: 1.5rem;
+    }
     &:active{
       color: black;
     }
@@ -42,6 +45,12 @@
     margin-top: 4rem;
     padding: 3rem;
     width: 40rem;
+    @include respond(phone) {
+     width: auto;
+     min-width: 80%;
+     padding: 1.5rem;
+     margin-top: 0;
+    }
   }
 
 

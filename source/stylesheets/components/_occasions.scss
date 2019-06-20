@@ -2,6 +2,9 @@
   padding: 3rem 9rem;
   max-width: 130rem;
   margin: 0 auto;
+    @include respond(portrait) {
+       display: none;
+      }
 
   &__card{
   width: 30rem;
@@ -10,6 +13,9 @@
   border-radius: 1rem;
   position: relative;
   margin: 0 auto;
+  @include respond(portrait) {
+       display: none;
+      }
   }
 
 
