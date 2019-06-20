@@ -87,6 +87,8 @@
   // text-align: center;
   border: none;
   border-bottom: 1px solid black;
+  border-radius: 0;
+  background-color: white;
   &:focus{
     border-bottom: 3px solid $yellow;
     outline:0;
