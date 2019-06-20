@@ -116,7 +116,7 @@ var stepThree = function (event) {
 
 var stepFour = function (event) {
   f3.classList.add("hidden");
-  console.log("stepFour");
+
   f4.classList.remove("hidden");
   bebidaButton.classList.add("hidden");
   datosButton.classList.remove("hidden");
@@ -155,17 +155,14 @@ var checkPostre = function(){
     } else if (postreRadio.checked && postreRadio.value === "no"){
       document.getElementById("order-line-2").classList.add("transparent");
     }
-    console.log("checkPostre, postre price= " + postrePrice  + " bebidaPrice = " + bebidaPrice)
     updateTotal(postrePrice, bebidaPrice);
   })
 }
 
-var logHello = function(){
-  console.log("hello");
-}
+
 
 var checkBebida = function(){
-  console.log(postrePrice)
+
   bebidaRadios.forEach(function(bebidaRadio){
     if (bebidaRadio.checked && bebidaRadio.value === "si"){
       document.getElementById("order-line-3").classList.remove("hidden");
@@ -176,7 +173,7 @@ var checkBebida = function(){
     } else if (bebidaRadio.checked && bebidaRadio.value === "no"){
       document.getElementById("order-line-3").classList.add("hidden");
       bebidaPrice = 0;
-      console.log("bebida-no")
+
     }
     updateTotal(postrePrice, bebidaPrice);
   })
