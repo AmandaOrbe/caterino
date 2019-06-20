@@ -11,6 +11,9 @@ body{
   @include respond(portrait) { // width < 1200
     padding: 2rem 6rem;
   }
+  @include respond(phone) { // width < 1200
+    padding: 2rem;
+  }
 }
 
 li{
