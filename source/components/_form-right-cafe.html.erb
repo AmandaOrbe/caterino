@@ -1,0 +1,19 @@
+<% t =  data.textos%>
+<div class="show__right hidden" id= "form-right">
+  <h2 class= "upcase margin-bottom-5 portrait-hidden"><%= t.order  %></h2>
+  <div class="details" id= "order-line-1">
+    <p><span id="order-line-1__number"></span> **** <%=  menu.nombre%></p>
+    <p id="order-line-1__total"></p>
+
+  </div>
+  <p> hello</p>
+  <div class="details" id= "order-line-total">
+    <p class="upcase" id= "order-total"><%= t.total%></p>
+    <p id="order-line-total__total"></p>
+  </div>
+
+
+  <div class="button hidden upcase" id= "button-datos" >
+    <%= submit_tag t.confirmar %>
+  </div>
+</div>

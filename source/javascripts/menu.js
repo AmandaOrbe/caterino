@@ -28,11 +28,16 @@ var postrePrice = 0
 var bebidaPrice = 0
 var menuTotal = menuPrice + postrePrice + bebidaPrice
 var orderTotal = document.getElementById("order-line-total__total");
+var menuName = document.getElementById("menu-name").innerText;
 var menuNumberLine1 = document.getElementById("order-line-1__number");
 var menuTotalLine1 = document.getElementById("order-line-1__total");
 var noBebida = document.getElementById("no-bebida-radio");
 var siBebida = document.getElementById("si-bebida-radio");
 var datepicker = document.getElementById("datepicker");
+var menusField = document.getElementById("menus-field");
+var postresField = document.getElementById("postres-field");
+var totalField = document.getElementById("total-field");
+var postreSelected = document.getElementById("order-postre").innerHTML
 
 
 var minimoVisible = function( event){
@@ -78,6 +83,8 @@ var updateStepOnePrice = function(){
     orderTotal.innerHTML = menuTotal;
     menuNumberLine1.innerHTML = dinersNumber;
     menuTotalLine1.innerHTML = menuPrice;
+    menusField.value = dinersNumber + " * " + menuName + " = " + menuPrice + "€";
+
   } else {
     price.innerHTML = "Total " + minPrice + " €";
   }
@@ -120,6 +127,7 @@ var stepFour = function (event) {
   f4.classList.remove("hidden");
   bebidaButton.classList.add("hidden");
   datosButton.classList.remove("hidden");
+
   // window.location = "#datos";
 }
 
@@ -141,6 +149,7 @@ var locateUrl = function(){
 var updateTotal = function(postrePrice, bebidaPrice){
   menuTotal = menuPrice + postrePrice + bebidaPrice
   orderTotal.innerHTML = menuTotal + " €"
+  totalField.value = + menuTotal + "€";
 }
 
 var checkPostre = function(){
@@ -149,9 +158,10 @@ var checkPostre = function(){
       var checkedPostre = postreRadio.value;
       document.getElementById("order-line-2").classList.remove("transparent");
       document.getElementById("order-line-2__number").innerHTML = dinersNumber;
-      document.getElementById("order-postre").innerHTML = checkedPostre;
+      postreSelected = checkedPostre;
       document.getElementById("order-line-2__total").innerHTML = dinersNumber + " €";
       postrePrice = dinersNumber;
+      postresField.value = dinersNumber + " * " + postreSelected + " = " + dinersNumber * "€";
     } else if (postreRadio.checked && postreRadio.value === "no"){
       document.getElementById("order-line-2").classList.add("transparent");
     }
