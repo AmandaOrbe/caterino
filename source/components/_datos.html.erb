@@ -21,13 +21,13 @@
       <div class="row">
         <div class="col-xs-12 col-md-6">
           <div class="datos-form__group">
-            <%= email_field_tag :email , :class => 'datos-form__input'%>
+            <%= email_field_tag :email , :class => 'datos-form__input', required: true %>
             <%= label_tag t.email, :class => 'datos-form__label' %>
           </div>
         </div>
         <div class="col-xs-12 col-md-6">
           <div class="datos-form__group">
-            <%= text_field_tag :telefono , :class => 'datos-form__input'%>
+            <%= text_field_tag :telefono , :class => 'datos-form__input', required: true %>
             <%= label_tag t.telefono, :class => 'datos-form__label' %>
           </div>
         </div>

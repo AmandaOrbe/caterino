@@ -6,7 +6,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    autoprefixer-rails (9.5.1.1)
+    autoprefixer-rails (9.6.1)
       execjs
     bootstrap-sass (3.4.1)
       autoprefixer-rails (>= 5.2.1)
@@ -42,10 +42,10 @@ GEM
     erubis (2.7.0)
     eventmachine (1.2.7)
     execjs (2.7.0)
-    ffi (1.10.0)
-    font-awesome-sass (5.8.1)
+    ffi (1.11.1)
+    font-awesome-sass (5.9.0)
       sassc (>= 1.11)
-    haml (5.1.0)
+    haml (5.1.1)
       temple (>= 0.8.0)
       tilt
     hike (1.2.3)
