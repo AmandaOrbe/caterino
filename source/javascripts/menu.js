@@ -38,6 +38,7 @@ var menusField = document.getElementById("menus-field");
 var postresField = document.getElementById("postres-field");
 var totalField = document.getElementById("total-field");
 var postreSelected = document.getElementById("order-postre").innerHTML
+var bebidaWarning = document.getElementById("bebida-warning")
 
 
 var minimoVisible = function( event){
@@ -158,7 +159,7 @@ var checkPostre = function(){
       var checkedPostre = postreRadio.value;
       document.getElementById("order-line-2").classList.remove("transparent");
       document.getElementById("order-line-2__number").innerHTML = dinersNumber;
-      postreSelected = checkedPostre;
+      document.getElementById("order-postre").innerHTML = checkedPostre;
       document.getElementById("order-line-2__total").innerHTML = dinersNumber + " €";
       postrePrice = dinersNumber;
       postresField.value = dinersNumber + " * " + postreSelected + " = " + dinersNumber * "€";
@@ -175,17 +176,11 @@ var checkBebida = function(){
 
   bebidaRadios.forEach(function(bebidaRadio){
     if (bebidaRadio.checked && bebidaRadio.value === "si"){
-      document.getElementById("order-line-3").classList.remove("hidden");
-      document.getElementById("order-line-3__number").innerHTML = dinersNumber;
-      document.getElementById("order-bebida").innerHTML = "bebida";
-      document.getElementById("order-line-3__total").innerHTML = dinersNumber * 3+ " €";
-      bebidaPrice = 3 * dinersNumber;
+      bebidaWarning.classList.remove("hidden");
+      console.log("checkbebida");
     } else if (bebidaRadio.checked && bebidaRadio.value === "no"){
-      document.getElementById("order-line-3").classList.add("hidden");
-      bebidaPrice = 0;
-
+      bebidaWarning.classList.add("hidden");
     }
-    updateTotal(postrePrice, bebidaPrice);
   })
 }
 
