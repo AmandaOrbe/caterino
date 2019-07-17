@@ -3,7 +3,7 @@
   max-width: 100%;
   overflow-x: hidden;
   position: relative;
-  scroll-behavior: smooth;
+
 
   @include respond(portrait) {
    min-height: auto;
@@ -89,6 +89,7 @@
     right: 0;
     top: 0;
     padding: 6rem;
+    box-shadow: $box-shadow;
 
 
     @include respond(portrait) {
