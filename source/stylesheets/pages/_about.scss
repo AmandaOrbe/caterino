@@ -1,33 +1,132 @@
-#about {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
-  background-image: linear-gradient(0deg, white 50%, #F4F4F4 50%);
-  img {
-    width: 150px;
-    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+.about{
+  color: black;
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  scroll-behavior: smooth;
+
+  @include respond(portrait) {
+   min-height: auto;
+   height: auto;
+   position: static;
   }
-  h1 {
-    font-size: 30px;
-    font-weight: bolder;
-    margin-bottom: 30px;
-    margin-top: 0px;
-    color: rgba(0,0,0,0.7);
+
+  h1{
+    font-size: 3.6rem;
+    font-weight: 900;
+    color: black;
+    letter-spacing: -2px;
   }
-  h2 {
-    font-size: 17px;
-    font-weight: bold;
-    color: rgba(0,0,0,0.6);
+
+  h2{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: $black;
   }
-  a {
-    color: rgba(0,0,0,0.25);
-    font-weight: bold;
-    letter-spacing: -0.5px;
-    font-size: 15px;
+
+  h4{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: black;
+    text-transform: capitalize;
+    margin-top: 0;
   }
-  .fa-heart {
-    color: #D23333;
+
+  p{
+    font-size: 1.4rem;
+    font-weight: 100;
+    color: black;
   }
+
+  &__background{
+    background-color: $yellow;
+    height: 1000px;
+    width: 200vw;
+    transform: skewY(-6deg) translateY(-50%) translateX(-25%);
+    border-radius: 119%;
+    z-index: -1;
+     @include respond(portrait) {
+     display: none;
+    }
+  }
+
+  &__content{
+    width: 80%;
+    display: flex;
+    position: absolute;
+    top: 10rem;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+
+  }
+  &__left{
+    position: absolute;
+    background-color: white;
+    box-shadow: $box-shadow;
+    border-radius: 2rem;
+    width: 30%;
+    background-color: white;
+    left: 0;
+    top: 0;
+    padding: 5rem;
+    @include respond(portrait) {
+      width: 80%;
+    }
+    @include respond(phone) {
+      width: 100%;
+      border-radius: 0;
+      padding: 0;
+      padding-left: 0 !important;
+    }
+  }
+
+  &__right{
+    border-radius: 2rem;
+    width: 65%;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 6rem;
+
+
+    @include respond(portrait) {
+      top: auto;
+      right: auto;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      height: auto;
+      box-shadow:$box-shadow;
+      border-radius: 0;
+      padding: 1rem 0;
+    }
+  }
+
+  &__line {
+    padding: 2rem 0;
+    border-bottom: 1px solid $gray;
+    &:last-child{
+      border-bottom: none;
+    }
+    a{
+      font-family: $body-font;
+      text-decoration: none;
+      color: black;
+      &:hover{
+        color: $yellow;
+      }
+    }
+  }
+
+  .QA{
+    margin-top: -10rem;
+    margin-bottom: 10rem;
+    &__content{
+      transform: translateY(10rem);
+    }
+  }
+
 }
+

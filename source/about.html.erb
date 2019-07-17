@@ -1,12 +1,24 @@
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<p>about</p>
-<h2>hello</h2>
+<div class="about">
+  <div class="about__background">
+  </div>
+  <div class="about__content">
+    <div class="about__left">
+      <% data.about.each do |about_line| %>
+        <div class="about__line">
+          <%= link_to about_line.question, "##{about_line.slug}"%>
+        </div>
+      <% end %>
+    </div>
+    <div class="about__right">
+      <% data.about.each do |about| %>
+        <div class="QA" id= <%= about.slug   %>>
+          <div class="QA__content">
+            <h2 ><%=about.question  %></h2>
+            <p><%=about.answer %></p>
+            <br>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
