@@ -11,9 +11,7 @@ data.menus.estrellas.each do |menu|
   lista_menus << menu.slug
 end
 
-data.menus.arroces.each do |menu|
-  lista_menus << menu.slug
-end
+
 
 lista_menus.each do |menu|
   proxy "/#{menu}.html", "/menu.html", :locals => { :menu => menu },  ignore: true
@@ -34,6 +32,10 @@ lista_cafes = []
 
 data.menus.coffees.each do |cafe|
   lista_cafes << cafe.slug
+end
+
+data.menus.pasteles.each do |pastel|
+  lista_cafes << pastel.slug
 end
 
 lista_cafes.each do |cafe|

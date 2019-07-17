@@ -37,7 +37,7 @@ si_bebida: Sí, quiero bebida
 datos: tus datos
 algo_mas: Algo más que debamos saber?
 estrellas: Nuestras estrellas
-arrocitos: Arrocitos
+pasteles: Pasteles
 coffee_breaks: Coffee Breaks
 encuentras: ¿No encuentras lo que buscas?
 selecciona: Selecciona los platos que quieres y hazte un menú a medida
@@ -50,3 +50,8 @@ principales: principales
 postres: postres
 bebidas: bebidas
 ver_mas: Ver artículos de la cesta y precios
+portes: Portes incluidos en la ciudad de Barcelona.
+iva: (IVA incluido)
+bebida_warning1:  Disponemos de agua, refrescos, latas de cerveza, vino tinto, vino blanco y cava.
+bebida_warning2:  Nos pondremos en contacto contigo para seleccionar las bebidas.
+como_funciona: como funciona

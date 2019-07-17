@@ -78,38 +78,33 @@ coffees:
       - Dados de brownie
       - Tarta de santiago
       - Brochetas de frutas naturales
-arroces:
-  - nombre: "Paella Mixta"
+pasteles:
+  - nombre: "Tarta limon"
     precio: 9.35
-    slug: paella-mixta
-    image: paella.jpg
+    slug: tarta-limon
+    image: tarta-limon.jpg
     platos:
-      - Calamar
-      - pollo
-      - ternera
-      - gambas
-      - alcachofas
-      - guisantes
-  - nombre: "Paella de pescado"
+      - base de galleta
+      - crema de limón
+      - merengue flameado
+  - nombre: "Tiramisu"
+    precio: 7.50
+    slug: tiramisu
+    image: tiramisu.jpg
+    platos:
+      - bizcocho
+      - café
+      - marcapone
+      - cacao
+  - nombre: "Milhojas de Crema"
     precio: 9.35
-    slug: paella-pescado
-    image: paella.jpg
+    slug: milhojas-crema
+    image: milhojas.jpg
     platos:
-      - Calamar
-      - Merluza
-      - gambas
-      - alcachofas
-      - guisantes
+      - hojaldre
+      - crema
+      - azúcar glas
 
-  - nombre: "Paella de Carne"
-    precio: 9.35
-    slug: paella-carne
-    image: paella.jpg
-    platos:
-      - pollo
-      - ternera
-      - alcachofas
-      - guisantes
 
 
 

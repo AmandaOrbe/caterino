@@ -11,7 +11,11 @@
       <div class="option-label">
         <%= radio_button_tag  :bebida, :value => "si" , :id => "si-bebida-radio"%>
         <label for="si-bebida-radio" class= 'option-label__text'><span class="form__radio-circle"></span><%= t.si_bebida %></label>
-        <p class="hidden " id= "bebida-warning"> Nos pondremos en contacto contigo para seleccionar las bebidas </p>
+        <div class="hidden padding-left-3" id= "bebida-warning">
+          <p><%= t.bebida_warning1  %></p>
+          <p><%= t.bebida_warning2  %></p>
+        </div>
+
       </div>
 
 

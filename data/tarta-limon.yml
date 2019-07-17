@@ -1,0 +1,8 @@
+nombre: "Tarta limon"
+precio: 9.35
+slug: tarta-limon
+image: tarta-limon.jpg
+platos:
+  - base de galleta
+  - crema de limón
+  - merengue flameado

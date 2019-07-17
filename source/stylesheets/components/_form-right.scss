@@ -3,6 +3,7 @@
 #order-line-2,
 #order-line-3,
 #order-line-4,
+.portes,
 #order-line-total {
   margin: 1rem 2rem;
   display: flex;
@@ -77,7 +78,9 @@
 }
 
 
-
+.iva{
+  font-weight: 100 !important;
+}
 
 #order-items-right{
   position: relative;
