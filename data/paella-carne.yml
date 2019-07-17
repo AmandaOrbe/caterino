@@ -1,9 +1,0 @@
-nombre: "Paella de Carne"
-precio: 9.35
-slug: paella-carne
-image: paellaflat.jpg
-platos:
-  - pollo
-  - ternera
-  - alcachofas
-  - guisantes

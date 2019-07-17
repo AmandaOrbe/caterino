@@ -1,0 +1,10 @@
+
+nombre: "Tiramisu"
+precio: 7.50
+slug: tiramisu
+image: tiramisu.jpg
+platos:
+  - bizcocho
+  - café
+  - marcapone
+  - cacao

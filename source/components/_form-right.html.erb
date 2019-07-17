@@ -15,9 +15,14 @@
       <%= text_field_tag :postres , :class => 'hidden-form__input', :id => "postres-field", required: true %>
     </div>
   </div>
+  <div class="details portes" >
+    <p ><i><%=t.portes  %></i></p>
+
+
+  </div>
 
   <div class="details" id= "order-line-total">
-    <p class="upcase" id= "order-total"><%= t.total%></p>
+    <p ><span class="upcase" id= "order-total"> <%= t.total%></span>  <span class="iva"><i><%=t.iva  %></i></span></p>
     <p id="order-line-total__total"></p>
     <div class="hidden-form__group hidden">
       <%= text_field_tag :total , :class => 'hidden-form__input', :id => "total-field", required: true %>

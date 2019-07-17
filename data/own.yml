@@ -87,6 +87,6 @@ bebidas:
     name:  vino blanco verdejo
     price: 4.9
   cava:
-    name: brut nature
+    name: cava brut nature
     price: 5.5
 
