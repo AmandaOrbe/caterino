@@ -7,3 +7,9 @@
 - question: Qué tengo que hacer para pedir en Caterino
   answer: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi vero repudiandae, fugiat deleniti sit perferendis, autem, ab magnam architecto ad tempora. Libero unde vero nostrum veniam repudiandae dolor, consectetur officiis?
   slug: como-pedir
+- question: ¿Puedo alquilar menage?
+  answer: "Por supuesto, ponemos a su disposición todo lo que pueda necesitar para que su evento sea perfecto: manteles, vasos, mesas, etc. Pónganse en constacto con nosotros para más detalles"
+  slug: menaje
+- question: ¿Alquiláis salas?
+  answer: "Nosotros no, pero puedes encontras salas en http://www.alteuaire.es/es/"
+  slug: menaje
