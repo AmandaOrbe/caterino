@@ -98,7 +98,7 @@ pasteles:
       - cacao
   - nombre: "Milhojas de Crema"
     precio: 9.35
-    slug: milhojas-crema
+    slug: milhojas
     image: milhojas.jpg
     platos:
       - hojaldre
