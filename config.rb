@@ -3,7 +3,7 @@ activate :autoprefixer do |prefix|
 end
 
 # Assumes the file source/about/template.html.erb exists
-
+activate :directory_indexes
 
 lista_menus = []
 
