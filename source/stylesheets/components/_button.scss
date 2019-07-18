@@ -42,8 +42,8 @@
   }
 
   &--header{
-    margin-top: 4rem;
-    padding: 3rem;
+    margin-top: 6vh;
+    padding: 4vh;
     width: 40rem;
     @include respond(phone) {
      width: auto;

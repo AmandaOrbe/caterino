@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   padding: 6rem;
-  padding-top: 14rem;
+  padding-top:  27vh;
   position: relative;
 
   @include respond(portrait) {
@@ -17,7 +17,7 @@
   }
 
   h1{
-  font-size: 6rem;
+  font-size: 10vh;
   font-weight: 700;
   color: black;
     @include respond(phone) {
@@ -26,7 +26,7 @@
   }
 
   h2{
-    font-size: 2.8rem;
+    font-size: 4vh;
     font-weight: 300;
     color: black;
     @include respond(phone) {
@@ -47,8 +47,10 @@
 
   &__image{
     position: absolute;
-    right: 0;
+    right: 10%;
     width: 55rem;
+    max-width: 66vh;
+
     @include respond(portrait) {
      width: 57%;
     right: auto;
