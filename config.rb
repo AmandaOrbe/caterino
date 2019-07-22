@@ -34,15 +34,27 @@ data.menus.coffees.each do |cafe|
   lista_cafes << cafe.slug
 end
 
-data.menus.pasteles.each do |pastel|
-  lista_cafes << pastel.slug
-end
-
 lista_cafes.each do |cafe|
   proxy "/#{cafe}.html", "/cafe.html", :locals => { :cafe => cafe },  ignore: true
 end
 
+lista_pasteles = []
 
+data.pasteles.pasteles.each do |pastel|
+  lista_pasteles << pastel.slug
+end
+
+data.pasteles.mini_pasteles.each do |pastel|
+  lista_pasteles << pastel.slug
+end
+
+data.pasteles.fechas_especiales.each do |pastel|
+  lista_pasteles << pastel.slug
+end
+
+lista_pasteles.each do |pastel|
+  proxy "/#{pastel}.html", "/pastel.html", :locals => { :pastel => pastel },  ignore: true
+end
 
 activate :sprockets
 
