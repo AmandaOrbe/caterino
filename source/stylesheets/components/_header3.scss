@@ -1,0 +1,52 @@
+.header3{
+  height: 40rem;
+  box-shadow: $box-shadow;
+  border-radius: 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem;
+  position: relative;
+  margin: 0 auto;
+  @include respond(phone) {
+    display: block;
+    padding: 3rem;
+    height: auto;
+  }
+
+
+  h3{
+    color: white;
+    font-size: 3.6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    @include respond(phone) {
+      font-size: 3.4rem;
+    }
+  }
+
+  h4{
+    color: $yellow;
+    font-size: 2.8rem;
+    font-weight: 800;
+    @include respond(phone) {
+      font-size: 3.8rem;
+    }
+  }
+
+  &__frame{
+    width: 50%;
+    position: relative;
+  }
+  &__image{
+    position: absolute;
+    width: 100%;
+
+  @include respond(portrait) {
+   display: none;
+  }
+  }
+
+
+}

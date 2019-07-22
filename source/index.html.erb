@@ -1,5 +1,5 @@
 ---
-title: Welcome to Middleman
+title: Caterino: el Catering más barato de Barcelona!
 ---
 <% t =  data.textos%>
 <header class= "header1">
@@ -35,6 +35,7 @@ title: Welcome to Middleman
     <div class="row cards__row">
       <% data.menus.estrellas.each do |menu| %>
         <div class="col-xs-12 col-sm-6  col-md-4">
+         <h3><%= menu.image  %></h3>
           <li>
             <%= partial(:'components/card', :locals => {
               :title => menu.nombre,
@@ -82,6 +83,21 @@ title: Welcome to Middleman
       <% end %>
     </div>
   </div>
+
+
+  <h3 class= "category-title"><%= t.pasteles %></h3>
+  <% link_to "/pasteles.html" do %>
+    <header class= "header3" style="background-image: linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.5) 50%), url('images/framboisier.jpg')">
+      <div class="header3__text">
+        <h3 class= "header3__title"><%=t.pasteles_banner %></h3>
+        <br>
+        <h4 class= "header3__subtitle"><%=t.pasteles_banner2  %></h4>
+        <h4 class= "header3__subtitle"><%=t.pasteles_banner3  %></h4>
+        <br>
+        <br><br>
+      </div>
+    </header>
+  <%end  %>
 
 </section>
 <header class= "header2">

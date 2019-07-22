@@ -1,0 +1,21 @@
+<% t =  data.textos%>
+<section class="content">
+  <div class="cards" id="menu-cards">
+    <h3 class= "category-title"><%= t.estrellas %></h3>
+    <div class="row cards__row">
+      <% data.menus.pasteles.each do |menu| %>
+        <div class="col-xs-12 col-sm-6  col-md-4">
+          <h3><%= menu.image  %></h3>
+          <li>
+            <%= partial(:'components/card', :locals => {
+              :title => menu.nombre,
+              :precio => menu.precio,
+              :image => menu.image,
+              :platos => menu.platos,
+              :slug => menu.slug }) %>
+          </li>
+         </div>
+      <% end %>
+    </div>
+  </div>
+</section>
