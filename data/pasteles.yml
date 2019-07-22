@@ -1,0 +1,81 @@
+pasteles:
+  - nombre: "Tarta limon"
+    precio: 9.35
+    slug: tarta-limon
+    image: tarta-limon.jpg
+    platos:
+      - base de galleta
+      - crema de limón
+      - merengue flameado
+  - nombre: "Tiramisu"
+    precio: 7.50
+    slug: tiramisu
+    image: tiramisu.jpg
+    platos:
+      - bizcocho
+      - café
+      - marcapone
+      - cacao
+  - nombre: "Milhojas de Crema"
+    precio: 9.35
+    slug: milhojas
+    image: milhojas.jpg
+    platos:
+      - hojaldre
+      - crema
+      - azúcar glas
+
+mini_pasteles:
+  - nombre: "Tarta limon"
+    precio: 9.35
+    slug: tarta-limon
+    image: tarta-limon.jpg
+    platos:
+      - base de galleta
+      - crema de limón
+      - merengue flameado
+  - nombre: "Tiramisu"
+    precio: 7.50
+    slug: tiramisu
+    image: tiramisu.jpg
+    platos:
+      - bizcocho
+      - café
+      - marcapone
+      - cacao
+  - nombre: "Milhojas de Crema"
+    precio: 9.35
+    slug: milhojas
+    image: milhojas.jpg
+    platos:
+      - hojaldre
+      - crema
+      - azúcar glas
+
+fechas_especiales:
+  - nombre: "Tarta limon"
+    precio: 9.35
+    slug: tarta-limon
+    image: tarta-limon.jpg
+    platos:
+      - base de galleta
+      - crema de limón
+      - merengue flameado
+  - nombre: "Tiramisu"
+    precio: 7.50
+    slug: tiramisu
+    image: tiramisu.jpg
+    platos:
+      - bizcocho
+      - café
+      - marcapone
+      - cacao
+  - nombre: "Milhojas de Crema"
+    precio: 9.35
+    slug: milhojas
+    image: milhojas.jpg
+    platos:
+      - hojaldre
+      - crema
+      - azúcar glas
+
