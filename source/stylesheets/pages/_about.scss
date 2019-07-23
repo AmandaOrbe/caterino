@@ -5,11 +5,6 @@
   position: relative;
 
 
-  @include respond(portrait) {
-   min-height: auto;
-   height: auto;
-   position: static;
-  }
 
   h1{
     font-size: 3.6rem;
@@ -45,9 +40,7 @@
     transform: skewY(-6deg) translateY(-50%) translateX(-25%);
     border-radius: 119%;
     z-index: -1;
-     @include respond(portrait) {
-     display: none;
-    }
+
   }
 
   &__content{
@@ -58,6 +51,12 @@
     margin: 0 auto;
     left: 50%;
     transform: translateX(-50%);
+    @include respond(portrait) {
+      width: 95%;
+    }
+    @include respond(phone) {
+      display: block;
+    }
 
   }
   &__left{
@@ -71,15 +70,14 @@
     top: 0;
     padding: 5rem;
     @include respond(portrait) {
-      width: 80%;
+      padding: 2rem;
     }
     @include respond(phone) {
+      position: unset;
       width: 100%;
-      border-radius: 0;
-      padding: 0;
-      padding-left: 0 !important;
     }
   }
+
 
   &__right{
     border-radius: 2rem;
@@ -90,18 +88,10 @@
     top: 0;
     padding: 6rem;
     box-shadow: $box-shadow;
-
-
-    @include respond(portrait) {
-      top: auto;
-      right: auto;
-      position: fixed;
+    @include respond(phone) {
+      position: unset;
+      margin-top: 3rem;
       width: 100%;
-      bottom: 0;
-      height: auto;
-      box-shadow:$box-shadow;
-      border-radius: 0;
-      padding: 1rem 0;
     }
   }
 
@@ -128,6 +118,5 @@
       transform: translateY(10rem);
     }
   }
-
 }
 

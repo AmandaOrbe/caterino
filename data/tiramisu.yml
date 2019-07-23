@@ -8,4 +8,4 @@ platos:
   - café
   - marcapone
   - cacao
-cantidades: [15,30,45,60]
+formatos: [15,30,45,60]
