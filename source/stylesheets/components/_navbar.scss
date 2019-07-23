@@ -77,6 +77,10 @@
     font-size: large;
     margin-top: 1rem;
     padding-bottom: .5rem;
+    @include respond(phone) {
+      display: none;
+    }
+
 
     &:hover{
       border-bottom: 1px solid black;

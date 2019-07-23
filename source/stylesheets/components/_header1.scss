@@ -12,9 +12,36 @@
    display: block;
   }
 
-  &__text{
 
+  @include respond(onlysmallphone) {
+   padding-top: 14vh;
   }
+  @include respond(phone) {
+   padding-top: 20vh;
+  }
+
+  &__link{
+    display:none;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Work Sans", "sans-serif";
+    font-weight: 900;
+    font-size: small;
+    position: absolute;
+    right: 2rem;
+    top: 5rem;
+    &:hover{
+      border-bottom: 1px solid black;
+      color: black;
+    }
+
+    @include respond(phone) {
+      display: block;
+    }
+  }
+
+
 
   h1{
   font-size: 10vh;
@@ -41,6 +68,9 @@
     @include respond(portrait) {
      height: 50%;
     }
+    @include respond(phone) {
+     height: 50%;
+    }
 
 
   }
@@ -59,7 +89,6 @@
     transform: translate(-31%, -50%);
     max-width: 32rem;
     }
-
   }
 
 

@@ -6,4 +6,4 @@ platos:
   - base de galleta
   - crema de limón
   - merengue flameado
-cantidades: [15,30,45,60]
+formatos: [15,30,45,60]
