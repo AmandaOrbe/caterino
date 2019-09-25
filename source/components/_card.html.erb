@@ -1,18 +1,16 @@
 
 
 <% link_to "/#{slug}.html" do %>
-  <div class="card" id= "<%=slug%>" style="background-image: linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.1) 50%), url('../images/<%=image%>')">
+  <div class="card" id= "<%=slug%>" >
       <div class="card__header">
         <h3><%= title.upcase  %></h3>
         <h4><%= number_to_currency(precio, unit: "€", separator: ",", delimiter: "", format: "%n %u")  %></h4>
-      </div>
-      <div class="card__content">
-        <div class="text">
-        <% platos.each do |plato| %>
-            <p><%= plato %></p>
-        <% end %>
+        <div class="card__frame">
+          <%=image_tag image , class: 'card__image'  %>
         </div>
-      </div>
 
+
+      </div>
+      <p class= "card__description"> <%= platos  %></p>
 
 <% end %>
