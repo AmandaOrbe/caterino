@@ -1,0 +1,10 @@
+nombre: "Menú oriental"
+precio: 10.50
+slug: menu-oriental
+image: oriental.jpg
+platos:
+  - Gyozas de verduras
+  - Brocheta Teriyaqui
+  - Sushi
+  - Rollito primavera
+  - Wok de fideos chinos con pollo

@@ -35,6 +35,9 @@
     font-size: 1.4rem;
     font-weight: 100;
     color: black;
+    @include respond(portrait) {
+     font-size: 1.6rem;
+    }
   }
 
   &__background{
@@ -70,6 +73,7 @@
       overflow: hidden;
       // max-width: 100rem;
       width: 95vw;
+      max-width: 111rem;
       min-height: 60rem;
       left: 50%;
       transform: translateX(-50%);
@@ -98,7 +102,7 @@
     // height: 100%;
     width: 70rem;
     @include respond(portrait) {
-      height: 40vw;
+      height: 60vw;
       width: 100%;
       overflow: hidden;
       position: relative;

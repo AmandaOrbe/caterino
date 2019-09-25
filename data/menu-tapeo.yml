@@ -1,10 +1,10 @@
-nombre: "Menu Tapeo"
+nombre: "Menú Tapeo"
 precio: 8.50
 slug: menu-tapeo
-image: PANSCOMPANYflat.jpg
+image: tapeo2.jpg
 platos:
-  - Alitas de Pollo,
-  - Fingers de queso,
-  - Nuggets,
-  - Nachos Tex Mex,
-  - Aros de Cebolla
+  - Tortilla de patatas
+  - croquetas de jamón ibérico
+  - Mini bocadillo de jamón york y queso de cabra
+  - Pintxo donostiarra (cangrejo, olivas y anchoa)
+  - Empanada gallega de atún

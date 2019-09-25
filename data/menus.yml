@@ -1,52 +1,89 @@
 estrellas:
-  - nombre: "Menu Tapeo"
+  - nombre: "Menú Tapeo"
     precio: 8.50
     slug: menu-tapeo
-    image: croquetas.jpg
+    image: tapeovertical.jpg
     platos:
       - Tortilla de patatas
-      - mini hamburguesa
-      - croquetas de setas
-      - croquetas de jamón
-      - ensaladilla rusa
-      - brochetas de tomate cherry
-  - nombre: "Menu Argentino"
-    precio: 9.50
-    slug: menu-argentino
-    image: empanadas.jpg
-    platos:
-      - empanada de carne
-      - empanada de pollo al curry
-      - empanada de jamón y queso
-      - empanada de atún
-      - empanada de queso seco, albaca y mozzarella
-  - nombre: "Menu vegetariano"
-    precio: 9.50
-    slug: menu-vegetariano
-    image: healthy.jpg
-    platos:
-      - tortilla de espinacas, escalivada y piñones.
-      - mini bocadillo vegetal.
-      - empanada de queso y cebolla (tipo argentinas)
-      - croqueta de verduras
-      - degustación de rissoto
+      - croquetas de jamón ibérico
+      - Mini bocadillo de jamón york y queso de cabra
+      - Pintxo donostiarra (cangrejo, olivas y anchoa)
+      - Empanada gallega de atún
 
+  - nombre: "Menú Mediterráneo"
+    precio: 10.50
+    slug: menu-mediterraneo
+    image: mediterraneovertical.jpg
+    platos:
+      - Fideuá
+      - Mini burger con queso y cebolla
+      - Brochetas de tomate cherry y mozzarella
+      - Ensaladilla rusa
+      - Delicias de olivada
 
-  - nombre: "Menu infantil"
+  - nombre: "Menú  de gala"
+    precio: 15
+    slug: menu-gala
+    image: galavertical.jpg
+    platos:
+      - canapés variados
+      - Embutidos ibéricos
+      - Quesos
+      - Pan de coca con tomate
+      - rissoto de setas y espárragos
+      - saquitos rellenos de champiñones
+      - Crujientes de langostino
+      - Brochetas de gambas
+      - Vichyssoisse o Gazpacho
+
+  - nombre: "Menú infantil"
     precio: 7
     slug: menu-infantil
-    image: alitas.jpg
+    image: infantilvertical.jpg
     platos:
       - mini hamburguesa o mini franfurt
       - nuguets de pollo
       - mini croquetas
       - tacos de pizza
 
+  - nombre: "Menú vegetariano"
+    precio: 10.50
+    slug: menu-vegetariano
+    image: vegetarianovertical.jpg
+    platos:
+      - tortilla de espinacas, escalivada y piñones
+      - mini bocadillo vegetal.
+      - empanada argentina de queso y cebolla
+      - croquetas de verduras
+      - risotto de setas
+
+  - nombre: "Menú argentino"
+    precio: 10.50
+    slug: menu-argentino
+    image: empanadasvertical.jpg
+    platos:
+      - empanada de carne
+      - empanada de pollo al curry
+      - empanada de jamón y queso
+      - empanada de atún
+      - empanada de queso seco, albaca y mozzarella
+
+  - nombre: "Menú oriental"
+    precio: 10.50
+    slug: menu-oriental
+    image: orientalvertical.jpg
+    platos:
+      - Gyozas de verduras
+      - Brocheta Teriyaqui
+      - Sushi
+      - Rollito primavera
+      - Wok de fideos chinos con pollo
+
 coffees:
   - nombre: "Coffee break 1"
-    precio: 6.50
+    precio: 7
     slug: coffee-break-1
-    image: chocolate.jpg
+    image: coffeebreak1vertical.jpg
     platos:
       - Café
       - Leche
@@ -56,9 +93,9 @@ coffees:
       - Mini madalenas
 
   - nombre: "Coffee break 2"
-    precio: 8.50
+    precio: 9.50
     slug: coffee-break-2
-    image: chocolate.jpg
+    image: coffeebreak2vertical.jpg
     platos:
       - Café, Infusiones, Leche
       - Agua mineral
@@ -67,9 +104,9 @@ coffees:
       - Mini bocadillo de queso manchego
 
   - nombre: "Coffee break 3"
-    precio: 11.50
+    precio: 12.50
     slug: coffee-break-3
-    image: chocolate.jpg
+    image: coffeebreak3vertical.jpg
     platos:
       - Café, Infusiones, Leche
       - Agua mineral

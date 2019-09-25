@@ -1,7 +1,7 @@
 nombre: "Menu vegetariano"
 precio: 9.50
 slug: menu-vegetariano
-image: healthyflat.jpg
+image: vegetariano.jpg
 platos:
   - tortilla de espinacas, escalivada y piñones.
   - mini bocadillo vegetal.
