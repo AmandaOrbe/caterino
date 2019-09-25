@@ -2,7 +2,7 @@
 .navbar{
   background: $yellow;
   position: fixed;
-  height: 8rem;
+  height: 9rem;
   display: flex;
   color: black;
   align-items: center;
@@ -54,7 +54,7 @@
 
   &__notice{
     position: absolute;
-    top: 6rem;
+    top: 6.5rem;
     right: 5rem;
     width: 20rem;
     color: black;

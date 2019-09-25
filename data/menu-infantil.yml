@@ -1,9 +1,9 @@
 nombre: "Menu infantil"
 precio: 7
 slug: menu-infantil
-image: infantilflat.jpg
+image: infantil.jpg
 platos:
-  - mini hamburguesa o mini franfurt
-  - nuguets de pollo
-  - mini croquetas
-  - tacos de pizza
+  - Mini hamburguesa o mini frankfurt
+  - Nuguets de pollo
+  - Mini croquetas
+  - Tacos de pizza

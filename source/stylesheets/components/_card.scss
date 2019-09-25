@@ -19,6 +19,7 @@
   padding: 0 2rem;
   position: relative;
   overflow: hidden;
+  background-size: 34rem;
   @include respond(landscape) {
     max-width: 90% !important;
   }

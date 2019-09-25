@@ -1,0 +1,14 @@
+nombre: "Menú  de gala"
+precio: 15
+slug: menu-gala
+image: gala.jpg
+platos:
+  - Canapés variados
+  - Embutidos ibéricos
+  - Quesos
+  - Pan de coca con tomate
+  - Rissoto de setas y espárragos
+  - Saquitos rellenos de champiñones
+  - Crujientes de langostino
+  - Brochetas de gambas
+  - Vichyssoisse o Gazpacho

@@ -17,16 +17,7 @@ lista_menus.each do |menu|
   proxy "/#{menu}.html", "/menu.html", :locals => { :menu => menu },  ignore: true
 end
 
-# lista_arroces = [
-#   "paella-mixta",
-#   "paella-pescado",
-#   "paella-carne",
-#   "fideua",
-#   "risotto-setas"
-# ]
-# lista_arroces.each do |menu|
-#   proxy "/#{menu}.html", "/menu.html", :locals => { :menu => menu },  ignore: true
-# end
+
 
 lista_cafes = []
 
