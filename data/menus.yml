@@ -2,119 +2,63 @@ estrellas:
   - nombre: "Menú Tapeo"
     precio: 8.50
     slug: menu-tapeo
-    image: tapeovertical.jpg
-    platos:
-      - Tortilla de patatas
-      - croquetas de jamón ibérico
-      - Mini bocadillo de jamón york y queso de cabra
-      - Pintxo donostiarra (cangrejo, olivas y anchoa)
-      - Empanada gallega de atún
+    image: tapeosquare.jpg
+    platos: Disfruta de un pica-pica con nuestro menú más clásico y popular
+
 
   - nombre: "Menú Mediterráneo"
     precio: 10.50
     slug: menu-mediterraneo
-    image: mediterraneovertical.jpg
-    platos:
-      - Fideuá
-      - Mini burger con queso y cebolla
-      - Brochetas de tomate cherry y mozzarella
-      - Ensaladilla rusa
-      - Delicias de olivada
+    image: mediterraneosquare.jpg
+    platos: El Mediterráneo en tu plato
 
   - nombre: "Menú  de gala"
     precio: 15
     slug: menu-gala
-    image: galavertical.jpg
-    platos:
-      - canapés variados
-      - Embutidos ibéricos
-      - Quesos
-      - Pan de coca con tomate
-      - rissoto de setas y espárragos
-      - saquitos rellenos de champiñones
-      - Crujientes de langostino
-      - Brochetas de gambas
-      - Vichyssoisse o Gazpacho
+    image: galasquare.jpg
+    platos: Un menú de impresión para las ocasionesd más elegantes
 
   - nombre: "Menú infantil"
     precio: 7
     slug: menu-infantil
-    image: infantilvertical.jpg
-    platos:
-      - mini hamburguesa o mini franfurt
-      - nuguets de pollo
-      - mini croquetas
-      - tacos de pizza
+    image: infantilsquare.jpg
+    platos: Diversión para los más peques!
 
   - nombre: "Menú vegetariano"
     precio: 10.50
     slug: menu-vegetariano
-    image: vegetarianovertical.jpg
-    platos:
-      - tortilla de espinacas, escalivada y piñones
-      - mini bocadillo vegetal.
-      - empanada argentina de queso y cebolla
-      - croquetas de verduras
-      - risotto de setas
+    image: vegetarianosquare.jpg
+    platos: Un pica-pica vegetariano para ....
 
   - nombre: "Menú argentino"
     precio: 10.50
     slug: menu-argentino
-    image: empanadasvertical.jpg
-    platos:
-      - empanada de carne
-      - empanada de pollo al curry
-      - empanada de jamón y queso
-      - empanada de atún
-      - empanada de queso seco, albaca y mozzarella
+    image: empanadassquare.jpg
+    platos: Empanadas de todos los tipos que ....
 
   - nombre: "Menú oriental"
     precio: 10.50
     slug: menu-oriental
-    image: orientalvertical.jpg
-    platos:
-      - Gyozas de verduras
-      - Brocheta Teriyaqui
-      - Sushi
-      - Rollito primavera
-      - Wok de fideos chinos con pollo
+    image: orientalsquare.jpg
+    platos: Sushi, gyozas qtc etc
 
 coffees:
   - nombre: "Coffee break 1"
     precio: 7
     slug: coffee-break-1
-    image: coffeebreak1vertical.jpg
-    platos:
-      - Café
-      - Leche
-      - Zumo de naranja
-      - Agua mineral
-      - Mini croisant
-      - Mini madalenas
+    image: coffeebreak1square.jpg
+    platos: El Coffee Break más sencillo y eficaz, mejora tus resuniones matutinas
 
   - nombre: "Coffee break 2"
     precio: 9.50
     slug: coffee-break-2
-    image: coffeebreak2vertical.jpg
-    platos:
-      - Café, Infusiones, Leche
-      - Agua mineral
-      - Zumo de naranja
-      - Mini croissant, Mini ensaimada
-      - Mini bocadillo de queso manchego
-
+    image: coffeebreak2square.jpg
+    platos: Un poco más para tus reuniones
   - nombre: "Coffee break 3"
     precio: 12.50
     slug: coffee-break-3
-    image: coffeebreak3vertical.jpg
-    platos:
-      - Café, Infusiones, Leche
-      - Agua mineral
-      - Zumos naranja / piña / melocoton
-      - Mini croissant, Mini ensaimada, Mini madalenas
-      - Dados de brownie
-      - Tarta de santiago
-      - Brochetas de frutas naturales
+    image: coffeebreak3square.jpg
+    platos: Nuestro impresionante desay
 
 
 
