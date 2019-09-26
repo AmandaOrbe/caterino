@@ -81,7 +81,7 @@ var updateStepOnePrice = function(){
   updatePrices();
   if (menuPrice >= minPrice ) {
     price.innerHTML = "Total " + menuPrice + " €";
-    orderTotal.innerHTML = menuTotal;
+    orderTotal.innerHTML = menuTotal + " €";
     menuNumberLine1.innerHTML = dinersNumber;
     menuTotalLine1.innerHTML = menuPrice;
     menusField.value = dinersNumber + " * " + menuName + " = " + menuPrice + "€";
@@ -160,11 +160,13 @@ var checkPostre = function(){
       document.getElementById("order-line-2").classList.remove("transparent");
       document.getElementById("order-line-2__number").innerHTML = dinersNumber;
       document.getElementById("order-postre").innerHTML = checkedPostre;
-      document.getElementById("order-line-2__total").innerHTML = dinersNumber + " €";
-      postrePrice = dinersNumber;
-      postresField.value = dinersNumber + " * " + postreSelected + " = " + dinersNumber * "€";
+      document.getElementById("order-line-2__total").innerHTML = dinersNumber * 1.5 + " €";
+      postrePrice = dinersNumber *1.5;
+      var postreSelected = document.getElementById("order-postre").innerHTML
+      postresField.value = dinersNumber + " * " + postreSelected + " = " + dinersNumber * 1.5 + "€";
     } else if (postreRadio.checked && postreRadio.value === "no"){
       document.getElementById("order-line-2").classList.add("transparent");
+      postrePrice = 0;
     }
     updateTotal(postrePrice, bebidaPrice);
   })

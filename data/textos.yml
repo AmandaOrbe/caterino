@@ -19,7 +19,7 @@ siguiente: SIGUIENTE
 minimo: A partir de 15 personas
 seleccion_postre: selecciona el postre
 next: siguiente
-quieres_postre: ¿Quieres añadir un postre por sólo 1€ por persona?
+quieres_postre: ¿Quieres añadir un postre por sólo 1,50€ por persona?
 no_postre: No gracias, no quiero postre
 brownie: brownie
 tarta_limon: tarta de limon
@@ -61,3 +61,5 @@ pasteles_banner3: de todos los tipos y para todas las ocasiones!
 pasteles_button: Ver los Pasteles
 mini_pasteles: Mini Pasteles
 fechas_especiales: Fechas Especiales
+massini: massini
+bracito: bracito de gitano

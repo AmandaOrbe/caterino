@@ -6,11 +6,11 @@
       <h4 class= "underline width80 margin-top-3" > <%= t.quieres_bebida %></h4>
       <div class="option-label">
         <%= radio_button_tag  :bebida, :value => "no" , :id => "no-bebida-radio"%>
-        <label for="no-bebida-radio" class= 'option-label__text'><span class="form__radio-circle"></span><%= t.no_bebida %></label>
+        <label for="no-bebida-radio" class= 'option-label__text'><span class="form__radio-circle top-radio-circle"></span><%= t.no_bebida %></label>
       </div>
       <div class="option-label">
         <%= radio_button_tag  :bebida, :value => "si" , :id => "si-bebida-radio"%>
-        <label for="si-bebida-radio" class= 'option-label__text'><span class="form__radio-circle"></span><%= t.si_bebida %></label>
+        <label for="si-bebida-radio" class= 'option-label__text'><span class="form__radio-circle top-radio-circle"></span><%= t.si_bebida %></label>
         <div class="hidden padding-left-3" id= "bebida-warning">
           <p><%= t.bebida_warning1  %></p>
           <p><%= t.bebida_warning2  %></p>

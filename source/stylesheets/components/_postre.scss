@@ -1,3 +1,37 @@
+.postre{
+  &__cards{
+    width: 69%;
+    display: flex;
+    justify-content: space-between;
+    @include respond(portrait) {
+      width: 98%;
+    }
+  }
+}
+
+.postre-card{
+  width: 21rem;
+  height: 26rem;
+  background-color: $beige;
+  box-shadow: $box-shadow;
+  border-radius: 1rem;
+  margin: 4rem auto;
+  transition: all .5s ease-in-out;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  @include respond(landscape) {
+    max-width: 90% !important;
+  }
+  @include respond(portrait) {
+    margin: 1rem auto;
+  }
+
+  &__radio-circle{
+    left: 1rem;
+    top: 1.2rem;
+  }
+}
 .option-label{
   height: 5rem;
   width: 100%;
@@ -18,10 +52,8 @@
   }
 }
 
-.form__radio-circle{
-  left: 1rem;
-  top: .5rem;
-  }
+
+
 
 
 #no-postre-radio,

@@ -1,10 +1,14 @@
+
+
 <% t =  data.textos%>
-<div class="col-xs-12 col-sm-4  col-md-4">
-<div class="form__radio-group" >
-    <%= radio_button_tag  :postre, :value=> name   , :id => postre, :class => "form__radio-button"%>
-    <%= image_tag image, :class => "form__image" %>
-    <label for=<%= postre %> class="form__radio-label upcase form__card-text"><%=name  %> <span class="form__radio-circle"></span></label>
+
+  <div class="postre-card">
+    <div class="form__radio-group" >
+        <%= radio_button_tag  :postre, :value=> name   , :id => postre, :class => "form__radio-button"%>
+        <%= image_tag image, :class => "form__image" %>
+        <label for=<%= postre %> class="form__radio-label upcase form__card-text"><%=name  %> <span class="form__radio-circle postre-card__radio-circle"></span></label>
+      </div>
+
   </div>
-</div>
 
 
