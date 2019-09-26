@@ -39,9 +39,7 @@ data.pasteles.mini_pasteles.each do |pastel|
   lista_pasteles << pastel.slug
 end
 
-data.pasteles.fechas_especiales.each do |pastel|
-  lista_pasteles << pastel.slug
-end
+
 
 lista_pasteles.each do |pastel|
   proxy "/#{pastel}.html", "/pastel.html", :locals => { :pastel => pastel },  ignore: true

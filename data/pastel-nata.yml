@@ -1,0 +1,9 @@
+
+nombre: "Pastel de Nata"
+precio: 49.35
+slug: pastel-nata
+image: pastelnatahorizontal.jpg
+platos:
+  - hojaldre
+  - crema
+  - azúcar glas
