@@ -1,0 +1,7 @@
+nombre: "Bracito de gitano"
+precio: 7.50
+slug: bracito-de-gitano
+image: bracitogitano.jpg
+platos:
+  - bizcocho
+  - crema o cacao

@@ -1,81 +1,53 @@
 pasteles:
-  - nombre: "Tarta limon"
-    precio: 9.35
-    slug: tarta-limon
-    image: tarta-limon.jpg
+  - nombre: "Massini"
+    precio: 39.35
+    slug: massini
+    image: massinisquare.jpg
     platos:
-      - base de galleta
-      - crema de limón
-      - merengue flameado
-  - nombre: "Tiramisu"
-    precio: 7.50
-    slug: tiramisu
-    image: tiramisu.jpg
+      - caramelo
+      - chocolate
+      - crema
+  - nombre: "Pastel de chocolate"
+    precio: 47.50
+    slug: pastel-chocolate
+    image: pastelchocolatesquare.jpg
     platos:
       - bizcocho
       - café
       - marcapone
       - cacao
-  - nombre: "Milhojas de Crema"
-    precio: 9.35
-    slug: milhojas
-    image: milhojas.jpg
+  - nombre: "Pastel de Nata"
+    precio: 49.35
+    slug: pastel-nata
+    image: pastel-natasquare.jpg
     platos:
       - hojaldre
       - crema
       - azúcar glas
 
 mini_pasteles:
-  - nombre: "Tarta limon"
-    precio: 9.35
-    slug: tarta-limon
-    image: tarta-limon.jpg
-    platos:
-      - base de galleta
-      - crema de limón
-      - merengue flameado
-  - nombre: "Tiramisu"
-    precio: 7.50
-    slug: tiramisu
-    image: tiramisu.jpg
+  - nombre: "Petits fours"
+    precio: 3.35
+    slug: petits-fours
+    image: petitsfourssquare.jpg
     platos:
       - bizcocho
-      - café
-      - marcapone
-      - cacao
-  - nombre: "Milhojas de Crema"
-    precio: 9.35
-    slug: milhojas
-    image: milhojas.jpg
+      - crema de chocolate
+      - merengue flameado
+  - nombre: "Bracito de gitano"
+    precio: 7.50
+    slug: bracito-de-gitano
+    image: bracitogitanosquare.jpg
+    platos:
+      - bizcocho
+      - crema o cacao
+  - nombre: "Pastelitos blancos"
+    precio: 3.35
+    slug: pastelitos
+    image: pastelitosblancossquare.jpg
     platos:
       - hojaldre
       - crema
       - azúcar glas
 
-fechas_especiales:
-  - nombre: "Tarta limon"
-    precio: 9.35
-    slug: tarta-limon
-    image: tarta-limon.jpg
-    platos:
-      - base de galleta
-      - crema de limón
-      - merengue flameado
-  - nombre: "Tiramisu"
-    precio: 7.50
-    slug: tiramisu
-    image: tiramisu.jpg
-    platos:
-      - bizcocho
-      - café
-      - marcapone
-      - cacao
-  - nombre: "Milhojas de Crema"
-    precio: 9.35
-    slug: milhojas
-    image: milhojas.jpg
-    platos:
-      - hojaldre
-      - crema
-      - azúcar glas
 

@@ -1,9 +1,0 @@
-nombre: "Milhojas de Crema"
-precio: 9.35
-slug: milhojas
-image: milhojas.jpg
-platos:
-  - hojaldre
-  - crema
-  - azúcar glas
-formatos: [15,30,45,60]

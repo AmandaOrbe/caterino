@@ -1,0 +1,9 @@
+nombre: "Pastel de chocolate"
+precio: 47.50
+slug: pastel-chocolate
+image: pastelchocolatehorizontal.jpg
+platos:
+  - bizcocho
+  - café
+  - marcapone
+  - cacao
