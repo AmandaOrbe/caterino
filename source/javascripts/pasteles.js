@@ -8,7 +8,7 @@ var f1 = document.getElementById("f1");
 var step2 = document.getElementById("step2");
 var f4 = document.getElementById("f4");
 var formRight = document.getElementById("form-right");
-var minPrice = unitPrice * 15;
+var minPrice = unitPrice ;
 var minimo = document.getElementById("minimo")
 var minus = document.getElementById("minus")
 var increase = document.getElementById("increase")
@@ -23,15 +23,10 @@ var menuTotalLine1 = document.getElementById("order-line-1__total");
 var datepicker = document.getElementById("datepicker");
 var menusField = document.getElementById("menus-field");
 
-var minimoVisible = function( event){
- if (Number(diners.value) < 15) {
-  minimo.style.opacity = 1;
- }
 
-}
 
 var signColor = function(){
-  if (Number(diners.value) > 15){
+  if (Number(diners.value) > 1){
       minus.style.fill="#FDD000";
   } else {
      minus.style.fill="#BCBABA";
@@ -39,13 +34,15 @@ var signColor = function(){
 }
 
 var increaseDiners  = function (event){
+  console.log('++');
   var dinersNumber = Number(diners.value);
   diners.value = Number(document.getElementById("comensales").value) + 1;
   minimo.style.opacity = 0;
 }
 
 var decreaseDiners  = function (event){
-  if (Number(diners.value) > 15){
+  console.log('--');
+  if (Number(diners.value) > 1){
     var dinersNumber = Number(diners.value);
     diners.value = Number(document.getElementById("comensales").value) - 1;
   } else {
@@ -56,21 +53,21 @@ var decreaseDiners  = function (event){
 
 var updatePrices = function (event) {
     dinersNumber = Number(diners.value);
-    menuPrice = dinersNumber * (unitPrice);
+    menuPrice =  (Math.round((dinersNumber * unitPrice) * 100) / 100).toFixed(2);
+
 };
 
 var updateStepOnePrice = function(){
   updatePrices();
   if (menuPrice >= minPrice ) {
-    price.innerHTML = "Total " + (Math.round(menuPrice * 100) / 100).toFixed(2)+ " €";
-    orderTotal.innerHTML = menuTotal;
+    price.innerHTML = "Total " +  menuPrice + " €";
+    orderTotal.innerHTML = menuPrice;
     menuNumberLine1.innerHTML = dinersNumber;
     menuTotalLine1.innerHTML = menuPrice;
     menusField.value = dinersNumber + " * " + menuName + " = " + menuPrice;
   } else {
-    price.innerHTML = "Total " + minPrice + " €";
+    price.innerHTML = "Total " + Math.round(minPrice * 100) / 100 + " €";
   }
-  minimoVisible();
   signColor();
 }
 
@@ -108,20 +105,14 @@ var locateUrl = function(){
 }
 
 
-var updateTotal = function(postrePrice, bebidaPrice){
-  menuTotal = menuPrice + postrePrice + bebidaPrice;
-  orderTotal.innerHTML = menuTotal + " €";
-
-}
 
 
+console.log(Math.round(1/3 * 100) / 100)
 
 
 diners.addEventListener("keyup", updateStepOnePrice);
 window.addEventListener("click", updateStepOnePrice);
 window.addEventListener("hashchange", locateUrl);
-
-
 
 window.addEventListener("DOMContentLoaded", updateStepOnePrice);
 

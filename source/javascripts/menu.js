@@ -80,7 +80,7 @@ var updatePrices = function (event) {
 var updateStepOnePrice = function(){
   updatePrices();
   if (menuPrice >= minPrice ) {
-    price.innerHTML = "Total " + menuPrice + " €";
+    price.innerHTML = "Total " + (Math.round(menuPrice * 100) / 100).toFixed(2) + " €";
     orderTotal.innerHTML = menuTotal + " €";
     menuNumberLine1.innerHTML = dinersNumber;
     menuTotalLine1.innerHTML = menuPrice;
