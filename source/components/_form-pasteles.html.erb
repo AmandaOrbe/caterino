@@ -2,6 +2,11 @@
 <% t =  data.textos%>
 <% form_tag 'https://formcarry.com/s/IPZZAEv8L9X', :class => 'form', :method => 'POST' do %>
   <%= partial(:'components/form1-pasteles', :locals => { :menu => menu}) %>
-  <%= partial(:'components/form2', :locals => { :menu => menu}) %>
+  <div class="hidden form2" id= "step2">
+      <% field_set_tag :class => 'fieldset-4 hidden', id: "f4" do %>
+        <%= partial(:'components/datos', :locals => { :menu => menu}) %>
+      <% end %>
+      <%= partial(:'components/form-right-cafe', :locals => { :menu => menu}) %>
+    </div>
   <% end %>
 </div>
