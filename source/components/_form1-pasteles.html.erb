@@ -16,17 +16,17 @@
       <%= text_field_tag :menu, :value => menu.nombre %>
     </p>
     <div class="show__down">
-      <h4 class="align-center"><%= label_tag t.comensales, :class => 'first' %></h4>
+      <h4 class="align-center"><%= label_tag t.pasteles_number, :class => 'first' %></h4>
       <div class="number-form">
         <div class="number-form__line">
-
-          <%= select_tag :comensales, :options => menu.formantos,  :id => 'comensales', :class => "number-form__number" %>
-
+          <%= partial(:'components/minus_sign') %>
+          <%= number_field_tag :comensales, :value => 1 , :min => 1,  :id => 'comensales', :class => "number-form__number" %>
+          <%= partial(:'components/plus_sign') %>
         </div>
       </div>
-      <p class="align-center" id= "minimo"><%= t.minimo  %></p>
+      <p class="align-center" id= "minimo"> </p>
       <h4 class="align-center" id= "price">
-          Total <%= 15 *  menu.precio  %> €
+          Total <%= 1 *  menu.precio  %> €
       </h4>
       <br>
       <div class=" show__button button" id= "button-next" href="">
