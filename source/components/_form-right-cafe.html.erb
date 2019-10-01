@@ -2,14 +2,12 @@
 <div class="show__right hidden" id= "form-right">
   <h2 class= "upcase margin-bottom-5 portrait-hidden"><%= t.order  %></h2>
   <div class="details" id= "order-line-1">
-    <<p><span id="order-line-1__number"></span> * <span id= "menu-name"><%=  menu.nombre%></span> </p>
+    <p><span id="order-line-1__number"></span> * <span id= "menu-name"><%=  menu.nombre%></span> </p>
     <p id="order-line-1__total"></p>
     <div class="hidden-form__group hidden">
       <%= text_field_tag :menús , :class => 'hidden-form__input', :id => "menus-field", required: true %>
     </div>
-
   </div>
-  <p> hello</p>
   <div class="details" id= "order-line-total">
     <p class="upcase" id= "order-total"><%= t.total%></p>
     <p id="order-line-total__total"></p>

@@ -7,10 +7,10 @@
   <div class="show__background">
   </div>
   <div class="show__content show__content--full">
-    <%= partial(:'components/form', :locals => { :menu => cafe}) %>
+    <%= partial(:'components/form-cafe', :locals => { :menu => cafe}) %>
     <div class="hidden form2" id= "step2">
       <% field_set_tag :class => 'fieldset-4 hidden', id: "f4" do %>
-        <%= partial(:'components/datos', :locals => { :menu => cafe}) %>
+        <%= partial(:'components/datos', :locals => { :menu => cafe} , :class=> "datos-form datos-form--full " ) %>
       <% end %>
       <%= partial(:'components/form-right-cafe', :locals => { :menu => cafe}) %>
     </div>

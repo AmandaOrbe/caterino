@@ -19,7 +19,7 @@ estrellas:
     platos: Un menú de impresión para las ocasionesd más elegantes
 
   - nombre: "Menú infantil"
-    precio: 7
+    precio: 7.50
     slug: menu-infantil
     image: infantilsquare.jpg
     platos: Diversión para los más peques!
