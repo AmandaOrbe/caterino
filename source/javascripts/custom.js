@@ -54,13 +54,13 @@ var updateTotalsObject =  function(item){
 }
 
 var displayTotalPrice = function() {
-  console.log( 'displayTotalPrice')
   totalsArray = []
   total = 0
   Object.values(totalsObject).forEach(function(value){
     total = total + value;
   })
   totalNumber.innerText = total + " €"
+  totalField.value = + total + "€";
 
 
 
