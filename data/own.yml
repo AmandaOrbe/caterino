@@ -1,19 +1,46 @@
 entrantes:
-  croquetas:
-    name: croquetas
-    price: 1
-  nuggets:
-    name: nuggets
-    price: 1
-  ensaladilla:
-    name: ensaladilla rusa
-    price: 1
-  crujiente:
-    name: crujiente de langostino
-    price: 2
-  saquets:
-    name: saquets de verduras
-    price: 1
+  canapes:
+    name: canapés variados 1kg (70uds)
+    price: 31.60
+  empanada:
+    name: empanada gallega atún 1,2kg
+    price: 18
+  tortilla_patata:
+    name: tortilla de patata con cebolla
+    price: 3.5
+  tortilla_calabacin:
+    name: tortilla de calabacín
+    price: 3.90
+  tortilla_alcachofas:
+    name: tortilla de alcachofas
+    price: 3.90
+  tortilla_espinacas:
+    name: tortilla de espinacas
+    price: 3.90
+  croquetas_atun:
+    name: croquetas de atún
+    price: .7
+  croquetas_bacalao:
+    name: croquetas de bacalao
+    price: .7
+  croquetas_calamares:
+    name: croquetas de calamares
+    price: .7
+  croquetas_espinacas:
+    name: croquetas de espinacas
+    price: .7
+  croquetas_escalivada:
+    name: croquetas de escalivada
+    price: .7
+  croquetas_jamon:
+    name: croquetas de jamón ibérico
+    price: .7
+  croquetas_pollo:
+    name: croquetas de pollo
+    price: .7
+  croquetas_setas:
+    name: croquetas de setas
+    price: .7
   chupito:
     name: chupito de gazpacho
     price: 1
