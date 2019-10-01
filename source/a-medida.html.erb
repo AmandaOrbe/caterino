@@ -10,8 +10,16 @@
     <% form_tag 'https://formcarry.com/s/IPZZAEv8L9X', :class => 'own', :method => 'POST' do %>
       <div class="show__left--divided padding-left-5" id="own-form">
         <div class="tabs">
-          <a href="#entrantes" class="tab " id= "entrantes-tab"><%=t.entrantes  %></a>
-          <a href="#principales" class="tab"  id= "principales-tab"><%=t.principales  %></a>
+          <a href="#entrantes" class="tab " id= "entrantes-tab"><%=t.para_picar  %></a>
+          <a href="#tortillas" class="tab"  id= "tortillas-tab"><%=t.tortillas  %></a>
+          <a href="#croquetas" class="tab"  id= "croquetas-tab"><%=t.croquetas  %></a>
+          <a href="#montaditos" class="tab"  id= "montaditos-tab"><%=t.montaditos  %></a>
+          <a href="#ensaladas" class="tab"  id= "ensaladas-tab"><%=t.ensaladas  %></a>
+          <a href="#verduras" class="tab"  id= "verduras-tab"><%=t.verduras  %></a>
+          <a href="#arroz" class="tab"  id= "arroz-tab"><%=t.arroz  %></a>
+          <a href="#pescados" class="tab"  id= "pescados-tab"><%=t.pescados  %></a>
+          <a href="#carnes" class="tab"  id= "carnes-tab"><%=t.carnes  %></a>
+          <a href="#empanadas" class="tab"  id= "empanadas-tab"><%=t.empanadas  %></a>
           <a href="#postres" class="tab"  id= "postres-tab"><%=t.postres  %></a>
           <a href="#bebidas" class="tab"  id= "bebidas-tab"><%=t.bebidas  %></a>
         </div>
@@ -19,9 +27,9 @@
           <h1 class="upcase own__title"><%=t.crea%></h1>
           <br><br>
           <div  id="entrantes"></div>
-          <h4 class="own__category" ><%=t.entrantes  %></h4>
+          <h4 class="own__category" ><%=t.para_picar  %></h4>
           <div class="row" id="entrantes-row" >
-            <% data.own.entrantes.each do |entrante| %>
+            <% data.own.para_picar.each do |entrante| %>
               <div class="col-xs-12 col-md-6">
                 <%= partial(:'components/own-card', :locals => {
                 :id => entrante[0],
@@ -33,15 +41,152 @@
 
           <br><br>
 
-          <div  id="principales" ></div>
-          <h4 class="own__category" ><%=t.principales  %></h4>
-          <div class="row" id="principales-row">
-            <% data.own.principales.each do |principal| %>
+          <div  id="tortillas"></div>
+          <h4 class="own__category" ><%=t.tortillas  %></h4>
+          <div class="row" id="tortillas-row" >
+            <% data.own.tortillas.each do |tortilla| %>
               <div class="col-xs-12 col-md-6">
                 <%= partial(:'components/own-card', :locals => {
-                :id => principal[0],
-                :name => principal[1].name,
-                :price => principal[1].price }) %>
+                :id => tortilla[0],
+                :name => tortilla[1].name,
+                :price => tortilla[1].price }) %>
+              </div>
+            <% end %>
+          </div>
+
+          <br><br>
+
+          <div  id="croquetas"></div>
+          <h4 class="own__category" ><%=t.croquetas  %></h4>
+          <div class="row" id="croquetas-row" >
+            <% data.own.croquetas.each do |croqueta| %>
+              <div class="col-xs-12 col-md-6">
+                <%= partial(:'components/own-card', :locals => {
+                :id => croqueta[0],
+                :name => croqueta[1].name,
+                :price => croqueta[1].price }) %>
+              </div>
+            <% end %>
+          </div>
+
+          <br><br>
+
+          <div  id="montaditos"></div>
+          <h4 class="own__category" ><%=t.montaditos  %></h4>
+          <div class="row" id="montaditos-row" >
+            <% data.own.montaditos.each do |montadito| %>
+              <div class="col-xs-12 col-md-6">
+                <%= partial(:'components/own-card', :locals => {
+                :id => montadito[0],
+                :name => montadito[1].name,
+                :price => montadito[1].price }) %>
+              </div>
+            <% end %>
+          </div>
+
+          <br><br>
+
+          <div  id="ensaladas"></div>
+          <h4 class="own__category" ><%=t.ensaladas  %></h4>
+          <div class="row" id="ensaladas-row" >
+            <% data.own.ensaladas.each do |ensalada| %>
+              <div class="col-xs-12 col-md-6">
+                <%= partial(:'components/own-card', :locals => {
+                :id => ensalada[0],
+                :name => ensalada[1].name,
+                :price => ensalada[1].price }) %>
+              </div>
+            <% end %>
+          </div>
+
+          <br><br>
+
+          <div  id="verduras"></div>
+          <h4 class="own__category" ><%=t.verduras  %></h4>
+          <div class="row" id="verduras-row" >
+            <% data.own.verduras.each do |verdura| %>
+              <div class="col-xs-12 col-md-6">
+                <%= partial(:'components/own-card', :locals => {
+                :id => verdura[0],
+                :name => verdura[1].name,
+                :price => verdura[1].price }) %>
+              </div>
+            <% end %>
+          </div>
+
+          <br><br>
+
+          <div  id="arroz"></div>
+          <h4 class="own__category" ><%=t.arroz  %></h4>
+          <div class="row" id="arrozs-row" >
+            <% data.own.arroz.each do |arroz| %>
+              <div class="col-xs-12 col-md-6">
+                <%= partial(:'components/own-card', :locals => {
+                :id => arroz[0],
+                :name => arroz[1].name,
+                :price => arroz[1].price }) %>
+              </div>
+            <% end %>
+          </div>
+
+          <br><br>
+
+          <div  id="pasta"></div>
+          <h4 class="own__category" ><%=t.pasta  %></h4>
+          <div class="row" id="pastas-row" >
+            <% data.own.pasta.each do |pasta| %>
+              <div class="col-xs-12 col-md-6">
+                <%= partial(:'components/own-card', :locals => {
+                :id => pasta[0],
+                :name => pasta[1].name,
+                :price => pasta[1].price }) %>
+              </div>
+            <% end %>
+          </div>
+
+          <br><br>
+
+          <div  id="pescados" ></div>
+          <h4 class="own__category" ><%=t.pescado  %></h4>
+          <div class="row" id="pescadoes-row">
+            <% data.own.pescados.each do |pescado| %>
+              <div class="col-xs-12 col-md-6">
+                <%= partial(:'components/own-card', :locals => {
+                :id => pescado[0],
+                :name => pescado[1].name,
+                :price => pescado[1].price }) %>
+              </div>
+            <% end %>
+          </div>
+
+
+          <br><br>
+
+          <div  id="carnes" ></div>
+          <h4 class="own__category" ><%=t.carnes  %></h4>
+          <div class="row" id="carnes-row">
+            <% data.own.carnes.each do |carne| %>
+              <div class="col-xs-12 col-md-6">
+                <%= partial(:'components/own-card', :locals => {
+                :id => carne[0],
+                :name => carne[1].name,
+                :price => carne[1].price }) %>
+              </div>
+            <% end %>
+          </div>
+
+
+          <br><br>
+
+          <div  id="empanadas" ></div>
+          <h4 class="own__category" ><%=t.empanadas  %></h4>
+          <div class="row" id="empanadas-row">
+            <% data.own.empanadas.each do |empanada| %>
+              <div class="col-xs-12 col-md-6">
+                <%= partial(:'components/own-card', :locals => {
+                :id => empanada[0],
+                :name => empanada[1].name,
+                :price => empanada[1].price }) %>
               </div>
             <% end %>
           </div>

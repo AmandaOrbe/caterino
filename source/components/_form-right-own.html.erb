@@ -20,6 +20,9 @@
     <div class="order-line-total2-prices">
       <p class="upcase" id= "order-total"><%= t.total%></p>
       <p id="order-line-total__total"></p>
+    <div class="hidden-form__group hidden">
+      <%= text_field_tag :total , :class => 'hidden-form__input', :id => "total-field", required: true %>
+    </div>
     </div>
     </div>
   <div class="button  upcase hidden" id= "button-next-own" >
