@@ -1,10 +1,24 @@
-entrantes:
+para_picar:
   canapes:
     name: canapés variados 1kg (70uds)
     price: 31.60
   empanada:
     name: empanada gallega atún 1,2kg
     price: 18
+  crujiente_langostino:
+    name: crujiente de langostino
+    price: .90
+  saquets_gamba:
+    name: saquets de hojaldre y gamba
+    price: .9
+  vasito_ensaladilla:
+    name: vasito de ensaladilla rusa
+    price: 1.6
+  chupito:
+    name: chupito de gazpacho
+    price: .90
+
+tortillas:
   tortilla_patata:
     name: tortilla de patata con cebolla
     price: 3.5
@@ -17,6 +31,8 @@ entrantes:
   tortilla_espinacas:
     name: tortilla de espinacas
     price: 3.90
+
+croquetas:
   croquetas_atun:
     name: croquetas de atún
     price: .7
@@ -41,59 +57,182 @@ entrantes:
   croquetas_setas:
     name: croquetas de setas
     price: .7
-  chupito:
-    name: chupito de gazpacho
-    price: 1
-principales:
-  fideua:
-    name: Fideuà
-    price: 5
-  risotto:
-    name: Risotto
-    price: 4.50
-  redondo:
-    name: Redondo de Ternera
-    price: 6.50
-  campero:
-    name: Pollo Campero
-    price: 6.50
-  macarrones:
-    name: Macarrones (infantil)
+  mini_croquetas:
+    name: mini croquetas de jamón
+    price: .35
+
+montaditos:
+  montadito_donostiarra:
+    name: montadito donostiarra
+    price: 1.2
+  montadito_jamon:
+    name: montadito de jamón
+    price: 1.2
+  montadito_atun:
+    name: montadito de atún
+    price: 1.2
+  mini_bocadillo_cabra_york:
+    name: mini bocadillo de queso de cabra y jamón de york
+    price: 1.9
+  mini_bocadillo_lomo:
+    name: mini bocadillo de lomo ibérico
+    price: 1.9
+
+ensaladas:
+  ensalada_de_pasta:
+    name: ensalada de pasta
+    price: 3.8
+  ensaladilla_rusa:
+    name: ensaladilla rusa
+    price: 3.6
+  ensalada_verde:
+    name: ensalada verde
+    price: 3.5
+  escalivada:
+    name: escalivada
+    price: 3.5
+
+verduras:
+  espinacad:
+    name: Espinacas a la catalana
+    price: 4.5
+  verduras_vapor:
+    name: verduras cocidas al vapor
+    price: 3.2
+  verduras_salteadas_jamon:
+    name: verduras salteadas con jamon
+    price: 3.8
+
+arroz:
+  arroz_negro:
+    name: arroz negro
+    price: 4.5
+  fideuá:
+    name: fideuá
+    price: 4.9
+  paella_marinera:
+    name: paella marinera
+    price: 4.5
+
+pasta:
+  pasta_boloñesa:
+    name: pasta  boloñesa
     price: 3.50
-  pollo:
-    name: Pollo Rebozado (infantil)
+  pasta_carbonara:
+    name: pasta carbonara
     price: 3.50
+  pasta_atun:
+    name: pasta con atún
+    price: 3.50
+
+carnes:
+  alitas_pollo:
+    name: alitas de pollo
+    price: 3.8
+  butifarra_judias:
+    name: butifarra con judías
+    price: 3.8
+  libritos:
+    name: libritos
+    price: 7.95
+  pechuga_pollo:
+    name: pechuga de pollo rebozada
+    price: 6.5
+  pollo_horno:
+    name: pollo al horno con patatas
+    price: 4
+  redondo_pollo:
+    name: redondo de pollo
+    price: 6.4
+  redondo_ternera:
+    name: redondo de ternera
+    price: 6.4
+
+pescados:
+  dorada_horno:
+    name: dorada al horno
+    price: 7.45
+  lubina_horno:
+    name: lubina al horno
+    price: 7.45
+  bacalao_llauna:
+    name: bacalao a la llauna
+    price: 9.4
+  bacalao_sanfaina:
+    name: bacalao en sanfaina
+    price: 8.21
+
+empanadas:
+  empanada_carne:
+    name: empanada de carne
+    price: 1.95
+  empanada_carne_picante:
+    name: empanada de carne picante
+    price: 1.95
+  empanada_pollo:
+    name: empanada de pollo
+    price: 1.95
+  empanada_pollo_curry:
+    name: empanada de pollo al curry
+    price: 1.95
+  empanada_jamon_queso:
+    name: empanada de jamón y queso
+    price: 1.95
+  empanada_sobrasada:
+    name: empanada de sobrasada
+    price: 1.95
+  empanada_sobrasada:
+    name: empanada de sobrasada
+    price: 1.95
+  empanada_queso_cabra:
+    name: empanada de queso de cabra, tomate seco y cebolla
+    price: 1.95
+  humita:
+    name: humita
+    price: 1.95
+
+
 postres:
-  massini:
-    name: massini
-    price: 1
+  reposteria_variada:
+    name: reposteria variada 2kg (80 uds)
+    price: 38
+    lionesas:
+    name: lionesas de nata o trufa 1kg (35uds)
+    price: 38
+  tarta_arandanos:
+    name: tarta de arándanos
+    price: 12
+  tarta_manzana:
+    name: tarta de manzana
+    price: 12
   brownie:
     name: brownie
-    price: 1
-  brownie:
-    name: brownie
-    price: 1
-  limon:
-    name: tarta de limón
-    price: 2
+    price: 12
+  mousse_limón:
+    name: mousse de limón
+    price: 12
+  mousse_chocolate:
+    name: mousse chocolate
+    price: 12
+  tiramisu:
+    name: tiramisú
+    price: 12
+  brazo_gitano:
+    name: brazo de gitano de nata trufa o crema
+    price: 12
+  sacher:
+    name: tarta sacher
+    price: 16
   queso:
     name: tarta de queso
-    price: 1
-  choco:
-    name: tarta choco trufa
-    price: 1
-  gitano:
-    name: brazo de gitano
-    price: 2
-  tartaletas:
-    name: tartaletas frutales
-    price: 1
-  brocheta:
-    name: brocheta de frutas
-    price: 1
-  canasta:
-    name: canasta de frutas de temporada
-    price: 1
+    price: 16
+  redvelvet:
+    name: tarta redvelvet
+    price: 16
+  massini:
+    name: massini
+    price: 18
+
 bebidas:
   agua:
     name: agua mineral 1,5l

@@ -21,6 +21,7 @@ var principalesTab = document.getElementById("principales-tab");
 var postresTab = document.getElementById("postres-tab");
 var bebidasTab = document.getElementById("bebidas-tab");
 var tabs = document.querySelector(".tabs");
+var totalField = document.getElementById("total-field");
 
 var itemsObject= {}
 var totalsObject = {}
@@ -53,6 +54,7 @@ var updateTotalsObject =  function(item){
 }
 
 var displayTotalPrice = function() {
+  console.log( 'displayTotalPrice')
   totalsArray = []
   total = 0
   Object.values(totalsObject).forEach(function(value){

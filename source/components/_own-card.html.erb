@@ -4,7 +4,7 @@
     <h3 class="own__name"><span class= "own__name__cantidad"></span>  <%= name  %></h3>
 
     <p class="own__price__number hidden">  <%= price  %></p>
-    <h4 class="own__price">  <%= price  %>  €</h4>
+    <h4 class="own__price">  <%= number_to_currency(price, unit: '€', format: "%n %u") %> </h4>
   </button>
 
 
@@ -21,7 +21,7 @@
         </div>
         <div class="modal-body">
           <div class="show__down indica">
-            <h4 class="align-center"><%= label_tag t.cantidad, :class => 'first' %></h4>
+            <h5 class="align-center"><%= label_tag t.cantidad, :class => 'first' %></h5>
             <%= number_field_tag name, :value => 0 , :min => 0,  :id => "#{name}id ", :class => "own__number-form" %>
           </div>
         </div>
