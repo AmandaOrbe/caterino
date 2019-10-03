@@ -68,23 +68,8 @@ title: Caterino: el Catering más barato de Barcelona!
   </div>
 
 
-
-
-  <h3 class= "category-title"><%= t.pasteles %></h3>
-  <% link_to "/pasteles.html" do %>
-    <header class= "header3" style="background-image: linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.5) 50%), url('images/framboisier.jpg')">
-      <div class="header3__text">
-        <h3 class= "header3__title"><%=t.pasteles_banner %></h3>
-        <br>
-        <h4 class= "header3__subtitle"><%=t.pasteles_banner2  %></h4>
-        <h4 class= "header3__subtitle"><%=t.pasteles_banner3  %></h4>
-        <br>
-        <br><br>
-      </div>
-    </header>
-  <%end  %>
-
 </section>
+
 <header class= "header2">
   <div class="header2__text">
     <h2 class= "header2__title"><%=t.encuentras  %></h2>
@@ -100,6 +85,24 @@ title: Caterino: el Catering más barato de Barcelona!
     <%= image_tag "miniburgers.png", class: "header2__image" %>
   </div>
 </header>
+
+<section class="content">
+  <h3 class= "category-title"><%= t.pasteles %></h3>
+  <% link_to "/pasteles.html" do %>
+    <header class= "header3" style="background-image: linear-gradient(rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.5) 50%), url('images/pastel-chocolate-hl.jpg')">
+      <div class="header3__text">
+        <h3 class= "header3__title"><%=t.pasteles_banner %></h3>
+        <br>
+        <h4 class= "header3__subtitle"><%=t.pasteles_banner2  %></h4>
+        <h4 class= "header3__subtitle"><%=t.pasteles_banner3  %></h4>
+        <br>
+        <br><br>
+      </div>
+    </header>
+  <%end  %>
+
+</section>
+
 
 <section class="occasions">
   <div class="row">
