@@ -1,7 +1,7 @@
 nombre: "Menú Tapeo"
 precio: 8.50
 slug: menu-tapeo
-image: tapeo2.jpg
+image: menu-tapeo.jpg
 platos:
   - Tortilla de patatas
   - croquetas de jamón ibérico

@@ -1,7 +1,7 @@
 nombre: "Menú Mediterráneo"
 precio: 10.50
 slug: menu-mediterraneo
-image: mediterraneo.jpg
+image: menu-mediterraneo.jpg
 platos:
   - Fideuá
   - Mini burger con queso y cebolla

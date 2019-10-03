@@ -2,52 +2,39 @@ pasteles:
   - nombre: "Massini"
     precio: 39.35
     slug: massini
-    image: massinisquare.jpg
-    platos:
-      - caramelo
-      - chocolate
-      - crema
+    image: massini-s.jpg
+    platos: El delicioso pastel massini
+
   - nombre: "Pastel de chocolate"
     precio: 47.50
     slug: pastel-chocolate
-    image: pastelchocolatesquare.jpg
-    platos:
-      - bizcocho
-      - café
-      - marcapone
-      - cacao
+    image: pastel-chocolate-s.jpg
+    platos: El delicioso pastel de chocolate
+
   - nombre: "Pastel de Nata"
     precio: 49.35
     slug: pastel-nata
-    image: pastel-natasquare.jpg
-    platos:
-      - hojaldre
-      - crema
-      - azúcar glas
+    image: pastel-nata-s.jpg
+    platos: Mmm qué rico!
 
 mini_pasteles:
   - nombre: "Petits fours"
     precio: 3.35
     slug: petits-fours
-    image: petitsfourssquare.jpg
-    platos:
-      - bizcocho
-      - crema de chocolate
-      - merengue flameado
+    image: petits-fours-s.jpg
+    platos: Dulcísimo
+
   - nombre: "Bracito de gitano"
     precio: 7.50
     slug: bracito-de-gitano
-    image: bracitogitanosquare.jpg
-    platos:
-      - bizcocho
-      - crema o cacao
+    image: bracito-gitano-s.jpg
+    platos: El delicioso bracito de gitano
+
+
   - nombre: "Pastelitos blancos"
     precio: 3.35
     slug: pastelitos
-    image: pastelitosblancossquare.jpg
-    platos:
-      - hojaldre
-      - crema
-      - azúcar glas
+    image: pastelitos-blancos-s.jpg
+    platos: Buenísimos!
 
 

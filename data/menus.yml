@@ -2,62 +2,62 @@ estrellas:
   - nombre: "Menú Tapeo"
     precio: 8.50
     slug: menu-tapeo
-    image: tapeosquare.jpg
+    image: menu-tapeo-s.jpg
     platos: Disfruta de un pica-pica con nuestro menú más clásico y popular
 
 
   - nombre: "Menú Mediterráneo"
     precio: 10.50
     slug: menu-mediterraneo
-    image: mediterraneosquare.jpg
+    image: menu-mediterraneo-s.jpg
     platos: El Mediterráneo en tu plato
 
   - nombre: "Menú  de gala"
     precio: 15
     slug: menu-gala
-    image: galasquare.jpg
+    image: menu-gala-s.jpg
     platos: Un menú de impresión para las ocasionesd más elegantes
 
   - nombre: "Menú infantil"
     precio: 7.50
     slug: menu-infantil
-    image: infantilsquare.jpg
+    image: menu-infantil-s.jpg
     platos: Diversión para los más peques!
 
   - nombre: "Menú vegetariano"
     precio: 10.50
     slug: menu-vegetariano
-    image: vegetarianosquare.jpg
+    image: menu-vegetariano-s.jpg
     platos: Un pica-pica vegetariano para ....
 
   - nombre: "Menú argentino"
     precio: 10.50
     slug: menu-argentino
-    image: empanadassquare.jpg
+    image: menu-empanadas-s.jpg
     platos: Empanadas de todos los tipos que ....
 
   - nombre: "Menú oriental"
     precio: 10.50
     slug: menu-oriental
-    image: orientalsquare.jpg
+    image: menu-oriental-s.jpg
     platos: Sushi, gyozas qtc etc
 
 coffees:
   - nombre: "Coffee break 1"
     precio: 7
     slug: coffee-break-1
-    image: coffeebreak1square.jpg
+    image: coffee-break-1s.jpg
     platos: El Coffee Break más sencillo y eficaz, mejora tus resuniones matutinas
 
   - nombre: "Coffee break 2"
     precio: 9.50
     slug: coffee-break-2
-    image: coffeebreak2square.jpg
+    image: coffee-break-2s.jpg
     platos: Un poco más para tus reuniones
   - nombre: "Coffee break 3"
     precio: 12.50
     slug: coffee-break-3
-    image: coffeebreak3square.jpg
+    image: coffee-break-3s.jpg
     platos: Nuestro impresionante desay
 
 

@@ -1,7 +1,7 @@
 nombre: "Menú oriental"
 precio: 10.50
 slug: menu-oriental
-image: oriental.jpg
+image: menu-oriental.jpg
 platos:
   - Gyozas de verduras
   - Brocheta Teriyaqui
