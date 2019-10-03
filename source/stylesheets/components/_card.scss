@@ -27,6 +27,10 @@
   @include respond(portrait) {
     margin: 1rem auto;
   }
+  @include respond(phone) {
+    height: 48rem;
+  }
+
   &__frame{
     width: 32rem;
     height: 32rem;
@@ -34,9 +38,14 @@
     position: absolute;
     top: 12rem;
     border-radius: 1rem;
+    @include respond(phone) {
+      width: 28rem;
+      height: 28rem;
+    }
   }
   &__image{
     width: 32rem;
+
 
   }
 
@@ -55,16 +64,20 @@
     font-weight: 800;
     letter-spacing: -2px;
     @include respond(phone) {
-      font-size: 2.8rem;
+      font-size: 2.4rem;
     }
   }
 
   &__description{
     position: absolute;
-    top: 45rem;
+    top: 42.5rem;
     color: black;
     font-weight: 300;
     font-size: 1.2rem;
+    @include respond(phone) {
+      top:41rem;
+      max-width: 28rem;
+    }
   }
 
   &__header{
