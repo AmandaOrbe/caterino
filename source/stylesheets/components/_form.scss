@@ -17,11 +17,6 @@
     border-radius: 1rem;
     @include respond(portrait) {
       border-radius: 1rem;
-      margin: 1.5rem;
-      margin: 1rem;
-     &:first-child{
-      margin-left: 1.8rem;
-     }
     }
 
 
