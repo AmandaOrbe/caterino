@@ -5,12 +5,13 @@
       <div class="card__header">
         <h3><%= title.upcase  %></h3>
         <h4><%= number_to_currency(precio, unit: "€", separator: ",", delimiter: "", format: "%n %u")  %></h4>
-        <div class="card__frame">
-          <%=image_tag image , class: 'card__image'  %>
-        </div>
-
-
       </div>
+      <div class="card__frame">
+        <%=image_tag image , class: 'card__image'  %>
+      </div>
+
+
+
       <p class= "card__description"> <%= platos  %></p>
 </div>
 <% end %>

@@ -1,29 +1,28 @@
 <% t =  data.textos%>
 
 
-    <div class="show__left padding-left-2" id="postre-form">
-      <h1><%= t.seleccion_postre.upcase  %></h1>
-      <h4 class= "underline width80 margin-top-3" > <%= t.quieres_postre %></h4>
-      <div class="option-label">
-        <%= radio_button_tag  :postre, :value => "no" , :id => "no-postre-radio"%>
-        <label for="no-postre-radio" class= 'option-label__text'><span class="form__radio-circle top-radio-circle"></span><%= t.no_postre %></label>
-      </div>
-
-      <div class="postre__cards">
-
-
-          <%= partial(:'components/postre_card', :locals => {
-              :postre => "brownie",
-              :image => 'brownie-s.jpg',
-              :name => t.brownie}) %>
-          <%= partial(:'components/postre_card', :locals => {
-            :postre => "massini", :image => 'massini-s.jpg',
-            :name => t.massini}) %>
-          <%= partial(:'components/postre_card', :locals => {
-              :postre => "bracito",
-              :image => 'bracito-gitano-s.jpg',
-              :name => t.bracito }) %>
-
-      </div>
+<div class="show__left padding-left-2" id="postre-form">
+  <div class="postre__header">
+    <h1><%= t.seleccion_postre.upcase  %></h1>
+    <h4 class= "underline width80 margin-top-3" > <%= t.quieres_postre %></h4>
+    <div class="option-label">
+      <%= radio_button_tag  :postre, :value => "no" , :id => "no-postre-radio"%>
+      <label for="no-postre-radio" class= 'option-label__text'><span class="form__radio-circle top-radio-circle"></span><%= t.no_postre %></label>
     </div>
+  </div>
+
+  <div class="postre__cards">
+    <%= partial(:'components/postre_card', :locals => {
+        :postre => "brownie",
+        :image => 'brownie-s.jpg',
+        :name => t.brownie}) %>
+    <%= partial(:'components/postre_card', :locals => {
+      :postre => "massini", :image => 'massini-s.jpg',
+      :name => t.massini}) %>
+    <%= partial(:'components/postre_card', :locals => {
+        :postre => "bracito",
+        :image => 'bracito-gitano-s.jpg',
+        :name => t.bracito }) %>
+  </div>  </div>
+</div>
 
