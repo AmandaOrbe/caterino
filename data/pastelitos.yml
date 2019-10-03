@@ -1,7 +1,7 @@
 nombre: "Pastelitos blancos"
 precio: 3.35
 slug: pastelitos
-image: pastelitosblancos.jpg
+image: pastelitos-blancos.jpg
 platos:
   - hojaldre
   - crema

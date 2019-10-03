@@ -1,7 +1,7 @@
 nombre: "Menú  de gala"
 precio: 15
 slug: menu-gala
-image: gala.jpg
+image: menu-gala.jpg
 platos:
   - Canapés variados
   - Embutidos ibéricos
