@@ -70,12 +70,12 @@
 
   &__description{
     position: absolute;
-    top: 42.5rem;
+    top: 45rem;
     color: black;
     font-weight: 300;
     font-size: 1.2rem;
     @include respond(phone) {
-      top:41rem;
+      top:42.5rem;
       max-width: 28rem;
     }
   }
