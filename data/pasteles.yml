@@ -3,13 +3,13 @@ pasteles:
     precio: 39.35
     slug: massini
     image: massini-s.jpg
-    platos: El delicioso pastel massini
+    platos: Bizcocho relleno de nata y trufa
 
   - nombre: "Pastel de chocolate"
     precio: 47.50
     slug: pastel-chocolate
     image: pastel-chocolate-s.jpg
-    platos: El delicioso pastel de chocolate
+    platos: El gran clásico para todas las ocasiones
 
   - nombre: "Pastel de Nata"
     precio: 49.35
@@ -28,7 +28,7 @@ mini_pasteles:
     precio: 7.50
     slug: bracito-de-gitano
     image: bracito-gitano-s.jpg
-    platos: El delicioso bracito de gitano
+    platos: ERelleno de trufa o nata
 
 
   - nombre: "Pastelitos blancos"

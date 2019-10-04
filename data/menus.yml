@@ -16,7 +16,7 @@ estrellas:
     precio: 15
     slug: menu-gala
     image: menu-gala-s.jpg
-    platos: Un menú de impresión para las ocasionesd más elegantes
+    platos: Un menú de impresión para las ocasiones más elegantes
 
   - nombre: "Menú infantil"
     precio: 7.50
@@ -28,37 +28,38 @@ estrellas:
     precio: 10.50
     slug: menu-vegetariano
     image: menu-vegetariano-s.jpg
-    platos: Un pica-pica vegetariano para ....
+    platos: Nuestro delicioso pica pica, version vegetariana
 
   - nombre: "Menú argentino"
     precio: 10.50
     slug: menu-argentino
     image: menu-empanadas-s.jpg
-    platos: Empanadas de todos los tipos que ....
+    platos: Receta clásica argentina, con y sin carne.
 
   - nombre: "Menú oriental"
     precio: 10.50
     slug: menu-oriental
     image: menu-oriental-s.jpg
-    platos: Sushi, gyozas qtc etc
+    platos: Maki, sushi, gyozas y mucho más.
 
 coffees:
   - nombre: "Coffee break 1"
     precio: 7
     slug: coffee-break-1
     image: coffee-break-1s.jpg
-    platos: El Coffee Break más sencillo y eficaz, mejora tus resuniones matutinas
+    platos: Para reuniones y conferencias
 
   - nombre: "Coffee break 2"
     precio: 9.50
     slug: coffee-break-2
     image: coffee-break-2s.jpg
-    platos: Un poco más para tus reuniones
+    platos: Los mejores desayunos de trabajo
+
   - nombre: "Coffee break 3"
     precio: 12.50
     slug: coffee-break-3
     image: coffee-break-3s.jpg
-    platos: Nuestro impresionante desay
+    platos: Para grandes eventos de empresa
 
 
 
