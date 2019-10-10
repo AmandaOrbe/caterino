@@ -5,7 +5,7 @@ pasteles:
     image: massini-s2.jpg
     platos: Bizcocho relleno de nata y trufa
 
-  - nombre: "Pastel de chocolate"
+  - nombre: "Pastel Sacher"
     precio: 47.50
     slug: pastel-chocolate
     image: pastel-chocolate-s.jpg
@@ -18,7 +18,7 @@ pasteles:
     platos: Mmm qué rico!
 
 mini_pasteles:
-  - nombre: "Petits fours"
+  - nombre: " Lionesas"
     precio: 3.35
     slug: petits-fours
     image: petits-fours-s.jpg
@@ -28,10 +28,10 @@ mini_pasteles:
     precio: 7.50
     slug: bracito-de-gitano
     image: bracito-gitano-s.jpg
-    platos: ERelleno de trufa o nata
+    platos: Relleno de trufa o nata
 
 
-  - nombre: "Pastelitos blancos"
+  - nombre: "Piononos de crema tostada"
     precio: 3.35
     slug: pastelitos
     image: pastelitos-blancos-s.jpg
