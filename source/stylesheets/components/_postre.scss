@@ -5,11 +5,15 @@
     justify-content: space-between;
     @include respond(portrait) {
       width: 98%;
+      position: absolute;
+      top: 20rem;
     }
     @include respond(phone) {
       width: 68rem;
       overflow-x: scroll;
-      margin-top: 18rem;
+      margin-top: 15rem;
+      position: initial;
+      top: auto;
     }
   }
   &__header{

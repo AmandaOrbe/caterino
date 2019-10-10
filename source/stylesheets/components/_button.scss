@@ -42,7 +42,6 @@
   }
 
   &--header{
-    margin-top: 6vh;
     padding: 2rem;
     width: 40rem;
     @include respond(phone) {
@@ -73,9 +72,8 @@
     }
 
   }
-
-
-
 }
 
-
+#button--home{
+  margin-top: 6vh;
+}
