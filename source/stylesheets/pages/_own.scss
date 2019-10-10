@@ -5,7 +5,9 @@
     }
   }
   &__category{
+    font-size: 3.2rem !important;
     @include respond(phone) {
+      font-size: 2.2rem;
       width: 100%;
       padding: 1.5rem 2rem;
       background-color: $beige;

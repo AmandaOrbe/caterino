@@ -1,13 +1,13 @@
 estrellas:
   - nombre: "Menú Tapeo"
-    precio: 8.50
+    precio: 7.50
     slug: menu-tapeo
     image: menu-tapeo-s.jpg
     platos: Disfruta de un pica-pica con nuestro menú más clásico y popular
 
 
   - nombre: "Menú Mediterráneo"
-    precio: 10.50
+    precio: 9.50
     slug: menu-mediterraneo
     image: menu-mediterraneo-s.jpg
     platos: El Mediterráneo en tu plato
@@ -19,44 +19,44 @@ estrellas:
     platos: Un menú de impresión para las ocasiones más elegantes
 
   - nombre: "Menú infantil"
-    precio: 7.50
+    precio: 6.50
     slug: menu-infantil
     image: menu-infantil-s.jpg
     platos: Diversión para los más peques!
 
   - nombre: "Menú vegetariano"
-    precio: 10.50
+    precio: 9.50
     slug: menu-vegetariano
     image: menu-vegetariano-s.jpg
     platos: Nuestro delicioso pica pica, version vegetariana
 
   - nombre: "Menú argentino"
-    precio: 10.50
+    precio: 9.50
     slug: menu-argentino
     image: menu-empanadas-s.jpg
     platos: Receta clásica argentina, con y sin carne.
 
   - nombre: "Menú oriental"
-    precio: 10.50
+    precio: 9.50
     slug: menu-oriental
     image: menu-oriental-s.jpg
     platos: Maki, sushi, gyozas y mucho más.
 
 coffees:
   - nombre: "Coffee break 1"
-    precio: 7
+    precio: 6
     slug: coffee-break-1
     image: coffee-break-1s.jpg
     platos: Para reuniones y conferencias
 
   - nombre: "Coffee break 2"
-    precio: 9.50
+    precio: 8.50
     slug: coffee-break-2
     image: coffee-break-2s.jpg
     platos: Los mejores desayunos de trabajo
 
   - nombre: "Coffee break 3"
-    precio: 12.50
+    precio: 11.50
     slug: coffee-break-3
     image: coffee-break-3s.jpg
     platos: Para grandes eventos de empresa

@@ -1,10 +1,4 @@
 para_picar:
-  canapes:
-    name: canapés variados 1kg (70uds)
-    price: 31.60
-  empanada:
-    name: empanada gallega atún 1,2kg
-    price: 18
   crujiente_langostino:
     name: crujiente de langostino
     price: .90

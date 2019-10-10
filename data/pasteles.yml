@@ -2,7 +2,7 @@ pasteles:
   - nombre: "Massini"
     precio: 39.35
     slug: massini
-    image: massini-s.jpg
+    image: massini-s2.jpg
     platos: Bizcocho relleno de nata y trufa
 
   - nombre: "Pastel de chocolate"
