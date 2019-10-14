@@ -1,15 +1,19 @@
 - question: Qué es Caterino.
-  answer: Caterino tiene la misión de transformar la forma de pedir comida a domicilio. Nos asociamos con los mejores restaurantes del sector, desde pequeños locales a restaurantes internacionales, llevando la comida que te encanta, directa a tu puerta.
+  answer: [CATERINO  es una empresa familiar especializada en el servicio de catering. Proponemos ideas personalizadas a nuestros clientes para todas las ocasiones. Fundada en el año 2004 en Barcelona,  trabajamos desde entonces ofreciendo un servicio de calidad. Disponemos de unas instalaciones magníficas en el histórico barrio de Gràcia. En nuestra cocina podemos preparar pedidos personalizados y de grandes dimensiones rápidamente.]
   slug: que-es-caterino
 - question: Porqué Caterino
-  answer: Lorem ipsum dolor sit amet, consectetur adipisicing elit. In est provident assumenda consequatur sequi quo exercitationem magnam aut repudiandae dolorem odit iure aspernatur tenetur, explicabo sunt autem, illo quaerat cum!
+  answer:  ['Porque nos encanta lo que hacemos, porque nuestra labor es ofrecer productos buenos para encuentros buenos.' ,
+    'Porque trabajamos para dar soluciones ofreciendo el mejor servicio con los mejores productos.',
+    'Entre nuestros servicios de Catering destacamos:',
+    '•  Ofrecemos un servicio tanto para particulares (con un servicio a domicilio) como para restaurantes (empresas). Nos adaptamos a cada tipo de cliente.',
+    '•  Ofrecemos servicios de catering para desayunos, como servicios para eventos realizados en la ciudad de Barcelona.',
+    '•  Ofrecemos un servicio con un precio económico comparándolos con el mercado dada nuestra alta calidad de servicio.']
   slug: porque-caterino
 - question: Qué tengo que hacer para pedir en Caterino
-  answer: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi vero repudiandae, fugiat deleniti sit perferendis, autem, ab magnam architecto ad tempora. Libero unde vero nostrum veniam repudiandae dolor, consectetur officiis?
+  answer: ['Es muy fácil, en nuestra página encontrarás una gran cantidad de opciones gastronómicas, menús armados listos para que los pidas o bien opciones para que puedas elegirlo y armarlo tú mismo.',
+   'Si lo que buscas es diferente o la ocasión es especial nos lo cuentas y seguro que lo hacemos realidad.',
+   'Una vez hayas realizado el pedido nos pondremos en contacto contigo.']
   slug: como-pedir
 - question: ¿Puedo alquilar menage?
-  answer: "Por supuesto, ponemos a su disposición todo lo que pueda necesitar para que su evento sea perfecto: manteles, vasos, mesas, etc. Pónganse en constacto con nosotros para más detalles"
-  slug: menaje
-- question: ¿Alquiláis salas?
-  answer: "Nosotros no, pero puedes encontras salas en http://www.alteuaire.es/es/"
+  answer: ["Por supuesto, ponemos a su disposición todo lo que pueda necesitar para que su evento sea perfecto: manteles, vasos, mesas, etc. Pónganse en constacto con nosotros para más detalles"]
   slug: menaje

@@ -8,17 +8,33 @@
           <%= link_to about_line.question, "##{about_line.slug}"%>
         </div>
       <% end %>
+      <div class="about__line">
+        <%= link_to '¿Alquiláis salas?', "#salas"%>
+      </div>
+
     </div>
     <div class="about__right">
       <% data.about.each do |about| %>
         <div class="QA" id= <%= about.slug   %>>
           <div class="QA__content">
             <h2 ><%=about.question  %></h2>
-            <p><%=about.answer %></p>
+            <%about.answer.each do |answer_line| %>
+              <p> <%= answer_line  %></p>
+            <% end %>
             <br>
+          </div>
+          <div class="QA__content">
           </div>
         </div>
       <% end %>
+      <div class="QA" id="salas">
+        <div class="QA__content">
+          <h2 >¿Alquiláis salas?</h2>
+          <p>Nosotros no, pero puedes encontrar salas <a href="http://www.alteuaire.es/es/"> aquí.</a></p>
+           <p>Nosotros no, pero puedes encontrar salas  en http://www.alteuaire.es/es/
+          <br>
+        </div>
+      </div>
     </div>
   </div>
 </div>
