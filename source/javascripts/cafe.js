@@ -23,11 +23,15 @@ var menuTotalLine1 = document.getElementById("order-line-1__total");
 var datepicker = document.getElementById("datepicker");
 var menusField = document.getElementById("menus-field");
 
-var minimoVisible = function( event){
- if (Number(diners.value) < 15) {
-  minimo.style.opacity = 1;
- }
+console.log('hello from cooofe.js');
 
+var isMinimoVisible = function(){
+  console.log('isMinimoVisible');
+  if (Number(diners.value) < 15) {
+    minimo.style.opacity = 1;
+  } else if  (Number(diners.value) > 14){
+    minimo.style.opacity = 0;
+  }
 }
 
 var signColor = function(){
@@ -41,10 +45,11 @@ var signColor = function(){
 var increaseDiners  = function (event){
   var dinersNumber = Number(diners.value);
   diners.value = Number(document.getElementById("comensales").value) + 1;
-  minimo.style.opacity = 0;
+  isMinimoVisible();
 }
 
 var decreaseDiners  = function (event){
+  console.log('decreaseDiners');
   if (Number(diners.value) > 15){
     var dinersNumber = Number(diners.value);
     diners.value = Number(document.getElementById("comensales").value) - 1;
@@ -70,7 +75,7 @@ var updateStepOnePrice = function(){
   } else {
     price.innerHTML = "Total " + minPrice + " €";
   }
-  minimoVisible();
+  // isMinimoVisible();
   signColor();
 }
 
@@ -118,6 +123,7 @@ var updateTotal = function(postrePrice, bebidaPrice){
 
 
 diners.addEventListener("keyup", updateStepOnePrice);
+diners.addEventListener("keyup", isMinimoVisible);
 window.addEventListener("click", updateStepOnePrice);
 window.addEventListener("hashchange", locateUrl);
 

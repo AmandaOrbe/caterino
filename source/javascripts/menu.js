@@ -191,6 +191,7 @@ var checkBebida = function(){
 
 
 diners.addEventListener("keyup", updateStepOnePrice);
+diners.addEventListener("keyup", isMinimoVisible);
 window.addEventListener("click", updateStepOnePrice);
 window.addEventListener("hashchange", locateUrl);
 
