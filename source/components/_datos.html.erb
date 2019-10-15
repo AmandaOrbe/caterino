@@ -27,7 +27,7 @@
         </div>
         <div class="col-xs-12 col-md-6">
           <div class="datos-form__group">
-            <%= text_field_tag :telefono , :class => 'datos-form__input', required: true %>
+            <%= phone_field_tag :telefono , :class => 'datos-form__input', required: true, pattern: '^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$' %>
             <%= label_tag t.telefono, :class => 'datos-form__label' %>
           </div>
         </div>

@@ -41,11 +41,13 @@ var postreSelected = document.getElementById("order-postre").innerHTML
 var bebidaWarning = document.getElementById("bebida-warning")
 
 
-var minimoVisible = function( event){
- if (Number(diners.value) < 15) {
-  minimo.style.opacity = 1;
- }
 
+var isMinimoVisible = function(){
+  if (Number(diners.value) < 15) {
+    minimo.style.opacity = 1;
+  } else if  (Number(diners.value) > 14){
+    minimo.style.opacity = 0;
+  }
 }
 
 var signColor = function(){
@@ -59,7 +61,7 @@ var signColor = function(){
 var increaseDiners  = function (event){
   var dinersNumber = Number(diners.value);
   diners.value = Number(document.getElementById("comensales").value) + 1;
-  minimo.style.opacity = 0;
+  isMinimoVisible();
 }
 
 var decreaseDiners  = function (event){
@@ -67,7 +69,7 @@ var decreaseDiners  = function (event){
     var dinersNumber = Number(diners.value);
     diners.value = Number(document.getElementById("comensales").value) - 1;
   } else {
-    minimo.style.opacity = 1;
+    isMinimoVisible();
   }
 
 }
@@ -89,7 +91,7 @@ var updateStepOnePrice = function(){
   } else {
     price.innerHTML = "Total " + minPrice + " €";
   }
-  minimoVisible();
+  isMinimoVisible();
   signColor();
 }
 
