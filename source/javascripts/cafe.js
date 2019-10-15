@@ -1,5 +1,5 @@
 
-var unitPrice = Number(document.getElementById("precio").innerText);
+var unitPrice = Number(document.getElementById("unit-price").innerText);
 var buttonNext = document.getElementById("button-next");
 var diners = document.getElementById("comensales");
 var price =document.getElementById("price");
@@ -23,7 +23,6 @@ var menuTotalLine1 = document.getElementById("order-line-1__total");
 var datepicker = document.getElementById("datepicker");
 var menusField = document.getElementById("menus-field");
 
-console.log('hello from cooofe.js');
 
 var isMinimoVisible = function(){
   console.log('isMinimoVisible');
