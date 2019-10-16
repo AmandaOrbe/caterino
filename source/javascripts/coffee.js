@@ -17,13 +17,12 @@ var datosButton =document.getElementById("button-datos");
 var formRight = document.getElementById("form-right");
 
 
-console.log('hello from coffe.js')
+
 
 
 // functions***********************
 
 var isMinimoVisible = function(){
-  console.log('isMinimoVisible');
   if (Number(comensales.value) < 15) {
     minimo.style.opacity = 1;
   } else if  (Number(comensales.value) > 14){
@@ -47,7 +46,6 @@ var increaseComensales  = function (event){
 }
 
 var decreaseComensales  = function (event){
-  console.log('decreaseDiners');
   if (Number(comensales.value) > 15){
     comensales.value = Number(document.getElementById("comensales").value) - 1;
   } else {
@@ -69,7 +67,6 @@ var printMenuPrice = function(){
   menuNumberLine1.innerHTML = Number(comensales.value);
   menuTotalLine1.innerHTML = "Total " + (Math.round(menuPrice * 100) / 100).toFixed(2)+ " €";
   menusField.value = Number(comensales.value) + " * " + menuName + " = " + menuPrice;
-  console.log(menusField.value);
 }
 
 var updateMenuPrice = function (){
@@ -83,7 +80,6 @@ var stepTwo = function (event) {
   step2.classList.remove("hidden");
   formRight.classList.remove("hidden");
   datosButton.classList.remove("hidden");
-  console.log("stepTwo");
 
   // window.location = "#bebida";
 }

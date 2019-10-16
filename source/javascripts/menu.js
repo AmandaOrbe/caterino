@@ -37,13 +37,13 @@ var totalField = document.getElementById("total-field");
 var bebidaWarning = document.getElementById("bebida-warning");
 var bebidaRadios = document.getElementsByName('bebida');
 
-console.log('hello from menu2.js')
+
 
 
 // functions***********************
 
 var isMinimoVisible = function(){
-  console.log('isMinimoVisible');
+
   if (Number(comensales.value) < 15) {
     minimo.style.opacity = 1;
   } else if  (Number(comensales.value) > 14){

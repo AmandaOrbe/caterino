@@ -48,7 +48,7 @@ title: Caterino: el Catering más barato de Barcelona! <%= menu.nombre  %>
           </div>
         </div>
       <% end %>
-      --------------
+
       <div class="hidden form2" id= "step2">
         <% field_set_tag :class => 'fieldset-2  hidden', id: "f2" do %>
           <%= partial(:'components/postre', :locals => { :menu => menu}) %>
@@ -61,7 +61,7 @@ title: Caterino: el Catering más barato de Barcelona! <%= menu.nombre  %>
         <% end %>
         <%= partial(:'components/form-right',  :locals => { :menu => menu}) %>
       </div>
-      --------------
+
     <% end %>
   </div>
 </div>
