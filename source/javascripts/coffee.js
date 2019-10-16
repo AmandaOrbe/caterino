@@ -93,7 +93,7 @@ var stepTwo = function (event) {
 
 increase.addEventListener("click",  increaseComensales, updateMenuPrice);
 decrease.addEventListener("click", decreaseComensales, updateMenuPrice);
-comensales.addEventListener("keyup",  updateMenuPrice);
+comensales.addEventListener("keyup", isMinimoVisible,  updateMenuPrice);
 buttonNext.addEventListener("click", stepTwo);
 
 flatpickr(datepicker, {
