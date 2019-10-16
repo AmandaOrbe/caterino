@@ -7,15 +7,64 @@
   <div class="show__background">
   </div>
   <div class="show__content show__content--full">
-    <%= partial(:'components/form-cafe', :locals => { :menu => cafe}) %>
-    <div class="hidden form2" id= "step2">
-      <% field_set_tag :class => 'fieldset-4 hidden', id: "f4" do %>
-        <%= partial(:'components/datos', :locals => { :menu => cafe} , :class=> "datos-form datos-form--full " ) %>
+    <% form_tag 'https://formcarry.com/s/IPZZAEv8L9X', :class => 'form', :method => 'POST' do %>
+      <% field_set_tag :class => 'fieldset-1 form1', id: "f1" do %>
+        <div class="show__left show__frame">
+          <%= image_tag cafe.image, class: "form1__image" %>
+        </div>
+        <div class="show__right show__form1">
+          <h1><%=cafe.nombre.upcase  %></h1>
+          <h2 id= "unit-price" class= "hidden" ><%=cafe.precio %></h2>
+          <h2  ><%=number_to_currency(cafe.precio, unit: "€", separator: ",", delimiter: "", format: "%n %u")   %></h2>
+          <div class="platos">
+            <% cafe.platos.each do |plato| %>
+              <div class="plato-instance"><p><%= plato %></p></div>
+            <% end %>
+          </div>
+          <p class= "hidden"><%= text_field_tag :menu, :value => cafe.nombre %></p>
+          <div class="show__down">
+            <h4 class="align-center"><%= label_tag t.comensales, :class => 'first' %></h4>
+            <div class="number-form">
+              <div class="number-form__line">
+                <%= partial(:'components/minus_sign') %>
+                <%= number_field_tag :comensales, :value => 15 , :min => 15,  :id => 'comensales', :class => "number-form__number" %>
+                <%= partial(:'components/plus_sign') %>
+              </div>
+            </div>
+            <p class="align-center" id= "minimo"><%= t.minimo  %></p>
+            <h4 class="align-center" id= "total-price-step1">Total <%= 15 *  cafe.precio  %> €</h4>
+            <br>
+            <div class=" show__button button" id= "button-next" href="">
+              <a href="#1">Continuar</a>
+            </div>
+          </div>
+        </div>
       <% end %>
-      <%= partial(:'components/form-right-cafe', :locals => { :menu => cafe}) %>
-    </div>
+      <div class="hidden form2" id= "step2">
+        <% field_set_tag :class => 'fieldset-4 hidden datos-form datos-form--half', id: "f4" do %>
+        <%= partial(:'components/datos', :locals => { :menu => cafe}) %>
+        <% end %>
+        <div class="show__right hidden" id= "form-right">
+          <h2 class= "upcase margin-bottom-5 portrait-hidden"><%= t.order  %></h2>
+          <div class="details" id= "order-line-1">
+            <p><span id="order-line-1__number"></span> * <span id= "menu-name"><%=  cafe.nombre%></span> </p>
+            <p id="order-line-1__total"></p>
+            <div class="hidden-form__group hidden">
+              <%= text_field_tag :menús , :class => 'hidden-form__input', :id => "menus-field", required: true %>
+            </div>
+          </div>
+          <div class="details" id= "order-line-total">
+            <p class="upcase" id= "order-total"><%= t.total%></p>
+            <p id="order-line-total__total"></p>
+          </div>
+          <div class="button hidden upcase" id= "button-datos" >
+            <%= submit_tag t.confirmar %>
+          </div>
+        </div>
+      </div>
+    <% end %>
   </div>
 </div>
 
-<%= javascript_include_tag "cafe" %>
+<%= javascript_include_tag "coffee" %>
 
