@@ -8,13 +8,13 @@ activate :directory_indexes
 lista_menus = []
 
 data.menus.estrellas.each do |menu|
-  lista_menus << menu.slug
+  lista_menus << menu
 end
 
 
 
 lista_menus.each do |menu|
-  proxy "/#{menu}.html", "/menu.html", :locals => { :menu => menu },  ignore: true
+  proxy "/#{menu.slug}.html", "/menu.html", :locals => { :menu => menu.slug , title: menu.title },  ignore: true
 end
 
 
@@ -22,27 +22,27 @@ end
 lista_cafes = []
 
 data.menus.coffees.each do |cafe|
-  lista_cafes << cafe.slug
+  lista_cafes << cafe
 end
 
 lista_cafes.each do |cafe|
-  proxy "/#{cafe}.html", "/cafe.html", :locals => { :cafe => cafe },  ignore: true
+  proxy "/#{cafe.slug}.html", "/cafe.html", :locals => { :cafe => cafe.slug,  title: cafe.title },  ignore: true
 end
 
 lista_pasteles = []
 
 data.pasteles.pasteles.each do |pastel|
-  lista_pasteles << pastel.slug
+  lista_pasteles << pastel
 end
 
 data.pasteles.mini_pasteles.each do |pastel|
-  lista_pasteles << pastel.slug
+  lista_pasteles << pastel
 end
 
 
 
 lista_pasteles.each do |pastel|
-  proxy "/#{pastel}.html", "/pastel.html", :locals => { :pastel => pastel },  ignore: true
+  proxy "/#{pastel.slug}.html", "/pastel.html", :locals => { :pastel => pastel.slug,  title: pastel.title },  ignore: true
 end
 
 activate :sprockets
