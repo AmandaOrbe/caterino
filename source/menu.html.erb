@@ -11,7 +11,58 @@ title: Caterino: el Catering más barato de Barcelona! <%= menu.nombre  %>
   <div class="show__background">
   </div>
   <div class="show__content  show__content--full">
-    <%= partial(:'components/form', :locals => { :menu => menu}) %>
+    <% form_tag 'https://formcarry.com/s/IPZZAEv8L9X', :class => 'form', :method => 'POST' do %>
+      <% field_set_tag :class => 'fieldset-1 form1', id: "f1" do %>
+        <div class="show__left show__frame">
+          <%= image_tag menu.image, class: "form1__image" %>
+        </div>
+        <div class="show__right show__form1">
+          <h1><%=menu.nombre.upcase  %></h1>
+          <h2 id= "unit-price" class= "hidden" ><%=menu.precio %></h2>
+          <h2  ><%=number_to_currency(menu.precio, unit: "€", separator: ",", delimiter: "", format: "%n %u")   %></h2>
+          <div class="platos">
+            <% menu.platos.each do |plato| %>
+             <div class="plato-instance"><p><%= plato %></p></div>
+            <% end %>
+          </div>
+          <p class= "hidden">
+            <%= text_field_tag :menu, :value => menu.nombre %>
+          </p>
+          <div class="show__down">
+            <h4 class="align-center"><%= label_tag t.comensales, :class => 'first' %></h4>
+            <div class="number-form">
+              <div class="number-form__line">
+                <%= partial(:'components/minus_sign') %>
+                <%= number_field_tag :comensales, :value => 15 , :min => 15,  :id => 'comensales', :class => "number-form__number" %>
+                <%= partial(:'components/plus_sign') %>
+              </div>
+            </div>
+            <p class="align-center" id= "minimo"><%= t.minimo  %></p>
+            <h4 class="align-center" id= "total-price-step1">
+                Total <%= 15 *  menu.precio  %> €
+            </h4>
+            <br>
+            <div class=" show__button button" id= "button-next" href="">
+                 <a href="#1">Continuar</a>
+            </div>
+          </div>
+        </div>
+      <% end %>
+      --------------
+      <div class="hidden form2" id= "step2">
+        <% field_set_tag :class => 'fieldset-2  hidden', id: "f2" do %>
+          <%= partial(:'components/postre', :locals => { :menu => menu}) %>
+        <% end %>
+        <% field_set_tag :class => 'fieldset-3 hidden', id: "f3" do %>
+          <%= partial(:'components/bebida', :locals => { :menu => menu}) %>
+        <% end %>
+        <% field_set_tag :class => 'fieldset-4 hidden datos-form datos-form--half', id: "f4" do %>
+          <%= partial(:'components/datos',:locals => { :menu => menu}  ) %>
+        <% end %>
+        <%= partial(:'components/form-right',  :locals => { :menu => menu}) %>
+      </div>
+      --------------
+    <% end %>
   </div>
 </div>
 
