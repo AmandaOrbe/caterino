@@ -110,3 +110,14 @@
 
 }
 
+.pasteles{
+  .card{
+    height:52rem;
+    &__frame{
+      top: 14rem;
+    }
+    &__description{
+      top: 47rem;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 - question: Qué es Caterino.
-  answer: [CATERINO  es una empresa familiar especializada en el servicio de catering. Proponemos ideas personalizadas a nuestros clientes para todas las ocasiones. Fundada en el año 2004 en Barcelona,  trabajamos desde entonces ofreciendo un servicio de calidad. Disponemos de unas instalaciones magníficas en el histórico barrio de Gràcia. En nuestra cocina podemos preparar pedidos personalizados y de grandes dimensiones rápidamente.]
+  answer: ['CATERINO  es una empresa familiar especializada en el servicio de catering. Proponemos ideas personalizadas a nuestros clientes para todas las ocasiones. Fundada en el año 2004 en Barcelona, trabajamos desde entonces ofreciendo un servicio de calidad. Disponemos de unas instalaciones magníficas en el histórico barrio de Gràcia. En nuestra cocina podemos preparar pedidos personalizados y de grandes dimensiones rápidamente.']
   slug: que-es-caterino
 - question: Porqué Caterino
   answer:  ['Porque nos encanta lo que hacemos, porque nuestra labor es ofrecer productos buenos para encuentros buenos.' ,
@@ -15,5 +15,5 @@
    'Una vez hayas realizado el pedido nos pondremos en contacto contigo.']
   slug: como-pedir
 - question: ¿Puedo alquilar menage?
-  answer: ["Por supuesto, ponemos a su disposición todo lo que pueda necesitar para que su evento sea perfecto: manteles, vasos, mesas, etc. Pónganse en constacto con nosotros para más detalles"]
+  answer: ["Por supuesto, ponemos a tu disposición todo lo que puedas necesitar para que tu evento sea perfecto: manteles, vasos, mesas, etc. Ponte en contacto con nosotros para más detalles"]
   slug: menaje
