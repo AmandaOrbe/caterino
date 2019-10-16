@@ -60,7 +60,7 @@ var displayTotalPrice = function() {
     total = total + value;
   })
   totalNumber.innerText = total + " €"
-  totalField.value = + total + "€";
+  totalField.value = 'Un pedido a medida por un total de '+ total + "€";
 
 
 
