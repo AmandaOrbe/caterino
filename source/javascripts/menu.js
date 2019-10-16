@@ -88,7 +88,7 @@ var printMenuPrice = function(){
   orderTotal.innerHTML = "Total " + (Math.round(menuPrice * 100) / 100).toFixed(2)+ " €";
   menuNumber.innerHTML = Number(comensales.value);
   menuTotal.innerHTML = "Total " + (Math.round(menuPrice * 100) / 100).toFixed(2)+ " €";
-  menusField.value = Number(comensales.value) + " * " + menuName + " = " + menuPrice;
+  menusField.value = 'Menús: ' + Number(comensales.value) + " * " + menuName + " = " + menuPrice + ' €';
   console.log(menusField.value);
 }
 
@@ -147,7 +147,7 @@ var locateUrl = function(){
 var updateOrderTotal = function(postrePrice){
   menuTotal = menuPrice + postrePrice
   orderTotal.innerHTML = "Total " + (Math.round(menuTotal * 100) / 100).toFixed(2)+ " €";
-  totalField.value = + menuTotal + "€";
+  totalField.value = 'Total: '+ menuTotal + "€";
 }
 
 
@@ -161,7 +161,7 @@ var checkPostre = function(){
       document.getElementById("order-line-2__total").innerHTML = Number(comensales.value) * 1.5 + " €";
       postrePrice = Number(comensales.value) *1.5;
       var postreSelected = document.getElementById("order-postre").innerHTML
-      postresField.value = Number(comensales.value) + " * " + postreSelected + " = " + Number(comensales.value) * 1.5 + "€";
+      postresField.value = 'Postres: ' + Number(comensales.value) + " * " + postreSelected + " = " + Number(comensales.value) * 1.5 + "€";
     } else if (postreRadio.checked && postreRadio.value === "no"){
       document.getElementById("order-line-2").classList.add("transparent");
       postrePrice = 0;
