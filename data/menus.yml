@@ -5,6 +5,7 @@ estrellas:
     image: menu-tapeo-s.jpg
     platos: Disfruta de un pica-pica con nuestro menú más clásico y popular
     title: 'Menú Tapeo - Caterino: el Catering más barato de Barcelona'
+    decription: Disfruta de un pica-pica con nuestro menú más clásico y popular.
   - nombre: "Menú Mediterráneo"
     precio: 9.50
     slug: menu-mediterraneo

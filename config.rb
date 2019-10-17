@@ -14,7 +14,7 @@ end
 
 
 lista_menus.each do |menu|
-  proxy "/#{menu.slug}.html", "/menu.html", :locals => { :menu => menu.slug , title: menu.title },  ignore: true
+  proxy "/#{menu.slug}.html", "/menu.html", :locals => { :menu => menu.slug , title: menu.title, description: menu.description },  ignore: true
 end
 
 
@@ -26,7 +26,7 @@ data.menus.coffees.each do |cafe|
 end
 
 lista_cafes.each do |cafe|
-  proxy "/#{cafe.slug}.html", "/cafe.html", :locals => { :cafe => cafe.slug,  title: cafe.title },  ignore: true
+  proxy "/#{cafe.slug}.html", "/cafe.html", :locals => { :cafe => cafe.slug,  title: cafe.title, description: cafe.description },  ignore: true
 end
 
 lista_pasteles = []
@@ -42,7 +42,7 @@ end
 
 
 lista_pasteles.each do |pastel|
-  proxy "/#{pastel.slug}.html", "/pastel.html", :locals => { :pastel => pastel.slug,  title: pastel.title },  ignore: true
+  proxy "/#{pastel.slug}.html", "/pastel.html", :locals => { :pastel => pastel.slug,  title: pastel.title, description: pastel.description },  ignore: true
 end
 
 activate :sprockets

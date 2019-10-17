@@ -22,7 +22,8 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <%= favicon_tag 'chef-hat.png' %>
 
-    <title><%= current_resource.data.title || title %></title>
+    <title><%= current_resource.data.title || title || 'Caterino - El catering más barato de Barcelona'%></title>
+    <meta name="description" content=<%= current_resource.data.description || description || '' %>>
     <%= stylesheet_link_tag "normalize", "application" %>
 
     <meta name="google-site-verification" content="8TgDPT_r4qsOA6Ix49iEllMp0l5ZZHpIYGoMDl8MevA" />
