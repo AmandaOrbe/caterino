@@ -5,43 +5,49 @@ estrellas:
     image: menu-tapeo-s.jpg
     platos: Disfruta de un pica-pica con nuestro menú más clásico y popular
     title: 'Menú Tapeo - Caterino: el Catering más barato de Barcelona'
-    decription: Disfruta de un pica-pica con nuestro menú más clásico y popular.
+    decription: Disfruta de un pica-pica con nuestro menú más clásico y popular. Tortilla de patatas, croquetas de jamón ibérico, Mini bocadillo de jamón york y queso de cabra, Pintxo donostiarra (cangrejo, olivas y anchoa), y Empanada gallega de atún.
   - nombre: "Menú Mediterráneo"
     precio: 9.50
     slug: menu-mediterraneo
     image: menu-mediterraneo-s.jpg
     platos: El Mediterráneo en tu plato
     title: 'Menú Mediterráneo - Caterino: el Catering más barato de Barcelona'
+    description: El Mediterráneo en tu plato. Degustación de Fideuá, Mini burger con queso y cebolla, Brochetas de tomate cherry y mozzarella, Ensaladilla rusa y Delicias de olivada.
   - nombre: "Menú  de gala"
     precio: 15
     slug: menu-gala
     image: menu-gala-s.jpg
     platos: Un menú de impresión para las ocasiones más elegantes
     title: 'Menú  de gala - Caterino: el Catering más barato de Barcelona'
+    description: Un menú de impresión para las ocasiones más elegantes.  Canapés variados, Embutidos ibéricos, Quesos, Pan de coca con tomate, Rissoto de setas y espárragos, Saquitos rellenos de champiñones, Crujientes de langostino, Brochetas de gambas y Chupito de Vichyssoisse o Gazpacho
   - nombre: "Menú infantil"
     precio: 6.50
     slug: menu-infantil
     image: menu-infantil-s.jpg
     platos: Diversión para los más peques!
     title: 'Menú infantil - Caterino: el Catering más barato de Barcelona'
+    description: Diversión para los más peques! Mini hamburguesa o mini frankfurt, Nuguets de pollo, Mini croquetas y Tacos de pizza
   - nombre: "Menú vegetariano"
     precio: 9.50
     slug: menu-vegetariano
     image: menu-vegetariano-s.jpg
     platos: Nuestro delicioso pica pica, version vegetariana
     title: 'Menú vegetariano - Caterino: el Catering más barato de Barcelona'
+    description: Nuestro delicioso pica pica, version vegetariana. Tortilla de espinacas, escalivada y piñones, mini bocadillo vegetal, empanada de queso y cebolla (tipo argentinas), croqueta de verduras, degustación de rissoto
   - nombre: "Menú argentino"
     precio: 9.50
     slug: menu-argentino
     image: menu-empanadas-s.jpg
     platos: Receta clásica argentina, con y sin carne.
     title: 'Menú argentino - Caterino: el Catering más barato de Barcelona'
+    description: Empanadas argentinas, la receta clásica argentina, de carne, de pollo al curry, de jamón y queso, de atún y de queso seco, albaca y mozzarella
   - nombre: "Menú oriental"
     precio: 9.50
     slug: menu-oriental
     image: menu-oriental-s.jpg
     platos: Maki, sushi, gyozas y mucho más.
     title: 'Menú oriental - Caterino: el Catering más barato de Barcelona'
+    decription: Gyozas de verduras, Brocheta Teriyaqui, Sushi Maki, Rollito primavera y Wok de fideos chinos con pollo
 coffees:
   - nombre: "Coffee break 1"
     precio: 6
@@ -49,17 +55,22 @@ coffees:
     image: coffee-break-1s.jpg
     platos: Para reuniones y conferencias
     title: 'Coffee break 1 - Caterino: el Catering más barato de Barcelona'
+    description: El desayuno perfecto para reuniones y conferencias. Café, Leche, Zumo de naranja, Agua mineral, Mini croisant y Mini madalenas
+
   - nombre: "Coffee break 2"
     precio: 8.50
     slug: coffee-break-2
     image: coffee-break-2s.jpg
     platos: Los mejores desayunos de trabajo
     title: 'Coffee break 2 - Caterino: el Catering más barato de Barcelona'
+    description: Los mejores desayunos de trabajo. Café, Infusiones, Leche, Agua mineral, Zumo de naranja, Mini croissant, Mini ensaimada y Mini bocadillo de queso manchego
+
   - nombre: "Coffee break 3"
     precio: 11.50
     slug: coffee-break-3
     image: coffee-break-3s.jpg
     platos: Para grandes eventos de empresa
     title: 'Coffee break 3 - Caterino: el Catering más barato de Barcelona'
+    description: El desayuno de loss grandes eventos de empresa. Café, Infusiones, Leche, Agua mineral, Zumos de naranja, piña y melocoton, Mini croissant, Mini ensaimada, Mini madalenas, Dados de brownie, Tarta de santiago y Brochetas de frutas naturales
 
 
