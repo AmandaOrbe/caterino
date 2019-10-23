@@ -1,9 +1,9 @@
-
 nombre: "Pastel de Nata"
-precio: 49.35
+precio: 1.5
 slug: pastel-nata
 image: pastel-nata.jpg
 platos:
-  - hojaldre
-  - crema
-  - azúcar glas
+  - bizcocho
+  - nata
+  - trufa
+  - cubierto de nata

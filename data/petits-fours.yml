@@ -1,8 +1,0 @@
-nombre: "Petits fours"
-precio: 3.35
-slug: petits-fours
-image: petits-fours.jpg
-platos:
-  - bizcocho
-  - crema de chocolate
-  - merengue flameado

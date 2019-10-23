@@ -1,0 +1,8 @@
+nombre: "Piononos de crema tostada"
+precio: 2.20
+slug: piononos
+image: piononos.jpg
+platos:
+  - bizcocho enrollado
+  - crema tostada
+  - azúcar glas

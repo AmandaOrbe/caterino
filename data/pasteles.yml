@@ -1,35 +1,35 @@
 pasteles:
   - nombre: "Massini"
-    precio: 39.35
+    precio: 1.50
     slug: massini
     image: massini-s2.jpg
-    platos: Bizcocho relleno de nata y trufa
+    platos: Bizcocho, nata, trufa y yema quemada
     title: 'Massini - Caterino: el Catering más barato de Barcelona'
 
   - nombre: "Pastel Sacher"
-    precio: 47.50
-    slug: pastel-chocolate
-    image: pastel-chocolate-s.jpg
+    precio: 1.50
+    slug: pastel-sacher
+    image: pastel-sacher-s.jpg
     platos: El gran clásico para todas las ocasiones
     title: 'Pastel Sacher - Caterino: el Catering más barato de Barcelona'
 
   - nombre: "Pastel de Nata"
-    precio: 49.35
+    precio: 1.50
     slug: pastel-nata
     image: pastel-nata-s.jpg
     platos: Mmm qué rico!
     title: 'Pastel de Nata - Caterino: el Catering más barato de Barcelona'
 
 mini_pasteles:
-  - nombre: " Lionesas"
-    precio: 3.35
-    slug: petits-fours
-    image: petits-fours-s.jpg
+  - nombre: "Lionesas"
+    precio: 2.20
+    slug: lionesas
+    image: lionesas-s.jpg
     platos: Dulcísimo
     title: 'Lionesas - Caterino: el Catering más barato de Barcelona'
 
   - nombre: "Bracito de gitano"
-    precio: 7.50
+    precio: 2.20
     slug: bracito-de-gitano
     image: bracito-gitano-s.jpg
     platos: Relleno de trufa o nata
@@ -37,9 +37,9 @@ mini_pasteles:
 
 
   - nombre: "Piononos de crema tostada"
-    precio: 3.35
-    slug: pastelitos
-    image: pastelitos-blancos-s.jpg
+    precio: 2.20
+    slug: piononos
+    image: piononos-s.jpg
     platos: Buenísimos!
     title: 'Piononos de crema tostada - Caterino: el Catering más barato de Barcelona'
 

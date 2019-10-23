@@ -1,0 +1,10 @@
+nombre: "Pastel Sacher"
+precio: 1.50
+slug: pastel-sacher
+image: pastel-sacher.jpg
+platos:
+  - Bizcocho de chocolate
+  - mermelada de fresa natural
+  - cubierto con chocolate fundido
+  - y escamas de chocolate
+

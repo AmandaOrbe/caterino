@@ -5,14 +5,14 @@
     <p><span id="order-line-1__number"></span> * <span id= "menu-name"><%=  menu.nombre%></span> </p>
     <p id="order-line-1__total"></p>
     <div class="hidden-form__group hidden">
-      <%= text_field_tag :menús , :class => 'hidden-form__input', :id => "menus-field", required: true %>
+      <%= text_field_tag :menús , :class => 'hidden-form__input', :id => "menus-field"%>
     </div>
   </div>
   <div class="details transparent" id= "order-line-2">
     <p ><span id="order-line-2__number"></span> * <span id= "order-postre"></span></p>
     <p id="order-line-2__total"></p>
     <div class="hidden-form__group hidden">
-      <%= text_field_tag :postres , :class => 'hidden-form__input', :id => "postres-field", required: true %>
+      <%= text_field_tag :postres , :class => 'hidden-form__input', :id => "postres-field" %>
     </div>
   </div>
   <div class="details portes" >
@@ -25,7 +25,7 @@
     <p ><span class="upcase" id= "order-total"> <%= t.total%></span>  <span class="iva"><i><%=t.iva  %></i></span></p>
     <p id="order-line-total__total"></p>
     <div class="hidden-form__group hidden">
-      <%= text_field_tag :total , :class => 'hidden-form__input', :id => "total-field", required: true %>
+      <%= text_field_tag :total , :class => 'hidden-form__input', :id => "total-field" %>
     </div>
   </div>
   <div class="button hidden" id= "button-postre">

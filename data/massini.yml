@@ -1,8 +1,10 @@
 nombre: "Massini"
-precio: 39.35
+precio: 1.5
 slug: massini
 image: massini.jpg
 platos:
-  - caramelo
-  - chocolate
-  - crema
+  - bizcocho
+  - nata
+  - trufa
+  - yema tostada
+  - perlasde chocolate

@@ -1,8 +1,0 @@
-nombre: "Pastelitos blancos"
-precio: 3.35
-slug: pastelitos
-image: pastelitos-blancos.jpg
-platos:
-  - hojaldre
-  - crema
-  - azúcar glas

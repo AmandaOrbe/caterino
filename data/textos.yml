@@ -63,7 +63,7 @@ mini_pasteles: Mini Pasteles
 fechas_especiales: Fechas Especiales
 massini: massini
 bracito: bracito de gitano
-pasteles_number: ¿Cuántas unidades quieres?
+pasteles_number: ¿Cuántos sois?
 para_picar: aperitivos
 tortillas: tortillas
 croquetas: croquetas
@@ -80,6 +80,7 @@ confirmar_title: ¡Pedido registrado!
 confirmar_l1: En menos de tres horas nos pondremos en contacto contigo para confirmar tu pedido.
 confirmar_l2: El pedido se hará con tarjeta o en efectivo en el momento de la entrega del pedido.
 confirmar_l3: Si tienes alguna duda llámanos al
+pasteles_completos: Postres
 
 
 

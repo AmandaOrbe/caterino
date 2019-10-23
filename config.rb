@@ -42,7 +42,7 @@ end
 
 
 lista_pasteles.each do |pastel|
-  proxy "/#{pastel.slug}.html", "/pastel.html", :locals => { :pastel => pastel.slug,  title: pastel.title, description: pastel.description },  ignore: true
+  proxy "/#{pastel.slug}.html", "/cafe.html", :locals => { :cafe => pastel.slug,  title: pastel.title, description: pastel.description },  ignore: true
 end
 
 activate :sprockets

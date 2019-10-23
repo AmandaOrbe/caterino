@@ -1,0 +1,7 @@
+nombre: "Lionesas"
+precio: 2.20
+slug: lionesas
+image: lionesas.jpg
+platos:
+  - pasta choux
+  - relleno de trufa o nata

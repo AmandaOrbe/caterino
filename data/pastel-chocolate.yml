@@ -1,9 +1,0 @@
-nombre: "Pastel Sacher"
-precio: 47.50
-slug: pastel-chocolate
-image: pastel-chocolate.jpg
-platos:
-  - bizcocho
-  - café
-  - marcapone
-  - cacao
