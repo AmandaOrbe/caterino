@@ -1,33 +1,18 @@
 .footer{
   width: 100%;
-
   background-color: black;
   padding: 5rem;
-  display: flex;
   font-family: $body-font;
   color: white;
-  font-weight: 100;
-  justify-content: space-between;
+  text-align: center;
+  font-weight: 300;
   letter-spacing: 1px;
-  align-items: center;
+  a{
+    color: white;
+  }
   @include respond(portrait) { // width < 1200
-      display: block;
       height: auto;
       padding: 3rem;
-    }
-  &__left{
-    display: flex;
-    width: 20rem;
-    justify-content: space-between;
-    @include respond(portrait) { // width < 1200
-      margin: 2rem auto;
-    }
   }
-  &__right{
-    text-align: right;
-    @include respond(portrait) { // width < 1200
-      text-align: center;
-      font-size: 1.4rem;
-    }
-  }
+
 }
